@@ -101,3 +101,24 @@
   font-weight: 400;
   font-style: italic;
 }
+
+@layer base {
+  * {
+    @apply font-circular;
+  }
+  h1 {
+    @apply font-circular text-5xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  p {
+    @apply font-circular;
+  }
+  a {
+    @apply text-purple;
+  }
+}
