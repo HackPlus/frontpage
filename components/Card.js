@@ -1,17 +1,16 @@
 import Link from "next/link";
+import Badge from "./Badge"
 
-export default function Card() {
+export default function Card({ title, textcolor, fillcolor, badgeText, href, cta, children }) {
   return (
     <div className="border border-opacity-25 border-gray rounded-xl p-6">
       <img src="" alt="icon" />
-      <h3>Events+</h3>
-      <p>Accepting Applications</p>
+      <h3>{title}</h3>
+      <Badge textcolor={textcolor} fillcolor={fillcolor}>{badgeText}</Badge>
       <p>
-        Launch events, like hackathons or conferences, using our comprehensive
-        platform. We`&#39;`ll provide legal backend, banking services, powerful
-        equipment, and more.
+        {children}
       </p>
-      <Link href="/">Learn more</Link>
+      <Link href={href}>{cta}</Link>
     </div>
   );
 }

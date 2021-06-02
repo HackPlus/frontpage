@@ -2,28 +2,28 @@ import Link from "next/link";
 
 export default function Button({ type, href, children }) {
   switch (type) {
-    // primary button
+    // secondary button
     case 2:
       return (
-        <button className="bg-purple text-white rounded-lg p-4">
-          <Link href={href}>
-            <a className="text-white">{children}</a>
-          </Link>
-        </button>
-      );
-    // secondary button
-    case 3:
-      return (
-        <button className="bg-white text-purple border border-purple rounded-lg p-4">
+        <button className="border border-purple rounded-lg p-4 bg-white text-purple hover:bg-purple hover:text-white">
           <Link href={href}>
             <a>{children}</a>
           </Link>
         </button>
       );
-    default:
-      // primary
+    // blue, "get started" button
+    case 3:
       return (
-        <button className="bg-purple text-white rounded-lg p-4">
+        <button className="rounded-md bg-blue p-4 text-black hover:bg-cyan hover:text-white">
+          <Link href={href}>
+            <a className="">{children}</a>
+          </Link>
+        </button>
+      );
+    default:
+      // primary button
+      return (
+        <button className="rounded-lg bg-purple p-4 text-white hover:bg-indigo">
           <Link href={href}>
             <a className="text-white">{children}</a>
           </Link>
