@@ -8,7 +8,7 @@ export default function Card() {
       <p>Accepting Applications</p>
       <p>
         Launch events, like hackathons or conferences, using our comprehensive
-        platform. We'll provide legal backend, banking services, powerful
+        platform. We`&#39;`ll provide legal backend, banking services, powerful
         equipment, and more.
       </p>
       <Link href="/">Learn more</Link>
