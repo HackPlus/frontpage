@@ -18,7 +18,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-5">
               <Card
                 title="Events+"
-                textcolor="blue"
+                textcolor="black"
                 fillcolor="green"
                 badgeText="Accepting applications"
                 href="/"
@@ -30,7 +30,7 @@ export default function Home() {
               </Card>
               <Card
                 title="Events+"
-                textcolor="blue"
+                textcolor="black"
                 fillcolor="green"
                 badgeText="Accepting applications"
                 href="/"
@@ -42,7 +42,7 @@ export default function Home() {
               </Card>
               <Card
                 title="Events+"
-                textcolor="blue"
+                textcolor="black"
                 fillcolor="green"
                 badgeText="Accepting applications"
                 href="/"

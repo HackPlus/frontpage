@@ -7,7 +7,7 @@ export default function Layout({ title, children }) {
     <div>
       <Meta title={title} />
       <Nav />
-      {children}
+      <div>{children}</div>
       <Footer />
     </div>
   );
