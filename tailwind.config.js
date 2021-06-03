@@ -1,5 +1,4 @@
 module.exports = {
-  mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -17,6 +16,7 @@ module.exports = {
         green: "#32FF7E",
         indigo: "#6610f2",
         purple: "#7d5fff",
+        purplemedium: "#D9D1FF",
         purplelight: "#F7F5FF",
         orange: "#fd7e14",
         pink: "#e83e8c",
