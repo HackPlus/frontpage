@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import Badge from "../components/Badge";
 import Layout from "../components/Layout";
 import Team from "../components/Team";
@@ -17,7 +18,27 @@ export default function About() {
             </div>
           </section>
           <section className="py-16">
-            <h3>At a glance</h3>
+            <h3 className=" mx-12 md:mx-32 leading-loose pb-7">At a glance</h3>
+            <div className="grid grid-cols-2 gap-y-5 lg:grid-cols-4 mx-12 md:mx-32">
+              <div>
+                <CountUp end={732} className="text-5xl text-purple font-semibold" />
+                <p className="text-black font-medium text-sm pt-2">student founders</p>
+              </div>
+              <div>
+                <CountUp end={65} className="text-5xl text-purple font-semibold" />
+                <p className="text-black font-medium text-sm pt-2">ventures launched</p>
+              </div>
+              <div>
+                <CountUp end={258} className="text-5xl text-purple font-semibold" />
+                <p className="text-black font-medium text-sm pt-2">donors to date</p>
+              </div>
+              <div>
+
+                <CountUp end={60000} separator="," suffix="+" className="text-5xl text-purple font-semibold" />
+
+                <p className="text-black font-medium text-sm pt-2">impacted annually</p>
+              </div>
+            </div>
           </section>
           <svg
             className="fill-current w-full -mb-1"
@@ -30,11 +51,11 @@ export default function About() {
             />
           </svg>
           <section className="bg-purplelight py-8">
-            <div className="flex flex-col space-y-10 mx-10 md:space-y-0 md:mx-24 md:flex-row md:justify-evenly md:space-x-16">
+            <div className="grid grid-cols-1 space-y-10 mx-10 md:space-y-0 md:mx-24 md:grid-cols-2 md:space-x-8">
               <div>
                 <img className="w-50 h-96 rounded-xl mx-auto md:mx-0" src="/about.jpg" alt="A group of students sitting and smiling" />
               </div>
-              <div className="flex flex-col space-y-4 md:w-2/3">
+              <div className="flex flex-col space-y-4">
                 <Badge fillcolor="purple" textcolor="white">Our mission</Badge>
                 <h2 className="font-medium"> Creating an accessible accelerator for student-led impact. </h2>
                 <p className="text-gray">Hack+ is a full-spectrum platform that enables students to launch and pursue startups, nonprofits, and events, with no fees attached. </p>
@@ -52,9 +73,9 @@ export default function About() {
               fill="#F7F5FF"
             />
           </svg>
-          <section>
-            <h3>Meet the Team</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-8 md:mx-24">
+          <section className="pb-8 mx-8 md:mx-24">
+            <h3 className="pb-16 pt-8">Meet the Team</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <Team
                 src="/avatars/sanil.jpeg"
                 name="Sanil Chawla"
@@ -130,6 +151,9 @@ export default function About() {
               />
 
             </div>
+            <p className="text-sm py-8">
+              Interested in joining our team? <a href="mailto:hello@hackplus.io" className="text-purple">Reach out <span className="hover:transform hover:translate-x-4 inline-block">&rarr;</span></a>
+            </p>
           </section>
         </main>
       </Layout>
