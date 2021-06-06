@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import Perk from "../components/PerkCard";
+import Link from "next/link";
 import { FaStripeS, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
 
 export default function Home() {
@@ -9,17 +10,40 @@ export default function Home() {
     <div>
       <Layout title="Home">
         <main>
-          {/* <svg
-            className="fill-current w-full -mb-1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 2468 184"
-          >
-            <path
-              fill="#fff"
-              d="M2468 85.292S2294.18 184 1959.94 184c-357.7 0-762.33-78.269-1174.624-106.075C653.734 69.051 0 77.925 0 77.925V0h2468v85.292z"
-            ></path>
-          </svg> */}
+          <section>
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+              <div className="flex flex-col space-y-5 ml-8 md:ml-16">
+                <h1>
+                  We make it easy for students to create the next big thing.
+                </h1>
+                <p className="text-gray text-lg">
+                  Hack+ is an accessible nonprofit accelerator for student-led
+                  impacts. In other words: we&apos;re here to help students
+                  change the world.
+                </p>
+                <div className="flex space-x-3">
+                  <Button href="/">Reach Out</Button>
+                  <Button type={2} href="/">
+                    Donate
+                  </Button>
+                </div>
+                <a className="text-graymed text-sm">
+                  Already a Hack+ member?{" "}
+                  <span>
+                    <Link href="/">
+                      <a className="text-purple hover:text-gray">Sign In</a>
+                    </Link>
+                  </span>
+                </a>
+              </div>
+              <div>
+                <img
+                  src="/saas-3.svg"
+                  alt="Person sitting in a chair chilling in at their desk"
+                />
+              </div>
+            </div>
+          </section>
           <svg
             className="fill-current w-full -mb-1"
             xmlns="http://www.w3.org/2000/svg"
