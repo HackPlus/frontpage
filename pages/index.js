@@ -1,20 +1,36 @@
 import Card from "../components/Card";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
+import { BsDot } from "react-icons/bs";
 import Perk from "../components/PerkCard";
 import Link from "next/link";
 import { FaStripeS, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
+import ReactTypingEffect from "react-typing-effect";
+import CountUp from "react-countup";
 
 export default function Home() {
   return (
     <div>
       <Layout title="Home">
         <main>
-          <section>
+          <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <div className="flex flex-col space-y-5 ml-8 md:ml-16">
                 <h1>
-                  We make it easy for students to create the next big thing.
+                  We make it easy for students to create <br />
+                  <span>
+                    <ReactTypingEffect
+                      text={[
+                        "innovative startups.",
+                        "impactful nonprofits.",
+                        "amazing events.",
+                        "the next big thing.",
+                      ]}
+                      eraseSpeed="100"
+                      speed="100"
+                      typingDelay="300"
+                    />
+                  </span>
                 </h1>
                 <p className="text-gray text-lg">
                   Hack+ is an accessible nonprofit accelerator for student-led
@@ -36,7 +52,7 @@ export default function Home() {
                   </span>
                 </a>
               </div>
-              <div>
+              <div className="p-16">
                 <img
                   src="/saas-3.svg"
                   alt="Person sitting in a chair chilling in at their desk"
@@ -127,9 +143,14 @@ export default function Home() {
                 idea—and we&apos;re here to help.{" "}
               </p>
               <div className="pt-8 pb-14">
-                <p className="text-purple text-5xl leading-loose">
-                  $1,756,382+
-                </p>
+                <CountUp
+                  end={1756382}
+                  separator=","
+                  suffix="+"
+                  prefix="$"
+                  className="text-purple text-5xl leading-loose font-semibold"
+                />
+
                 <p className="text-lg text-gray">
                   transacted for our student-run ventures to date
                 </p>
@@ -224,15 +245,28 @@ export default function Home() {
               d="M0 15.446S461-27.74 788.16 30.312c462.18 82.012 732.73 147.47 1196.24 89.548C2177.21 95.767 2469 15.446 2469 15.446V239H0V15.446z"
             ></path>
           </svg>
-          <section className="bg-purplelight">
-            <h2>Get started in days.</h2>
-            <div className="grid grid-cols-2 md:grid-cols-2">
+          <section className="bg-purplelight pb-24 pt-10">
+            <h2 className="leading-loose mx-8 md:mx-24">Get started in days.</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-8 md:mx-24">
               <div>
-                <p>list</p>
+                <ol className="space-y-10">
+                  <Step
+                    heading="1. Reach out"
+                    description="Apply for one of our programs by reaching out to our team."
+                  />
+                  <Step
+                    heading="2. Fill out some simple paperwork"
+                    description="Once accepted, fill out some basic paperwork so we can make things official."
+                  />
+                  <Step
+                    heading="3. Get resources and launch your ventures"
+                    description="Apply for one of our programs by reaching out to our team."
+                  />
+                </ol>
               </div>
-              <div>
+              <div className="mx-20 pt-5 md:pt-0 md:mx-5">
                 <img
-                  src=""
+                  src="/saas-4.svg"
                   alt="Two people working together on a computer screen"
                 />
               </div>
@@ -280,3 +314,17 @@ export default function Home() {
     </div>
   );
 }
+
+const Step = ({ heading, description }) => {
+  return (
+    <li className="flex items-center space-x-6">
+      <div className="p-1 rounded-full bg-purplemedium bg-opacity-50 w-min">
+        <BsDot size={40} className="text-purple" />
+      </div>
+      <div>
+        <h5 className="leading-6 pb-3">{heading}</h5>
+        <p className="text-gray">{description}</p>
+      </div>
+    </li>
+  );
+};
