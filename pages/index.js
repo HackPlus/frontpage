@@ -326,7 +326,7 @@ export default function Home() {
             />
           </svg>
           <section className="bg-purple pt-16 pb-16">
-            <h2 className="text-white text-center">
+            <h2 className="text-white text-center pb-10">
               Launch your dream organization now.
             </h2>
             <div className="flex flex-col md:flex-row justify-center mx-auto md:space-x-4">
@@ -339,7 +339,7 @@ export default function Home() {
                 Get Started
               </Button>
             </div>
-            <p className="text-graylight text-xs text-center pt-6">
+            <p className="text-graylight text-sm text-center pt-6">
               Let us know what you&apos;re interested in starting, and
               we&apos;ll get talking!
             </p>
