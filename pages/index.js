@@ -8,6 +8,29 @@ import { FaStripeS, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
 import CountUp from "react-countup";
 
+const corporate = [
+  { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
+  { company: "Atlassian", logo: "/partners/corporate/atlassian.svg" },
+  { company: "Facebook", logo: "/partners/corporate/facebook.svg" },
+  { company: "Google", logo: "/partners/corporate/google.svg" },
+  { company: "Microsoft", logo: "/partners/corporate/microsoft.svg" },
+  { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
+  { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
+  { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
+]
+
+const schools = [
+  { company: "Berkeley", logo: "/partners/university/berkeley.svg" },
+  { company: "Boston university", logo: "/partners/university/bostonuniversity.svg" },
+  { company: "Calpoly SLO", logo: "/partners/university/calpolyslo.svg" },
+  { company: "MIT", logo: "/partners/university/mit.svg" },
+  { company: "Northeastern", logo: "/partners/university/northeastern.svg" },
+  { company: "Stanford", logo: "/partners/university/stanford.svg" },
+  { company: "USC", logo: "/partners/university/usc.svg" },
+  { company: "UPenn", logo: "/partners/university/upenn.svg" },
+]
+
+
 export default function Home() {
   return (
     <div>
@@ -219,20 +242,32 @@ export default function Home() {
               d="M0 15.446S461-27.74 788.16 30.312c462.18 82.012 732.73 147.47 1196.24 89.548C2177.21 95.767 2469 15.446 2469 15.446V239H0V15.446z"
             ></path>
           </svg>
-          <section>
+          <section className="flex flex-col justify-center text-center py-20 mx-8 md:mx-24">
             <div>
-              <h2>Powered by industry-leading partners.</h2>
-              <p>
+              <h2 className="text-5xl pb-6 md:mx-8">Powered by industry-leading partners.</h2>
+              <p className="text-gray text-lg">
                 Our community brings the brightest young minds from leading
                 institutions together with the world&apos;s most
                 forward-thinking companies, creating a mutual partnership
                 that&apos;s fostering a new generation of innovators.
               </p>
             </div>
-            <p>Corporate partners include</p>
-            <div></div>
-            <p>Schools include</p>
-            <div></div>
+            <p className="text-gray text-lg pt-8 py-6">Corporate partners include</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+              {corporate.map(({ company, logo }) => (
+                <div key={company} className="w-32">
+                  <img src={logo} alt={company} />
+                </div>
+              ))}
+            </div>
+            <p className="text-gray text-lg pt-8 py-6">Schools include</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+              {schools.map(({ company, logo }) => (
+                <div key={company} className="w-32">
+                  <img src={logo} alt={company} />
+                </div>
+              ))}
+            </div>
           </section>
           <svg
             className="fill-current w-full -mb-1"
