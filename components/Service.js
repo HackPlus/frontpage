@@ -4,8 +4,8 @@ export default function Service({ heading, description, children }) {
     return (
         <div className="flex flex-col space-y-4">
             {children}
-            <p className="text-xl text-purple">{heading}</p>
-            <p className="text-gray text-sm">{description}</p>
+            <p className="text-xl font-medium text-purple">{heading}</p>
+            <p className="text-gray text-base">{description}</p>
         </div>
     )
 }
