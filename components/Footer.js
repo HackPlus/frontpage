@@ -70,32 +70,32 @@ export default function Footer() {
           </form>
           <small>
             We’ll never share your details. See our{" "}
-            <a href="#">Privacy Policy</a>.
+            <Link href="/docs/privacy"><a>Privacy Policy</a></Link>.
           </small>
         </div>
       </div>
       <div>
-        <div className="flex justify-center space-x-6 pt-14 opacity-50 hover:text-white">
+        <div className="flex justify-center space-x-6 pt-14">
           <Link href="https://fb.com/HackPlusYou">
-            <a className="hover:text-white">
+            <a className="text-white opacity-50 hover:opacity-100">
               <AiFillFacebook size={30} />
             </a>
           </Link>
 
           <Link href="https://instagr.am/HackPlusYou">
-            <a className="hover:text-white">
+            <a className="text-white opacity-50 hover:opacity-100">
               <AiOutlineInstagram size={30} />
             </a>
           </Link>
 
           <Link href="https://twitter.com/HackPlusYou">
-            <a className="hover:text-white">
+            <a className="text-white opacity-50 hover:opacity-100">
               <FaTwitter size={30} />
             </a>
           </Link>
 
           <Link href="https://blog.hackplus.io/">
-            <a className="hover:text-white">
+            <a className="text-white opacity-50 hover:opacity-100">
               <FaMedium size={30} />
             </a>
           </Link>
@@ -106,7 +106,7 @@ export default function Footer() {
             501(c)(3) nonprofit public charity, with EIN 81-1543325.
           </small>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }

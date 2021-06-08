@@ -152,7 +152,7 @@ export default function About() {
 
             </div>
             <p className="text-sm py-8">
-              Interested in joining our team? <a href="mailto:hello@hackplus.io" className="text-purple">Reach out <span className="hover:transform hover:translate-x-4 inline-block">&rarr;</span></a>
+              Interested in joining our team? <a href="mailto:hello@hackplus.io" className="text-purple hover:text-indigo">Reach out <span>&rarr;</span></a>
             </p>
           </section>
         </main>

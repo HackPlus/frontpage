@@ -20,7 +20,7 @@ export default function Team({
           <img src={src} alt={name} />
         </div>
         <div className="flex flex-col text-center pt-4">
-          <p className="text-xl text-purple">{name}</p>
+          <p className="text-xl text-purple font-medium">{name}</p>
           <p className="text-sm text-gray">{role}</p>
         </div>
       </div>
