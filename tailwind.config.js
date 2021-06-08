@@ -22,7 +22,12 @@ module.exports = {
         pink: "#e83e8c",
         yellow: "#ffc107",
         white: "#ffffff",
-        black: "#212529"
+        black: "#212529",
+      },
+      backgroundColor: {
+        purple: "#7d5fff",
+        green: "#32FF7E",
+        blue: "#1AC9E7",
       },
       fontFamily: {
         circular: "CircularStd",
