@@ -28,6 +28,7 @@ module.exports = {
         purple: "#7d5fff",
         green: "#32FF7E",
         blue: "#1AC9E7",
+        yellow: "#ffc107",
       },
       fontFamily: {
         circular: "CircularStd",
