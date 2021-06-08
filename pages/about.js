@@ -12,7 +12,7 @@ export default function About() {
             <div className="bg-purple relative z-0">
               <div className="overflow-hidden w-full h-96">
                 <img
-                  className="mix-blend-overlay opacity-70"
+                  className="mix-blend-darken opacity-70"
                   src="/meeting.jpg"
                   alt="Four people talking over a computer screen"
                 />
