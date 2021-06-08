@@ -39,7 +39,7 @@ export default function Home() {
           <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <div className="flex flex-col space-y-5 ml-8 md:ml-16">
-                <h1>
+                <h1 className="font-medium">
                   We make it easy for students to create <br />
                   <span>
                     <ReactTypingEffect
@@ -95,7 +95,7 @@ export default function Home() {
             ></path>
           </svg>
           <section className="px-8 md:px-24 lg:px-40 bg-purplelight py-10">
-            <h2 className="text-black pb-7">
+            <h2 className="text-black pb-7 font-medium">
               We&apos;re a full-spectrum platform that enables students to
               launch startups, nonprofits, and events.
             </h2>
@@ -154,8 +154,8 @@ export default function Home() {
           </svg>
           <section>
             <div className="flex flex-col justify-center text-center space-y-5 pt-14">
-              <h2>For students, by students.</h2>
-              <p className="text-gray text-lg">
+              <h2 className="font-medium text-4xl md:text-5xl mx-8">For students, by students.</h2>
+              <p className="text-gray text-lg mx-8 md:mx-20">
                 Hack+ is a platform built by high school and college students.
                 We&apos;ve aggregated millions of dollars of resources and even
                 developed entire web and mobile apps to help you launch your
@@ -186,12 +186,12 @@ export default function Home() {
           </section>
           <section className="bg-purplelight">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-16 md:mx-24 pt-16">
-              <div className="md:px-4 px-24">
+              <div className="md:pr-4">
                 <img src="/saas-2.svg" alt="Person pointing at a whiteboard" />
               </div>
               <div>
                 <div className="flex flex-col space-y-3">
-                  <h3 className="font-medium">Join the Hack+ community.</h3>
+                  <h3 className="font-medium pt-8 md:pt-0">Join the Hack+ community.</h3>
                   <p className="text-gray">
                     Students in our programs get access to more than just a
                     platform. You&apos;ll find hundreds of other like-minded,
@@ -244,7 +244,7 @@ export default function Home() {
           </svg>
           <section className="flex flex-col justify-center text-center py-20 mx-8 md:mx-24">
             <div>
-              <h2 className="text-5xl pb-6 md:mx-8">Powered by industry-leading partners.</h2>
+              <h2 className="md:text-5xl text-4xl pb-6 mx-4 md:mx-8 font-medium">Powered by industry-leading partners.</h2>
               <p className="text-gray text-lg">
                 Our community brings the brightest young minds from leading
                 institutions together with the world&apos;s most
@@ -253,17 +253,17 @@ export default function Home() {
               </p>
             </div>
             <p className="text-gray text-lg pt-8 py-6">Corporate partners include</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center place-items-center">
               {corporate.map(({ company, logo }) => (
-                <div key={company} className="w-32">
+                <div key={company} className="w-48 md:w-32">
                   <img src={logo} alt={company} />
                 </div>
               ))}
             </div>
             <p className="text-gray text-lg pt-8 py-6">Schools include</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center place-items-center">
               {schools.map(({ company, logo }) => (
-                <div key={company} className="w-32">
+                <div key={company} className="w-48 md:w-32">
                   <img src={logo} alt={company} />
                 </div>
               ))}
@@ -281,7 +281,7 @@ export default function Home() {
             ></path>
           </svg>
           <section className="bg-purplelight pb-24 pt-10">
-            <h2 className="leading-loose mx-8 md:mx-24">Get started in days.</h2>
+            <h2 className="leading-loose mx-8 md:mx-24 font-medium">Get started in days.</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-8 md:mx-24">
               <div>
                 <ol className="space-y-10">
@@ -295,7 +295,7 @@ export default function Home() {
                   />
                   <Step
                     heading="3. Get resources and launch your ventures"
-                    description="Apply for one of our programs by reaching out to our team."
+                    description="That's it! We'll hook you up with everything you need to build your company."
                   />
                 </ol>
               </div>
@@ -326,7 +326,7 @@ export default function Home() {
             />
           </svg>
           <section className="bg-purple pt-16 pb-16">
-            <h2 className="text-white text-center pb-10">
+            <h2 className="text-white text-center pb-10 font-medium">
               Launch your dream organization now.
             </h2>
             <div className="flex flex-col md:flex-row justify-center mx-auto md:space-x-4">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="text-graymed mx-8 py-5">
+    <nav className="text-graymed font-medium text-opacity-50 mx-8 py-5">
       <ul className="flex justify-between items-start">
         <li>
           <Link href="/"><a><img src="/logo.png" alt="Hack+ Logo" className="h-8" /></a></Link>

@@ -7,12 +7,12 @@ export default function Card({ title, textcolor, fillcolor, badgeText, href, cta
       <div className="rounded-full bg-bluelight p-4 w-min">
         {renderIcon(icon)}
       </div>
-      <h3>{title}</h3>
+      <h3 className="text-2xl">{title}</h3>
       <Badge textcolor={textcolor} fillcolor={fillcolor}>{badgeText}</Badge>
       <p className="text-gray">
         {children}
       </p>
-      <Link href={href}><a className="text-purple hover:text-indigo">{cta}</a></Link>
+      <Link href={href}><a className="text-purple font-medium hover:text-indigo">{cta}</a></Link>
     </div>
   );
 }
