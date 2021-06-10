@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import Button from "../components/Button";
 import Layout from "../components/Layout";
 import Service from "../components/Service";
@@ -12,10 +12,11 @@ import {
   FaMoneyBillWave,
   FaFeatherAlt,
   FaHouseDamage,
-  FaLayerGroup
+  FaLayerGroup,
 } from "react-icons/fa";
 import Highlight from "../components/Highlight";
 import CarouselCard from "../components/CarouselCard";
+import Table from "../components/Table";
 
 const eventSponsors = [
   {
@@ -49,9 +50,9 @@ export default function Events() {
     <div>
       <Layout title="Events+">
         <main>
-          <section className="-mb-60">
-            <div className="text-white space-y-8 absolute z-10 py-14 mx-8 md:mx-20">
-              <h1 className="text-7xl font-medium">Events+</h1>
+          <section className="-mb-14 md:-mb-60 lg:-mb-96">
+            <div className="text-white space-y-4 md:space-y-6 lg:space-y-8 absolute z-10 py-14 mx-8 md:mx-20">
+              <h1 className="text-5xl md:text-7xl font-medium">Events+</h1>
               <p className="text-lg">
                 Run the event of your dreams using the world&apos;s most
                 comprehensive launchpad for hackathons, conferences, meetups,
@@ -84,7 +85,7 @@ export default function Events() {
             ></path>
           </svg>
           <section className="bg-blue py-18 relative z-50">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-0 items-center text-white px-8 md:px-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-0 items-center text-white px-8 md:px-24 pt-10 pb-16">
               <div>
                 <h3 className="text-4xl font-medium">
                   Take your event to the next level.
@@ -121,7 +122,7 @@ export default function Events() {
           </section>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="fill-current text-blue"
+            className="fill-current text-blue -mt-1"
             fill="none"
             viewBox="0 0 2568 292"
           >
@@ -146,7 +147,7 @@ export default function Events() {
               <CarouselCard />
             </div>
           </section>
-          <section className="bg-purplelight space-y-5 py-8">
+          <section className="bg-purplelight space-y-5 py-20">
             <div className="flex flex-col justify-center px-8 md:px-48 text-center space-y-5">
               <h2 className="text-purple text-5xl font-medium">
                 A true full-service platform
@@ -240,16 +241,43 @@ export default function Events() {
               <div>
                 <h2 className="pt-5 pb-10 font-medium">Highlighted Events+</h2>
               </div>
-              <div className="flex flex-col justify-center md:flex-row md:space-x-8">
-                <Highlight />
-                <Highlight />
-                <Highlight />
+              <div className="flex flex-col justify-center space-y-10 md:space-y-0 md:flex-row md:space-x-8">
+                <Highlight
+                  src="/TTB_stadium.jpg"
+                  purpleBadge="All-Female"
+                  greenBadge="Collegiate"
+                  heading="Tech Together Boston"
+                  href="https://techtogether.io/boston"
+                >
+                  The world&apos;s largest all-female and non-binary hackathon,
+                  at Agganis Arena in Boston.
+                </Highlight>
+                <Highlight
+                  src="/slohacks-venue.jpg"
+                  purpleBadge="General"
+                  greenBadge="Collegiate"
+                  heading="SLOHacks"
+                  href="https://www.slohacks.com"
+                >
+                  500 students came together for 36 hours to build big ideas at
+                  Cal Poly SLO.
+                </Highlight>
+                <Highlight
+                  src="/superposition-venue.jpg"
+                  purpleBadge="All-Female"
+                  greenBadge="high school"
+                  heading="Superposition"
+                  href="https://superposition.tech"
+                >
+                  A hackathon bringing together hundreds of female and
+                  non-binary Bay Area students.
+                </Highlight>
               </div>
             </div>
           </section>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="fill-current text-blue"
+            className="fill-current text-blue -mt-1"
             fill="none"
             viewBox="0 0 2568 292"
           >
@@ -269,7 +297,9 @@ export default function Events() {
                 students.{" "}
               </p>
             </div>
-            <div>how the heck do i do this table</div>
+            <div className="flex justify-center w-full">
+              <Table />
+            </div>
           </section>
           <svg
             className="fill-current w-full -mb-1"
