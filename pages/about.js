@@ -8,8 +8,8 @@ export default function About() {
     <div>
       <Layout title="About">
         <main>
-          <section className="-mb-8">
-            <div className="bg-purple relative z-0">
+          <section className="-mb-16">
+            <div className="bg-white relative z-0">
               <div className="overflow-hidden w-full h-96">
                 <img
                   className="mix-blend-darken opacity-70"
@@ -26,7 +26,18 @@ export default function About() {
               </p>
             </div>
           </section>
-          <section className="py-16">
+          <svg
+            className="fill-current w-full -mb-16 relative z-50"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 2469 239"
+          >
+            <path
+              fill="#ffffff"
+              d="M0 15.446S461-27.74 788.16 30.312c462.18 82.012 732.73 147.47 1196.24 89.548C2177.21 95.767 2469 15.446 2469 15.446V239H0V15.446z"
+            ></path>
+          </svg>
+          <section className="py-16 relative z-0">
             <h3 className=" mx-12 md:mx-32 leading-loose pb-7">At a glance</h3>
             <div className="grid grid-cols-2 gap-y-5 lg:grid-cols-4 mx-12 md:mx-32">
               <div>
