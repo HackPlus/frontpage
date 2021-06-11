@@ -50,8 +50,8 @@ export default function Events() {
     <div>
       <Layout title="Events+">
         <main>
-          <section className="-mb-14 md:-mb-60 lg:-mb-96">
-            <div className="text-white space-y-4 md:space-y-6 lg:space-y-8 absolute z-10 py-14 mx-8 md:mx-20">
+          <section className="-mb-8 sm:-mb-14 md:-mb-48 lg:-mb-80 xl:-mb-96">
+            <div className="text-white space-y-2 md:space-y-6 absolute z-10 py-6 md:py-14 mx-8 md:mx-20">
               <h1 className="text-5xl md:text-7xl font-medium">Events+</h1>
               <p className="text-lg">
                 Run the event of your dreams using the world&apos;s most
@@ -64,9 +64,9 @@ export default function Events() {
             </div>
 
             <div className="bg-purple relative z-0">
-              <div className="overflow-hidden w-full">
+              <div className="overflow-hidden">
                 <img
-                  className="mix-blend-darken opacity-70"
+                  className="mix-blend-darken opacity-70 w-full"
                   src="/ttbstadium_flip.jpg"
                   alt="Empty stadium with lots of people"
                 />
