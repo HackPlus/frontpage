@@ -51,7 +51,10 @@ export default function Events() {
       <Layout title="Events+">
         <main>
           <section className="-mb-8 sm:-mb-14 md:-mb-48 lg:-mb-80 xl:-mb-96">
-            <div className="text-white space-y-2 md:space-y-6 absolute z-10 py-6 md:py-14 mx-8 md:mx-20">
+            <div
+              data-aos="fade-up"
+              className="text-white space-y-2 md:space-y-6 absolute z-10 py-6 md:py-14 mx-8 md:mx-20"
+            >
               <h1 className="text-5xl md:text-7xl font-medium">Events+</h1>
               <p className="text-lg">
                 Run the event of your dreams using the world&apos;s most
@@ -111,7 +114,7 @@ export default function Events() {
                 <ul className="grid grid-cols-2 md:grid-cols-1 gap-8">
                   {eventSponsors.map(({ companyName, logo }) => {
                     return (
-                      <li key={companyName}>
+                      <li data-aos="fade-up" key={companyName}>
                         <img src={logo} alt={` logo`} className="h-8" />
                       </li>
                     );
@@ -241,7 +244,10 @@ export default function Events() {
               <div>
                 <h2 className="pt-5 pb-10 font-medium">Highlighted Events+</h2>
               </div>
-              <div className="flex flex-col justify-center space-y-10 md:space-y-0 md:flex-row md:space-x-8">
+              <div
+                data-aos="fade-up"
+                className="flex flex-col justify-center space-y-10 md:space-y-0 md:flex-row md:space-x-8"
+              >
                 <Highlight
                   src="/TTB_stadium.jpg"
                   purpleBadge="All-Female"
