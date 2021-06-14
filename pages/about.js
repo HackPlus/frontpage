@@ -27,7 +27,7 @@ export default function About() {
             </div>
           </section>
           <svg
-            className="fill-current w-full -mb-16 relative z-50"
+            className="fill-current w-full -mb-16 relative z-40"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 2469 239"
