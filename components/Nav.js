@@ -7,7 +7,7 @@ const routes = [
   { label: "Contact", href: "/contact" },
   {
     label: "Donate",
-    href: "/",
+    href: "https://hack.ms/donate",
     className: "rounded-md bg-purple hover:bg-indigo text-white py-2 px-4",
   },
 ];
