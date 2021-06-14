@@ -92,7 +92,10 @@ export default function About() {
             />
           </svg>
           <section className="bg-purplelight py-8">
-            <div className="grid grid-cols-1 space-y-10 mx-10 md:space-y-0 md:mx-24 md:grid-cols-2 md:space-x-8">
+            <div
+              data-aos="fade-up"
+              className="grid grid-cols-1 space-y-10 mx-10 md:space-y-0 md:mx-24 md:grid-cols-2 md:space-x-8"
+            >
               <div>
                 <img
                   className="w-50 h-96 rounded-xl mx-auto md:mx-0"

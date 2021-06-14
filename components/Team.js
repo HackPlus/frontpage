@@ -2,7 +2,10 @@ import Badge from "./Badge";
 
 export default function Team({ src, name, role, badgeFill, badgeText }) {
   return (
-    <div className="border border-graylight rounded-xl flex flex-col justify-center">
+    <div
+      data-aos="fade-up"
+      className="border border-graylight rounded-xl flex flex-col justify-center"
+    >
       <div className="mx-auto -mt-3">
         <Badge fillcolor={badgeFill}>{badgeText}</Badge>
       </div>
