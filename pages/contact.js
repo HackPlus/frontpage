@@ -6,7 +6,10 @@ export default function Contact() {
       <Layout title="Contact">
         <main>
           <section>
-            <div className="absolute z-20 text-white pt-8 md:pt-20 mx-8 md:mx-14">
+            <div
+              data-aos="fade-up"
+              className="absolute z-20 text-white pt-8 md:pt-20 mx-8 md:mx-14"
+            >
               <h1 className="text-4xl md:text-5xl font-medium leading-loose pb-4">
                 Reach Out
               </h1>

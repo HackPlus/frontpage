@@ -79,7 +79,7 @@ export default function Home() {
                   </span>
                 </a>
               </div>
-              <div className="p-16">
+              <div data-aos="fade-left" className="p-16">
                 <img
                   src="/saas-3.svg"
                   alt="Person sitting in a chair chilling in at their desk"
@@ -104,45 +104,52 @@ export default function Home() {
               launch startups, nonprofits, and events.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <Card
-                title="Events+"
-                icon="calendar"
-                textcolor="black"
-                fillcolor="green"
-                badgeText="Accepting applications"
-                href="/events"
-                cta="Learn more &rarr;"
-              >
-                Launch events, like hackathons or conferences, using our
-                comprehensive platform. We&apos;ll provide legal backend,
-                banking services, powerful equipment, and more.
-              </Card>
-              <Card
-                title="Nonprofits+"
-                icon="users"
-                textcolor="black"
-                fillcolor="green"
-                badgeText="Accepting applications"
-                href="mailto:hello@hackplus.io?subject=Applying for Nonprofits Program"
-                cta="Reach out to apply"
-              >
-                Want to have a positive impact on your community or the world
-                around you? We&apos;ll help you launch a nonprofit by providing
-                legal/financial infrastructure, banking, and 501c3 status.
-              </Card>
-              <Card
-                title="Startups+"
-                icon="playButton"
-                textcolor="white"
-                fillcolor="purple"
-                badgeText="Closed beta"
-                href="mailto:hello@hackplus.io?subject=Applying for Startups Program"
-                cta="Reach out to apply"
-              >
-                Students like you are coming up with the next unicorn startup
-                ideas. We&apos;re here to provide the resources, software, and
-                guidance you need to grow a scalable business.
-              </Card>
+              <span data-aos="fade-up">
+                <Card
+                  title="Events+"
+                  icon="calendar"
+                  textcolor="black"
+                  fillcolor="green"
+                  badgeText="Accepting applications"
+                  href="/events"
+                  cta="Learn more &rarr;"
+                >
+                  Launch events, like hackathons or conferences, using our
+                  comprehensive platform. We&apos;ll provide legal backend,
+                  banking services, powerful equipment, and more.
+                </Card>
+              </span>
+              <span data-aos="fade-up" data-aos-delay="300">
+                <Card
+                  title="Nonprofits+"
+                  icon="users"
+                  textcolor="black"
+                  fillcolor="green"
+                  badgeText="Accepting applications"
+                  href="mailto:hello@hackplus.io?subject=Applying for Nonprofits Program"
+                  cta="Reach out to apply"
+                >
+                  Want to have a positive impact on your community or the world
+                  around you? We&apos;ll help you launch a nonprofit by
+                  providing legal/financial infrastructure, banking, and 501c3
+                  status.
+                </Card>
+              </span>
+              <span data-aos="fade-up" data-aos-delay="600">
+                <Card
+                  title="Startups+"
+                  icon="playButton"
+                  textcolor="white"
+                  fillcolor="purple"
+                  badgeText="Closed beta"
+                  href="mailto:hello@hackplus.io?subject=Applying for Startups Program"
+                  cta="Reach out to apply"
+                >
+                  Students like you are coming up with the next unicorn startup
+                  ideas. We&apos;re here to provide the resources, software, and
+                  guidance you need to grow a scalable business.
+                </Card>
+              </span>
             </div>
           </section>
           <svg
@@ -192,7 +199,7 @@ export default function Home() {
           </section>
           <section className="bg-purplelight">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-16 md:mx-24 pt-16">
-              <div className="md:pr-4">
+              <div data-aos="fade-right" className="md:pr-4">
                 <img src="/saas-2.svg" alt="Person pointing at a whiteboard" />
               </div>
               <div>
@@ -209,32 +216,43 @@ export default function Home() {
                     you launch the next big thing.
                   </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12">
-                  <Perk
-                    heading="Google"
-                    description="Free G Suite, $3K in cloud credits"
-                  >
-                    <FaGoogle size={35} color="#7d5fff" />
-                  </Perk>
-                  <Perk
-                    heading="Stripe"
-                    description="Instant Atlas access, $20k in credits"
-                  >
-                    <FaStripeS size={35} color="#7d5fff" />
-                  </Perk>
-                  <Perk
-                    heading="Amazon Web Services"
-                    description="$5k in credits"
-                  >
-                    <FaAws size={35} color="#7d5fff" />
-                  </Perk>
+                <div
+                  data-aos="fade-left"
+                  className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12"
+                >
+                  <span data-aos="fade-left" data-aos-delay="100">
+                    <Perk
+                      heading="Google"
+                      description="Free G Suite, $3K in cloud credits"
+                    >
+                      <FaGoogle size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="200">
+                    <Perk
+                      heading="Stripe"
+                      description="Instant Atlas access, $20k in credits"
+                    >
+                      <FaStripeS size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="300">
+                    <Perk
+                      heading="Amazon Web Services"
+                      description="$5k in credits"
+                    >
+                      <FaAws size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
 
-                  <Perk
-                    heading="Microsoft"
-                    description="Azure credits, Office 365"
-                  >
-                    <FaMicrosoft size={35} color="#7d5fff" />
-                  </Perk>
+                  <span data-aos="fade-left" data-aos-delay="400">
+                    <Perk
+                      heading="Microsoft"
+                      description="Azure credits, Office 365"
+                    >
+                      <FaMicrosoft size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
                 </div>
               </div>
             </div>
@@ -313,7 +331,7 @@ export default function Home() {
                   />
                 </ol>
               </div>
-              <div className="mx-20 pt-5 md:pt-0 md:mx-5">
+              <div data-aos="fade-left" className="mx-20 pt-5 md:pt-0 md:mx-5">
                 <img
                   src="/saas-4.svg"
                   alt="Two people working together on a computer screen"
@@ -322,7 +340,10 @@ export default function Home() {
             </div>
           </section>
           <section className="pt-16">
-            <div className="flex justify-center relative mx-8 md:mx-24 z-10">
+            <div
+              data-aos="fade-up"
+              className="flex justify-center relative mx-8 md:mx-24 z-10"
+            >
               <img
                 src="/saas-1.svg"
                 alt="Person looking at tablet screen while pointing in the northeast direction"
@@ -368,7 +389,7 @@ export default function Home() {
 
 const Step = ({ heading, description }) => {
   return (
-    <li className="flex items-center space-x-6">
+    <li data-aos="fade-up" className="flex items-center space-x-6">
       <div className="p-1 rounded-full bg-purplemedium bg-opacity-50 w-min">
         <BsDot size={40} className="text-purple" />
       </div>
