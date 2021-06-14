@@ -17,19 +17,21 @@ const corporate = [
   { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
   { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
   { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
-]
+];
 
 const schools = [
   { company: "Berkeley", logo: "/partners/university/berkeley.svg" },
-  { company: "Boston university", logo: "/partners/university/bostonuniversity.svg" },
+  {
+    company: "Boston university",
+    logo: "/partners/university/bostonuniversity.svg",
+  },
   { company: "Calpoly SLO", logo: "/partners/university/calpolyslo.svg" },
   { company: "MIT", logo: "/partners/university/mit.svg" },
   { company: "Northeastern", logo: "/partners/university/northeastern.svg" },
   { company: "Stanford", logo: "/partners/university/stanford.svg" },
   { company: "USC", logo: "/partners/university/usc.svg" },
   { company: "UPenn", logo: "/partners/university/upenn.svg" },
-]
-
+];
 
 export default function Home() {
   return (
@@ -69,8 +71,10 @@ export default function Home() {
                 <a className="text-graymed text-sm">
                   Already a Hack+ member?{" "}
                   <span>
-                    <Link href="/">
-                      <a className="text-purple hover:text-gray">Sign In</a>
+                    <Link href="https://dash.hackplus.services">
+                      <a className="text-purple hover:text-gray font-semibold">
+                        Sign in &rarr;
+                      </a>
                     </Link>
                   </span>
                 </a>
@@ -154,7 +158,9 @@ export default function Home() {
           </svg>
           <section>
             <div className="flex flex-col justify-center text-center space-y-5 pt-14">
-              <h2 className="font-medium text-4xl md:text-5xl mx-8">For students, by students.</h2>
+              <h2 className="font-medium text-4xl md:text-5xl mx-8">
+                For students, by students.
+              </h2>
               <p className="text-gray text-lg mx-8 md:mx-20">
                 Hack+ is a platform built by high school and college students.
                 We&apos;ve aggregated millions of dollars of resources and even
@@ -191,7 +197,9 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex flex-col space-y-3">
-                  <h3 className="font-medium pt-8 md:pt-0">Join the Hack+ community.</h3>
+                  <h3 className="font-medium pt-8 md:pt-0">
+                    Join the Hack+ community.
+                  </h3>
                   <p className="text-gray">
                     Students in our programs get access to more than just a
                     platform. You&apos;ll find hundreds of other like-minded,
@@ -244,7 +252,9 @@ export default function Home() {
           </svg>
           <section className="flex flex-col justify-center text-center py-20 mx-8 md:mx-24">
             <div>
-              <h2 className="md:text-5xl text-4xl pb-6 mx-4 md:mx-8 font-medium">Powered by industry-leading partners.</h2>
+              <h2 className="md:text-5xl text-4xl pb-6 mx-4 md:mx-8 font-medium">
+                Powered by industry-leading partners.
+              </h2>
               <p className="text-gray text-lg">
                 Our community brings the brightest young minds from leading
                 institutions together with the world&apos;s most
@@ -252,7 +262,9 @@ export default function Home() {
                 that&apos;s fostering a new generation of innovators.
               </p>
             </div>
-            <p className="text-gray text-lg pt-8 py-6">Corporate partners include</p>
+            <p className="text-gray text-lg pt-8 py-6">
+              Corporate partners include
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center place-items-center">
               {corporate.map(({ company, logo }) => (
                 <div key={company} className="w-48 md:w-32">
@@ -281,7 +293,9 @@ export default function Home() {
             ></path>
           </svg>
           <section className="bg-purplelight pb-24 pt-10">
-            <h2 className="leading-loose mx-8 md:mx-24 font-medium">Get started in days.</h2>
+            <h2 className="leading-loose mx-8 md:mx-24 font-medium">
+              Get started in days.
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-8 md:mx-24">
               <div>
                 <ol className="space-y-10">
