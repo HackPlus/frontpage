@@ -307,7 +307,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section>
+          <section className="pt-16">
             <div className="flex justify-center relative mx-8 md:mx-24 z-10">
               <img
                 src="/saas-1.svg"
@@ -329,15 +329,17 @@ export default function Home() {
             <h2 className="text-white text-center pb-10 font-medium">
               Launch your dream organization now.
             </h2>
-            <div className="flex flex-col md:flex-row justify-center mx-auto md:space-x-4">
+            <div className="flex flex-col justify-center space-y-4 md:space-y-0 md:flex-row md:space-x-4">
               <input
-                className="px-2 py-2 rounded-lg border-graylight w-96"
+                className="px-2 py-2 rounded-lg border-graylight w-96 mx-auto md:mx-0"
                 placeholder="Email Address"
                 type="email"
               />
-              <Button type={3} href="mailto:hello@hackplus.io">
-                Get Started
-              </Button>
+              <span className="mx-auto md:mx-0">
+                <Button type={3} href="mailto:hello@hackplus.io">
+                  Get Started
+                </Button>
+              </span>
             </div>
             <p className="text-graylight text-sm text-center pt-6">
               Let us know what you&apos;re interested in starting, and
