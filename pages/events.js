@@ -74,7 +74,7 @@ export default function Events() {
             </div>
           </section>
           <svg
-            className="fill-current w-full -mb-1 relative z-50"
+            className="fill-current w-full -mb-1 relative z-40"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 2469 239"
@@ -84,7 +84,7 @@ export default function Events() {
               d="M0 15.446S461-27.74 788.16 30.312c462.18 82.012 732.73 147.47 1196.24 89.548C2177.21 95.767 2469 15.446 2469 15.446V239H0V15.446z"
             ></path>
           </svg>
-          <section className="bg-blue py-18 relative z-50">
+          <section className="bg-blue py-18 relative z-40">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-0 items-center text-white px-8 md:px-24 pt-10 pb-16">
               <div>
                 <h3 className="text-4xl font-medium">

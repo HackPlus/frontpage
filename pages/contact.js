@@ -35,7 +35,7 @@ export default function Contact() {
               d="M0 70.001S121.5 171.5 577.5 171.5c241.837 0 753.21-149.204 1222-171C2211 .5 2568 70.001 2568 70.001v222H0v-222z"
             ></path>
           </svg>
-          <section className="bg-white py-16 relative z-50">
+          <section className="bg-white py-16 relative z-40">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 place-items-center text-center">
               <div>
                 <h4 className="text-black leading-9 font-medium">Mail</h4>
