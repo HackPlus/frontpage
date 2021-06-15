@@ -40,8 +40,8 @@ export default function Home() {
         <main>
           <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-              <div className="flex flex-col space-y-5 ml-8 md:ml-16">
-                <h1 className="font-medium">
+              <div className="flex flex-col space-y-5 mx-8 md:ml-16">
+                <h1 className="font-medium text-3xl md:text-5xl">
                   We make it easy for students to create <br />
                   <span>
                     <ReactTypingEffect
