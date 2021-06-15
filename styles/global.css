@@ -141,4 +141,7 @@
   td {
     @apply border border-gray;
   }
+  section {
+    @apply xl:px-48;
+  }
 }
