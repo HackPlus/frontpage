@@ -5,7 +5,7 @@ export default function Contact() {
     <div>
       <Layout title="Contact">
         <main>
-          <section>
+          {/* <section>
             <div
               data-aos="fade-up"
               className="absolute z-20 text-white pt-8 md:pt-20 mx-8 md:mx-14"
@@ -24,6 +24,20 @@ export default function Contact() {
                 alt="Laptop"
                 className="w-full h-80 mix-blend-overlay opacity-70"
               />
+            </div>
+          </section> */}
+          <section className="bg-contact-cover bg-cover bg-gray bg-blend-overlay h-96 -mb-24">
+            <div
+              data-aos="fade-up"
+              className="absolute z-20 text-white pt-8 md:pt-20 mx-8 md:mx-14"
+            >
+              <h1 className="text-4xl md:text-5xl font-medium leading-loose pb-4">
+                Reach Out
+              </h1>
+              <p className="w-9/12 text-lg">
+                Shoot us a message to talk about our programs, learn more about
+                our story, or anything else.
+              </p>
             </div>
           </section>
 

@@ -8,26 +8,38 @@ export default function About() {
     <div>
       <Layout title="About">
         <main>
-          <section className="-mb-16">
-            <div className="bg-white relative z-0">
-              <div className="overflow-hidden w-full h-96">
-                <img
-                  className="mix-blend-darken opacity-70"
-                  src="/meeting.jpg"
-                  alt="Four people talking over a computer screen"
-                />
-              </div>
-            </div>
-            <div className="text-white space-y-5 mx-12 -mt-48 md:mx-24 absolute z-10">
+          <section className="bg-about-cover bg-cover bg-purple bg-blend-multiply h-96 -mb-10 md:-mb-24">
+            <div className="text-white space-y-5 mx-12 pt-20 md:mx-24">
               <h1 className="font-medium">About Hack+</h1>
-              <p>
+              <p className="text-xl">
                 We&apos;re a 501(c)(3) nonprofit that&apos;s looking to help
                 students change the world.
               </p>
             </div>
           </section>
           <svg
-            className="fill-current w-full -mb-16 relative z-40"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 2568 292"
+            className="w-full fill-current relative z-20 -mb-2"
+          >
+            <path
+              fill="#ffffff"
+              d="M0 70.001S121.5 171.5 577.5 171.5c241.837 0 753.21-149.204 1222-171C2211 .5 2568 70.001 2568 70.001v222H0v-222z"
+            ></path>
+          </svg>
+          {/* <svg
+            className="fill-current w-full"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="#ffffff"
+              d="M0,96L80,117.3C160,139,320,181,480,186.7C640,192,800,160,960,160C1120,160,1280,192,1360,208L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg> */}
+          {/* <svg
+            className="fill-current w-full relative z-30"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 2469 239"
@@ -36,9 +48,9 @@ export default function About() {
               fill="#ffffff"
               d="M0 15.446S461-27.74 788.16 30.312c462.18 82.012 732.73 147.47 1196.24 89.548C2177.21 95.767 2469 15.446 2469 15.446V239H0V15.446z"
             ></path>
-          </svg>
-          <section className="py-16 relative z-0">
-            <h3 className=" mx-12 md:mx-32 leading-loose pb-7">At a glance</h3>
+          </svg> */}
+          <section className="py-16 relative z-40">
+            <h3 className="mx-12 md:mx-32 leading-loose pb-7">At a glance</h3>
             <div className="grid grid-cols-2 gap-y-5 lg:grid-cols-4 mx-12 md:mx-32">
               <div>
                 <CountUp
