@@ -9,7 +9,10 @@ export default function About() {
       <Layout title="About">
         <main>
           <section className="bg-about-cover bg-cover bg-purple bg-blend-multiply h-96 -mb-10 md:-mb-24">
-            <div className="text-white space-y-5 mx-12 pt-20 md:mx-24">
+            <div
+              data-aos="fade-up"
+              className="text-white space-y-5 mx-12 pt-20 md:mx-24"
+            >
               <h1 className="font-medium">About Hack+</h1>
               <p className="text-xl">
                 We&apos;re a 501(c)(3) nonprofit that&apos;s looking to help
