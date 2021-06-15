@@ -50,10 +50,10 @@ export default function Events() {
     <div>
       <Layout title="Events+">
         <main>
-          <section className="-mb-8 sm:-mb-14 md:-mb-48 lg:-mb-80 xl:-mb-96">
+          <section className="bg-events-cover bg-cover bg-purple bg-blend-multiply h-screen  md:h-96 -mb-48 md:-mb-24">
             <div
               data-aos="fade-up"
-              className="text-white space-y-2 md:space-y-6 absolute z-10 py-6 md:py-14 mx-8 md:mx-20"
+              className="text-white space-y-2  py-6 md:py-14 mx-8 md:mx-20 pt-48"
             >
               <h1 className="text-5xl md:text-7xl font-medium">Events+</h1>
               <p className="text-lg">
@@ -64,16 +64,6 @@ export default function Events() {
               <Button type={3} href="mailto:hello@hackplus.io">
                 Get Started
               </Button>
-            </div>
-
-            <div className="bg-purple relative z-0">
-              <div className="overflow-hidden">
-                <img
-                  className="mix-blend-darken opacity-70 w-full"
-                  src="/ttbstadium_flip.jpg"
-                  alt="Empty stadium with lots of people"
-                />
-              </div>
             </div>
           </section>
           <svg

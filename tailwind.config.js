@@ -27,6 +27,11 @@ module.exports = {
       fontFamily: {
         circular: "CircularStd",
       },
+      backgroundImage: {
+        "about-cover": "url('/meeting.jpg')",
+        "events-cover": "url('/ttbstadium_flip.jpg')",
+        "contact-cover": "url('/article-6.jpg')",
+      },
     },
   },
   variants: {
