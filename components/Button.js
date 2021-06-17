@@ -14,7 +14,7 @@ export default function Button({ type, href, children }) {
     // blue, "get started" button
     case 3:
       return (
-        <button className="rounded-md bg-blue py-4 px-7 text-black text-lg font-medium hover:bg-cyan hover:text-white">
+        <button className="rounded-md bg-blue py-4 px-7 text-black text-lg font-medium w-40 hover:bg-cyan hover:text-white">
           <Link href={href}>
             <a className="">{children}</a>
           </Link>

@@ -1,19 +1,13 @@
 import Badge from "./Badge";
 
-export default function Team({
-  src,
-  name,
-  role,
-  badgeFill,
-  badgeTextColor,
-  badgeText,
-}) {
+export default function Team({ src, name, role, badgeFill, badgeText }) {
   return (
-    <div className="border border-graylight rounded-xl flex flex-col justify-center">
+    <div
+      data-aos="fade-up"
+      className="border border-graylight rounded-xl flex flex-col justify-center"
+    >
       <div className="mx-auto -mt-3">
-        <Badge fillcolor={badgeFill} textcolor={badgeTextColor}>
-          {badgeText}
-        </Badge>
+        <Badge fillcolor={badgeFill}>{badgeText}</Badge>
       </div>
       <div className="mx-auto py-8">
         <div className="rounded-full overflow-hidden border-4 border-graylight w-28 h-28">

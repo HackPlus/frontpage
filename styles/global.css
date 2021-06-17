@@ -136,4 +136,12 @@
   small {
     @apply text-white opacity-70 font-circular;
   }
+
+  th,
+  td {
+    @apply border border-gray;
+  }
+  section {
+    @apply xl:px-48;
+  }
 }

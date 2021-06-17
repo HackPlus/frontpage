@@ -22,10 +22,15 @@ module.exports = {
         pink: "#e83e8c",
         yellow: "#ffc107",
         white: "#ffffff",
-        black: "#212529"
+        black: "#212529",
       },
       fontFamily: {
         circular: "CircularStd",
+      },
+      backgroundImage: {
+        "about-cover": "url('/meeting.jpg')",
+        "events-cover": "url('/ttbstadium_flip.jpg')",
+        "contact-cover": "url('/article-6.jpg')",
       },
     },
   },

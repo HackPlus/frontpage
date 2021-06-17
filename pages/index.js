@@ -17,19 +17,21 @@ const corporate = [
   { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
   { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
   { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
-]
+];
 
 const schools = [
   { company: "Berkeley", logo: "/partners/university/berkeley.svg" },
-  { company: "Boston university", logo: "/partners/university/bostonuniversity.svg" },
+  {
+    company: "Boston university",
+    logo: "/partners/university/bostonuniversity.svg",
+  },
   { company: "Calpoly SLO", logo: "/partners/university/calpolyslo.svg" },
   { company: "MIT", logo: "/partners/university/mit.svg" },
   { company: "Northeastern", logo: "/partners/university/northeastern.svg" },
   { company: "Stanford", logo: "/partners/university/stanford.svg" },
   { company: "USC", logo: "/partners/university/usc.svg" },
   { company: "UPenn", logo: "/partners/university/upenn.svg" },
-]
-
+];
 
 export default function Home() {
   return (
@@ -38,8 +40,8 @@ export default function Home() {
         <main>
           <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-              <div className="flex flex-col space-y-5 ml-8 md:ml-16">
-                <h1 className="font-medium">
+              <div className="flex flex-col space-y-5 mx-8 md:ml-16">
+                <h1 className="font-medium text-3xl md:text-5xl">
                   We make it easy for students to create <br />
                   <span>
                     <ReactTypingEffect
@@ -69,13 +71,15 @@ export default function Home() {
                 <a className="text-graymed text-sm">
                   Already a Hack+ member?{" "}
                   <span>
-                    <Link href="/">
-                      <a className="text-purple hover:text-gray">Sign In</a>
+                    <Link href="https://dash.hackplus.services">
+                      <a className="text-purple hover:text-gray font-semibold">
+                        Sign in &rarr;
+                      </a>
                     </Link>
                   </span>
                 </a>
               </div>
-              <div className="p-16">
+              <div data-aos="fade-left" className="p-16">
                 <img
                   src="/saas-3.svg"
                   alt="Person sitting in a chair chilling in at their desk"
@@ -100,45 +104,52 @@ export default function Home() {
               launch startups, nonprofits, and events.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <Card
-                title="Events+"
-                icon="calendar"
-                textcolor="black"
-                fillcolor="green"
-                badgeText="Accepting applications"
-                href="/events"
-                cta="Learn more &rarr;"
-              >
-                Launch events, like hackathons or conferences, using our
-                comprehensive platform. We&apos;ll provide legal backend,
-                banking services, powerful equipment, and more.
-              </Card>
-              <Card
-                title="Nonprofits+"
-                icon="users"
-                textcolor="black"
-                fillcolor="green"
-                badgeText="Accepting applications"
-                href="mailto:hello@hackplus.io?subject=Applying for Nonprofits Program"
-                cta="Reach out to apply"
-              >
-                Want to have a positive impact on your community or the world
-                around you? We&apos;ll help you launch a nonprofit by providing
-                legal/financial infrastructure, banking, and 501c3 status.
-              </Card>
-              <Card
-                title="Startups+"
-                icon="playButton"
-                textcolor="white"
-                fillcolor="purple"
-                badgeText="Closed beta"
-                href="mailto:hello@hackplus.io?subject=Applying for Startups Program"
-                cta="Reach out to apply"
-              >
-                Students like you are coming up with the next unicorn startup
-                ideas. We&apos;re here to provide the resources, software, and
-                guidance you need to grow a scalable business.
-              </Card>
+              <span data-aos="fade-up">
+                <Card
+                  title="Events+"
+                  icon="calendar"
+                  textcolor="black"
+                  fillcolor="green"
+                  badgeText="Accepting applications"
+                  href="/events"
+                  cta="Learn more &rarr;"
+                >
+                  Launch events, like hackathons or conferences, using our
+                  comprehensive platform. We&apos;ll provide legal backend,
+                  banking services, powerful equipment, and more.
+                </Card>
+              </span>
+              <span data-aos="fade-up" data-aos-delay="300">
+                <Card
+                  title="Nonprofits+"
+                  icon="users"
+                  textcolor="black"
+                  fillcolor="green"
+                  badgeText="Accepting applications"
+                  href="mailto:hello@hackplus.io?subject=Applying for Nonprofits Program"
+                  cta="Reach out to apply"
+                >
+                  Want to have a positive impact on your community or the world
+                  around you? We&apos;ll help you launch a nonprofit by
+                  providing legal/financial infrastructure, banking, and 501c3
+                  status.
+                </Card>
+              </span>
+              <span data-aos="fade-up" data-aos-delay="600">
+                <Card
+                  title="Startups+"
+                  icon="playButton"
+                  textcolor="white"
+                  fillcolor="purple"
+                  badgeText="Closed beta"
+                  href="mailto:hello@hackplus.io?subject=Applying for Startups Program"
+                  cta="Reach out to apply"
+                >
+                  Students like you are coming up with the next unicorn startup
+                  ideas. We&apos;re here to provide the resources, software, and
+                  guidance you need to grow a scalable business.
+                </Card>
+              </span>
             </div>
           </section>
           <svg
@@ -154,7 +165,9 @@ export default function Home() {
           </svg>
           <section>
             <div className="flex flex-col justify-center text-center space-y-5 pt-14">
-              <h2 className="font-medium text-4xl md:text-5xl mx-8">For students, by students.</h2>
+              <h2 className="font-medium text-4xl md:text-5xl mx-8">
+                For students, by students.
+              </h2>
               <p className="text-gray text-lg mx-8 md:mx-20">
                 Hack+ is a platform built by high school and college students.
                 We&apos;ve aggregated millions of dollars of resources and even
@@ -186,12 +199,14 @@ export default function Home() {
           </section>
           <section className="bg-purplelight">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-16 md:mx-24 pt-16">
-              <div className="md:pr-4">
+              <div data-aos="fade-right" className="md:pr-4">
                 <img src="/saas-2.svg" alt="Person pointing at a whiteboard" />
               </div>
               <div>
                 <div className="flex flex-col space-y-3">
-                  <h3 className="font-medium pt-8 md:pt-0">Join the Hack+ community.</h3>
+                  <h3 className="font-medium pt-8 md:pt-0">
+                    Join the Hack+ community.
+                  </h3>
                   <p className="text-gray">
                     Students in our programs get access to more than just a
                     platform. You&apos;ll find hundreds of other like-minded,
@@ -201,32 +216,43 @@ export default function Home() {
                     you launch the next big thing.
                   </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12">
-                  <Perk
-                    heading="Google"
-                    description="Free G Suite, $3K in cloud credits"
-                  >
-                    <FaGoogle size={35} color="#7d5fff" />
-                  </Perk>
-                  <Perk
-                    heading="Stripe"
-                    description="Instant Atlas access, $20k in credits"
-                  >
-                    <FaStripeS size={35} color="#7d5fff" />
-                  </Perk>
-                  <Perk
-                    heading="Amazon Web Services"
-                    description="$5k in credits"
-                  >
-                    <FaAws size={35} color="#7d5fff" />
-                  </Perk>
+                <div
+                  data-aos="fade-left"
+                  className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12"
+                >
+                  <span data-aos="fade-left" data-aos-delay="100">
+                    <Perk
+                      heading="Google"
+                      description="Free G Suite, $3K in cloud credits"
+                    >
+                      <FaGoogle size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="200">
+                    <Perk
+                      heading="Stripe"
+                      description="Instant Atlas access, $20k in credits"
+                    >
+                      <FaStripeS size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="300">
+                    <Perk
+                      heading="Amazon Web Services"
+                      description="$5k in credits"
+                    >
+                      <FaAws size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
 
-                  <Perk
-                    heading="Microsoft"
-                    description="Azure credits, Office 365"
-                  >
-                    <FaMicrosoft size={35} color="#7d5fff" />
-                  </Perk>
+                  <span data-aos="fade-left" data-aos-delay="400">
+                    <Perk
+                      heading="Microsoft"
+                      description="Azure credits, Office 365"
+                    >
+                      <FaMicrosoft size={35} color="#7d5fff" />
+                    </Perk>
+                  </span>
                 </div>
               </div>
             </div>
@@ -244,7 +270,9 @@ export default function Home() {
           </svg>
           <section className="flex flex-col justify-center text-center py-20 mx-8 md:mx-24">
             <div>
-              <h2 className="md:text-5xl text-4xl pb-6 mx-4 md:mx-8 font-medium">Powered by industry-leading partners.</h2>
+              <h2 className="md:text-5xl text-4xl pb-6 mx-4 md:mx-8 font-medium">
+                Powered by industry-leading partners.
+              </h2>
               <p className="text-gray text-lg">
                 Our community brings the brightest young minds from leading
                 institutions together with the world&apos;s most
@@ -252,7 +280,9 @@ export default function Home() {
                 that&apos;s fostering a new generation of innovators.
               </p>
             </div>
-            <p className="text-gray text-lg pt-8 py-6">Corporate partners include</p>
+            <p className="text-gray text-lg pt-8 py-6">
+              Corporate partners include
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center place-items-center">
               {corporate.map(({ company, logo }) => (
                 <div key={company} className="w-48 md:w-32">
@@ -281,7 +311,9 @@ export default function Home() {
             ></path>
           </svg>
           <section className="bg-purplelight pb-24 pt-10">
-            <h2 className="leading-loose mx-8 md:mx-24 font-medium">Get started in days.</h2>
+            <h2 className="leading-loose mx-8 md:mx-24 font-medium">
+              Get started in days.
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-8 md:mx-24">
               <div>
                 <ol className="space-y-10">
@@ -299,7 +331,7 @@ export default function Home() {
                   />
                 </ol>
               </div>
-              <div className="mx-20 pt-5 md:pt-0 md:mx-5">
+              <div data-aos="fade-left" className="mx-20 pt-5 md:pt-0 md:mx-5">
                 <img
                   src="/saas-4.svg"
                   alt="Two people working together on a computer screen"
@@ -307,8 +339,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section>
-            <div className="flex justify-center relative mx-8 md:mx-24 z-10">
+          <section className="pt-16">
+            <div
+              data-aos="fade-up"
+              className="flex justify-center relative mx-8 md:mx-24 z-10"
+            >
               <img
                 src="/saas-1.svg"
                 alt="Person looking at tablet screen while pointing in the northeast direction"
@@ -329,15 +364,17 @@ export default function Home() {
             <h2 className="text-white text-center pb-10 font-medium">
               Launch your dream organization now.
             </h2>
-            <div className="flex flex-col md:flex-row justify-center mx-auto md:space-x-4">
+            <div className="flex flex-col justify-center space-y-4 md:space-y-0 md:flex-row md:space-x-4">
               <input
-                className="px-2 py-2 rounded-lg border-graylight w-96"
+                className="px-2 py-2 rounded-lg border-graylight w-96 mx-auto md:mx-0"
                 placeholder="Email Address"
                 type="email"
               />
-              <Button type={3} href="mailto:hello@hackplus.io">
-                Get Started
-              </Button>
+              <span className="mx-auto md:mx-0">
+                <Button type={3} href="mailto:hello@hackplus.io">
+                  Get Started
+                </Button>
+              </span>
             </div>
             <p className="text-graylight text-sm text-center pt-6">
               Let us know what you&apos;re interested in starting, and
@@ -352,7 +389,7 @@ export default function Home() {
 
 const Step = ({ heading, description }) => {
   return (
-    <li className="flex items-center space-x-6">
+    <li data-aos="fade-up" className="flex items-center space-x-6">
       <div className="p-1 rounded-full bg-purplemedium bg-opacity-50 w-min">
         <BsDot size={40} className="text-purple" />
       </div>
