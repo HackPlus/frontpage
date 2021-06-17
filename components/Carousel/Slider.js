@@ -58,11 +58,13 @@ const Carousel = ({ slides }) => {
   return (
     <div className="relative flex items-center justify-center h-full">
       <FaArrowLeft
-        className="absolute left-6 top-10 z-40"
+        size={35}
+        className="absolute left-6 top-10 z-40 cursor-pointer"
         onClick={prevSlide}
       />
       <FaArrowRight
-        className="absolute right-6 top-20 z-40"
+        size={35}
+        className="absolute right-6 top-20 z-40 cursor-pointer"
         onClick={nextSlide}
       />
       <div className="flex items-center justify-center">
@@ -71,7 +73,9 @@ const Carousel = ({ slides }) => {
             return (
               <div
                 key={index}
-                className={index === current ? "opacity-90" : "opacity-10"}
+                className={
+                  index === current ? "opacity-90" : "opacity-10 hidden"
+                }
               >
                 <CarouselItem
                   image={image}

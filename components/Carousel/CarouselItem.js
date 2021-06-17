@@ -7,7 +7,7 @@ export default function CarouselItem({
   role,
 }) {
   return (
-    <div className="border-2 border-graylight rounded-xl w-96">
+    <div className="border-2 border-graylight rounded-xl w-9/12 md:w-7/12 mx-auto">
       <div className="flex flex-row space-x-5 relative z-0">
         <div className="w-1/6">
           <img
