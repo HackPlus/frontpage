@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import CarouselItem from "./CarouselItem";
-import "./Carousel.module.css";
 
 const CarouselData = [
   {
+    index: 0,
     image: "/karinahalevy.png",
     excerpt:
       "Hack+ has been instrumental not only in making both of the LingHacks hackathons possible but also enabling us to expand into an international organization reaching hundreds of students.",
@@ -16,6 +16,7 @@ const CarouselData = [
     eventName: "LingHacks",
   },
   {
+    index: 1,
     image: "/scott.png",
     excerpt:
       "Garuda Hacks wouldn't have been possible without the Hack+ infrastructure that abstracted away the complexity of raising sponsorship and making vendor payments.",
@@ -26,6 +27,7 @@ const CarouselData = [
     eventName: "Garuda Hacks",
   },
   {
+    index: 2,
     image: "/eileenyang.jpg",
     excerpt:
       "Working with Hack+ last fall was an astoundingly rewarding decision.",
@@ -55,15 +57,21 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className="relative flex items-center justify-center h-full">
-      <FaArrowLeft className="absolute left-6 top-10" onClick={prevSlide} />
-      <FaArrowRight className="absolute right-6 top-10" onClick={nextSlide} />
+      <FaArrowLeft
+        className="absolute left-6 top-10 z-40"
+        onClick={prevSlide}
+      />
+      <FaArrowRight
+        className="absolute right-6 top-20 z-40"
+        onClick={nextSlide}
+      />
       <div className="flex items-center justify-center">
         {CarouselData.map(
           ({ index, image, excerpt, testimonial, name, eventName, role }) => {
             return (
               <div
                 key={index}
-                className={index === current ? "slide active" : "slide"}
+                className={index === current ? "opacity-90" : "opacity-10"}
               >
                 <CarouselItem
                   image={image}
