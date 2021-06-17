@@ -56,41 +56,43 @@ const Carousel = ({ slides }) => {
   };
 
   return (
-    <div className="relative flex items-center justify-center h-full">
-      <FaArrowLeft
-        size={35}
-        className="absolute left-6 top-10 z-40 cursor-pointer"
-        onClick={prevSlide}
-      />
-      <FaArrowRight
-        size={35}
-        className="absolute right-6 top-20 z-40 cursor-pointer"
-        onClick={nextSlide}
-      />
-      <div className="flex items-center justify-center">
-        {CarouselData.map(
-          ({ index, image, excerpt, testimonial, name, eventName, role }) => {
-            return (
-              <div
-                key={index}
-                className={
-                  index === current ? "opacity-90" : "opacity-10 hidden"
-                }
-              >
-                <CarouselItem
-                  image={image}
-                  excerpt={excerpt}
-                  testimonial={testimonial}
-                  name={name}
-                  eventName={eventName}
-                  role={role}
-                />
-              </div>
-            );
-          }
-        )}
+    <section className="h-full">
+      <div className="relative flex flex-row items-center justify-center h-full">
+        <FaArrowLeft
+          size={35}
+          className="absolute left-6 top-30 z-40 cursor-pointer"
+          onClick={prevSlide}
+        />
+        <FaArrowRight
+          size={35}
+          className="absolute right-6 top-30 z-40 cursor-pointer"
+          onClick={nextSlide}
+        />
+        <div className="flex items-center justify-center">
+          {CarouselData.map(
+            ({ index, image, excerpt, testimonial, name, eventName, role }) => {
+              return (
+                <div
+                  key={index}
+                  className={
+                    index === current ? "opacity-100" : "opacity-0 hidden"
+                  }
+                >
+                  <CarouselItem
+                    image={image}
+                    excerpt={excerpt}
+                    testimonial={testimonial}
+                    name={name}
+                    eventName={eventName}
+                    role={role}
+                  />
+                </div>
+              );
+            }
+          )}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
