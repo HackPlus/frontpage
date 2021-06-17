@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import CarouselItem from "./CarouselItem";
+import "./Carousel.module.css";
 
 const CarouselData = [
   {
@@ -53,26 +54,30 @@ const Carousel = ({ slides }) => {
   };
 
   return (
-    <div className="relative flex items-center justify-center">
-      <FaArrowLeft onClick={prevSlide} />
-      <FaArrowRight onClick={nextSlide} />
-      {CarouselData.map((index, slide) => {
-        return (
-          <div
-            key={index}
-            // className={index === current ? "slide active" : "slide"}
-          >
-            <CarouselItem
-              image={slide.image}
-              excerpt={slide.excerpt}
-              testimonial={slide.testimonial}
-              name={slide.name}
-              eventName={slide.eventName}
-              role={slide.role}
-            />
-          </div>
-        );
-      })}
+    <div className="relative flex items-center justify-center h-full">
+      <FaArrowLeft className="absolute left-6 top-10" onClick={prevSlide} />
+      <FaArrowRight className="absolute right-6 top-10" onClick={nextSlide} />
+      <div className="flex items-center justify-center">
+        {CarouselData.map(
+          ({ index, image, excerpt, testimonial, name, eventName, role }) => {
+            return (
+              <div
+                key={index}
+                className={index === current ? "slide active" : "slide"}
+              >
+                <CarouselItem
+                  image={image}
+                  excerpt={excerpt}
+                  testimonial={testimonial}
+                  name={name}
+                  eventName={eventName}
+                  role={role}
+                />
+              </div>
+            );
+          }
+        )}
+      </div>
     </div>
   );
 };
