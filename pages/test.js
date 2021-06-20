@@ -1,6 +1,5 @@
-import { CarouselData } from "../components/Carousel/CarouselData";
-import Carousel from "../components/Carousel/Slider";
 import Layout from "../components/Layout";
+import Table from "../components/Table";
 
 export default function Test() {
   return (
@@ -9,7 +8,7 @@ export default function Test() {
         <main>
           <section>
             <div className="flex justify-center mx-auto">
-              <Carousel slides={CarouselData} />
+              <Table />
             </div>
           </section>
         </main>
