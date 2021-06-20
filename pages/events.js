@@ -17,7 +17,6 @@ import {
   FaLayerGroup,
 } from "react-icons/fa";
 import Highlight from "../components/Highlight";
-import CarouselCard from "../components/CarouselCard";
 import Table from "../components/Table";
 
 const eventSponsors = [
@@ -137,12 +136,9 @@ export default function Events() {
                 cumulatively organized over 150 events— so we really know what
                 it&apos;s like to be in your shoes, and we&apos;re here to help.
               </p>
-              <div className="flex justify-center mx-auto pb-8">
-                <Carousel slides={CarouselData} />
-              </div>
             </div>
-            <div className="flex justify-center pt-8">
-              <CarouselCard />
+            <div className="flex justify-center mx-auto py-8">
+              <Carousel slides={CarouselData} />
             </div>
           </section>
           <section className="bg-purplelight space-y-5 py-20">
