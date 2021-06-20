@@ -153,7 +153,7 @@ export default function Events() {
             </div>
             {/* Badge/Alert thing */}
             <div className="flex justify-center pb-8">
-              <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-8">
+              <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-8 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                 <p className="text-white text-center">
                   NEW: All Hack+ events get access to{" "}
                   <a href="https://stream.club" className="underline">
