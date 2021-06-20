@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import CarouselItem from "./CarouselItem";
-import { motion, AnimatePresence } from "framer-motion";
 
 const CarouselData = [
   {
@@ -68,41 +67,31 @@ const Carousel = ({ slides }) => {
           className="absolute right-6 top-30 z-40 cursor-pointer"
           onClick={nextSlide}
         />
-        <div className="flex items-center justify-center">
-          <AnimatePresence>
-            {CarouselData.map(
-              ({
-                index,
-                image,
-                excerpt,
-                testimonial,
-                name,
-                eventName,
-                role,
-              }) => {
-                return (
-                  <motion.div
-                    key={index}
-                    className={
-                      index === current ? "opacity-100" : "opacity-0 hidden"
-                    }
-                    initial={{ opacity: 0, y: 200 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    <CarouselItem
-                      image={image}
-                      excerpt={excerpt}
-                      testimonial={testimonial}
-                      name={name}
-                      eventName={eventName}
-                      role={role}
-                    />
-                  </motion.div>
-                );
-              }
-            )}
-          </AnimatePresence>
+        <div className="flex items-center justify-center h-full">
+          {CarouselData.map(
+            ({ index, image, excerpt, testimonial, name, eventName, role }) => {
+              return (
+                <div
+                  key={index}
+                  className={
+                    index === current ? "opacity-100" : "opacity-0 hidden"
+                  }
+                  initial={{ opacity: 0, y: 200 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <CarouselItem
+                    image={image}
+                    excerpt={excerpt}
+                    testimonial={testimonial}
+                    name={name}
+                    eventName={eventName}
+                    role={role}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
