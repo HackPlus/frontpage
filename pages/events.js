@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Button from "../components/Button";
+import { CarouselData } from "../components/Carousel/CarouselData";
+import Carousel from "../components/Carousel/Slider";
 import Layout from "../components/Layout";
 import Service from "../components/Service";
 
@@ -135,6 +137,9 @@ export default function Events() {
                 cumulatively organized over 150 events— so we really know what
                 it&apos;s like to be in your shoes, and we&apos;re here to help.
               </p>
+              <div className="flex justify-center mx-auto pb-8">
+                <Carousel slides={CarouselData} />
+              </div>
             </div>
             <div className="flex justify-center pt-8">
               <CarouselCard />

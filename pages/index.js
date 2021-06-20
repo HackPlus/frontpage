@@ -1,4 +1,6 @@
 import Card from "../components/Card";
+import { CarouselData } from "../components/Carousel/CarouselData";
+import Carousel from "../components/Carousel/Slider";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import { BsDot } from "react-icons/bs";
@@ -193,8 +195,8 @@ export default function Home() {
                 <p className="text-xs text-graymed italic">(as of Q4 2019)</p>
               </div>
             </div>
-            <div className="border h-72 w-1/2 mx-auto">
-              <p className="text-center">carousel</p>
+            <div className="flex justify-center mx-auto pb-8">
+              <Carousel slides={CarouselData} />
             </div>
           </section>
           <section className="bg-purplelight">
