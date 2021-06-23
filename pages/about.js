@@ -248,6 +248,22 @@ export default function About() {
                 badgeTextColor="black"
                 badgeText="Intern"
               />
+              <Team
+                src="/avatars/garima.jpg"
+                name="Garima Sharma"
+                role="Marketing"
+                badgeFill="yellow"
+                badgeTextColor="black"
+                badgeText="Intern"
+              />
+              <Team
+                src="/avatars/jade.jpg"
+                name="Jade Wang"
+                role="Marketing"
+                badgeFill="yellow"
+                badgeTextColor="black"
+                badgeText="Intern"
+              />
             </div>
             <p className="text-sm py-8">
               Interested in joining our team?{" "}
