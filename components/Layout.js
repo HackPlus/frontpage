@@ -9,7 +9,7 @@ export default function Layout({ layout, title, children }) {
         <div>
           <Meta title={title} />
           <Nav />
-          <div className="mx-14 my-8 md:mx-24">{children}</div>
+          <div className="mx-14 my-8 md:mx-24 lg:mx-48">{children}</div>
           <Footer />
         </div>
       );

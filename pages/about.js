@@ -32,7 +32,7 @@ export default function About() {
             ></path>
           </svg>
 
-          <section className="py-16 relative z-40 px-8">
+          <section className="py-16 relative z-40 px-8 md:px-24">
             <h3 className="leading-loose pb-7">At a glance</h3>
             <div className="grid grid-cols-2 gap-y-5 lg:grid-cols-4">
               <div>
@@ -86,10 +86,10 @@ export default function About() {
               fill="#F7F5FF"
             />
           </svg>
-          <section className="bg-purplelight py-8">
+          <section className="bg-purplelight py-8 px-8 md:px-24">
             <div
               data-aos="fade-up"
-              className="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-2 md:space-x-8"
+              className="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-2"
             >
               <div>
                 <img
@@ -129,8 +129,8 @@ export default function About() {
             />
           </svg>
           <section className="pb-8">
-            <h3 className="pb-16 pt-8">Meet the Team</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <h3 className="pb-16 pt-8 mx-8 md:mx-24">Meet the Team</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-8 md:mx-14">
               <Team
                 src="/avatars/sanil.jpeg"
                 name="Sanil Chawla"
