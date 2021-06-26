@@ -19,6 +19,7 @@ const corporate = [
   { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
   { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
   { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
+  { company: "Vercel", logo: "/partners/corporate/vercel.svg" },
 ];
 
 const schools = [
@@ -195,7 +196,7 @@ export default function Home() {
                 <p className="text-xs text-graymed italic">(as of Q4 2019)</p>
               </div>
             </div>
-            <div className="flex justify-center mx-auto pb-8">
+            <div className="flex justify-center pb-8">
               <Carousel slides={CarouselData} />
             </div>
           </section>
