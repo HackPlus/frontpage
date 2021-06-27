@@ -51,10 +51,10 @@ export default function Events() {
     <div>
       <Layout title="Events+">
         <main>
-          <section className="bg-events-cover bg-cover bg-purple bg-blend-multiply h-screen  md:h-96 -mb-48 md:-mb-24">
+          <section className="bg-events-cover bg-cover bg-purple bg-blend-multiply h-screen md:h-96 -mb-48 md:-mb-16 lg:-mb-24">
             <div
               data-aos="fade-up"
-              className="text-white space-y-2  py-6 md:py-14 mx-8 md:mx-20 pt-48"
+              className="text-white space-y-4  py-6 md:py-14 mx-8 md:mx-20 pt-48"
             >
               <h1 className="text-5xl md:text-7xl font-medium">Events+</h1>
               <p className="text-lg">
