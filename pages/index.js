@@ -19,7 +19,11 @@ const corporate = [
   { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
   { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
   { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
-  { company: "Vercel", logo: "/partners/corporate/vercel.svg" },
+  {
+    company: "Vercel",
+    logo: "/partners/corporate/vercel.svg",
+    href: "https://vercel.com/?utm_source=hackplus&utm_campaign=oss",
+  },
 ];
 
 const schools = [
@@ -224,10 +228,7 @@ export default function Home() {
                   className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12"
                 >
                   <span data-aos="fade-left" data-aos-delay="100">
-                    <Perk
-                      heading="Google"
-                      description="Free G Suite, $3K in cloud credits"
-                    >
+                    <Perk heading="Google" description="Free Google Workspace">
                       <FaGoogle size={35} color="#7d5fff" />
                     </Perk>
                   </span>
@@ -249,10 +250,7 @@ export default function Home() {
                   </span>
 
                   <span data-aos="fade-left" data-aos-delay="400">
-                    <Perk
-                      heading="Microsoft"
-                      description="Azure credits, Office 365"
-                    >
+                    <Perk heading="Microsoft" description="Azure credits">
                       <FaMicrosoft size={35} color="#7d5fff" />
                     </Perk>
                   </span>
