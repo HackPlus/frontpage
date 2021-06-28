@@ -18,11 +18,11 @@ export default function Nav() {
     setActive(!active);
   };
   return (
-    <nav className="sticky top-0 z-50 flex flex-wrap items-center bg-white text-graymed font-medium text-opacity-50 px-8 pt-4 pb-6">
+    <nav className="sticky top-0 z-50 flex flex-wrap items-center bg-white text-graymed text-opacity-50 px-8 pt-4 pb-6">
       <div className="flex flex-1 justify-between items-center">
         <Link href="/">
           <a>
-            <img src="/logo.png" alt="Hack+ Logo" className="h-8" />
+            <img src="/logo.svg" alt="Hack+ Logo" className="h-8" />
           </a>
         </Link>
       </div>
