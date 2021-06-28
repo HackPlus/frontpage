@@ -11,7 +11,7 @@ export default function Card({
   children,
 }) {
   return (
-    <div className="border border-opacity-25 border-gray rounded-xl bg-white p-6 flex flex-col space-y-5">
+    <div className="border border-opacity-25 border-gray rounded-xl bg-white p-6 flex flex-col space-y-5 h-full">
       <div className="rounded-full bg-bluelight p-4 w-min">
         {renderIcon(icon)}
       </div>
