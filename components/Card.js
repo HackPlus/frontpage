@@ -19,7 +19,7 @@ export default function Card({
       <Badge fillcolor={fillcolor}>{badgeText}</Badge>
       <p className="text-gray">{children}</p>
       <Link href={href}>
-        <a className="text-purple font-medium hover:text-indigo">{cta}</a>
+        <a className="text-purple hover:text-indigo">{cta}</a>
       </Link>
     </div>
   );

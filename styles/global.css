@@ -108,7 +108,7 @@
 
 * {
   font-family: CircularStd;
-  letter-spacing: -0.04ch;
+  letter-spacing: -0.05ch;
 }
 
 @layer base {
@@ -128,7 +128,7 @@
     @apply text-xl leading-loose font-circular font-semibold;
   }
   p {
-    @apply font-circular;
+    @apply font-circular font-normal;
   }
   li {
     @apply font-circular;

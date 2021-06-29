@@ -48,7 +48,7 @@ export default function Home() {
           <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <div className="flex flex-col space-y-5 mx-8 md:ml-16">
-                <h1 className="font-medium text-3xl md:text-5xl">
+                <h1 className="font-medium text-4xl md:text-6xl">
                   We make it easy for students to create <br />
                   <span>
                     <ReactTypingEffect
@@ -64,7 +64,7 @@ export default function Home() {
                     />
                   </span>
                 </h1>
-                <p className="text-gray text-lg">
+                <p className="text-gray text-lg md:text-xl font-extralight">
                   Hack+ is an accessible nonprofit accelerator for student-led
                   impacts. In other words: we&apos;re here to help students
                   change the world.
@@ -79,14 +79,14 @@ export default function Home() {
                   Already a Hack+ member?{" "}
                   <span>
                     <Link href="https://dash.hackplus.services">
-                      <a className="text-purple hover:text-gray font-semibold">
+                      <a className="text-purple hover:text-gray">
                         Sign in &rarr;
                       </a>
                     </Link>
                   </span>
                 </a>
               </div>
-              <div data-aos="fade-left" className="p-16">
+              <div data-aos="fade-left" className="p-24">
                 <img
                   src="/saas-3.svg"
                   alt="Person sitting in a chair chilling in at their desk"
@@ -134,7 +134,7 @@ export default function Home() {
                   fillcolor="green"
                   badgeText="Accepting applications"
                   href="mailto:hello@hackplus.io?subject=Applying for Nonprofits Program"
-                  cta="Reach out to apply"
+                  cta="Reach out to apply &rarr;"
                 >
                   Want to have a positive impact on your community or the world
                   around you? We&apos;ll help you launch a nonprofit by
@@ -150,7 +150,7 @@ export default function Home() {
                   fillcolor="purple"
                   badgeText="Closed beta"
                   href="mailto:hello@hackplus.io?subject=Applying for Startups Program"
-                  cta="Reach out to apply"
+                  cta="Reach out to apply &rarr;"
                 >
                   Students like you are coming up with the next unicorn startup
                   ideas. We&apos;re here to provide the resources, software, and
