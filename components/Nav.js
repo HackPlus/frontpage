@@ -54,18 +54,20 @@ export default function Nav() {
             </Link>
           </li>
           <li onClick={openDropdown}>
-            <a className="hover:text-gray flex items-center">
+            <a className="hover:text-gray flex items-center cursor-pointer">
               Programs <BsCaretDownFill className="pl-1" />
             </a>
 
             <div
               className={`${
                 dropdown ? "" : "hidden"
-              } md:absolute pl-4 flex flex-col space-y-2 border-2 border-graylight p-3 py-4 rounded-xl shadow-lg`}
+              } md:absolute pl-4 flex flex-col space-y-2 border-2 border-graylight bg-white p-3 py-4 rounded-xl shadow-lg`}
             >
-              <span className="hover:text-gray">Eventssss+</span>
-              <span className="hover:text-gray">Events+</span>
-              <span className="hover:text-gray">Eeeventssss+</span>
+              <span className="hover:text-gray">
+                <Link href="/events">
+                  <a>Events+</a>
+                </Link>
+              </span>
             </div>
           </li>
           <li>
