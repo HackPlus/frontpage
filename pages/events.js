@@ -98,15 +98,15 @@ export default function Events() {
                   <span className="italic">no fees attached</span>.
                 </p>
               </div>
-              <div className="flex flex-col text-center mx-auto">
-                <p className="text-sm uppercase font-medium pb-6">
+              <div className="flex flex-col text-center">
+                <p className="text-sm uppercase font-medium pb-6 text-left md:text-center">
                   Our Events are Sponsored By
                 </p>
-                <ul className="grid grid-cols-2 md:grid-cols-1 gap-8">
+                <ul className="grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
                   {eventSponsors.map(({ companyName, logo }) => {
                     return (
                       <li data-aos="fade-up" key={companyName}>
-                        <img src={logo} alt={` logo`} className="h-8" />
+                        <img src={logo} alt={` logo`} className="w-36" />
                       </li>
                     );
                   })}
