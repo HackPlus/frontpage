@@ -1,10 +1,10 @@
 <p align="center"><img width="192px" alt="Hack+ Logo" src="./public/logo.svg"></p>
 <h1 align="center"><a href="https://hackplus.io/">Hack+ Site</a></h1>
-<p align="center"><i>Hack+ is an accessible nonprofit accelerator for student-led impacts.</i></p>
+<p align="center"><i>Hack+ is an accessible nonprofit accelerator for student-led impacts. In other words: we're here to help students change the world.</i></p>
 
 ---
 
-#### This project uses the following:
+#### This project uses the following technologies
 
 - Next.js
 - Tailwind CSS for styling
@@ -12,7 +12,7 @@
 - `react-icons` for icons
 - `AOS` for scroll animations
 
-#### Dev environment setup
+#### Setup
 
 Clone the repo:
 
@@ -32,7 +32,7 @@ Install dependencies:
 $ npm install
 ```
 
-Run it locally at localhost:3000:
+Run it locally at `localhost:3000`:
 
 ```shell
 $ npm run dev
