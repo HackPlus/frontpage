@@ -60,7 +60,7 @@ export default function Home() {
           <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <div className="flex flex-col space-y-5 mx-8 md:ml-16">
-                <h1 className="font-medium text-4xl md:text-6xl">
+                <h1 className="font-medium text-4xl md:text-5xl">
                   We make it easy for students to create <br />
                   <span>
                     <ReactTypingEffect
@@ -76,7 +76,7 @@ export default function Home() {
                     />
                   </span>
                 </h1>
-                <p className="text-gray text-lg md:text-xl font-extralight">
+                <p className="text-gray text-lg md:text-xl font-normal">
                   Hack+ is an accessible nonprofit accelerator for student-led
                   impacts. In other words: we&apos;re here to help students
                   change the world.

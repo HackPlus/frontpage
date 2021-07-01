@@ -108,7 +108,7 @@
 
 * {
   font-family: CircularStd;
-  letter-spacing: -0.05ch;
+  letter-spacing: -0.025ch;
 }
 
 @layer base {
