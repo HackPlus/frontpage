@@ -51,13 +51,15 @@ export default function Events() {
     <div>
       <Layout title="Events+">
         <main>
-          <section className="bg-events-cover bg-cover bg-purple bg-blend-multiply h-screen md:h-96 -mb-48 md:-mb-16 lg:-mb-24">
+          <section className="bg-events-cover bg-cover bg-purple bg-blend-multiply h-screen -mb-48 md:-mb-48 lg:-mb-64">
             <div
               data-aos="fade-up"
               className="text-white space-y-4  py-6 md:py-14 mx-8 md:mx-20 pt-48"
             >
-              <h1 className="text-5xl md:text-7xl font-medium">Events+</h1>
-              <p className="text-lg">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium">
+                Events+
+              </h1>
+              <p className="text-lg md:text-xl md:w-9/12">
                 Run the event of your dreams using the world&apos;s most
                 comprehensive launchpad for hackathons, conferences, meetups,
                 and more.
@@ -98,15 +100,15 @@ export default function Events() {
                   <span className="italic">no fees attached</span>.
                 </p>
               </div>
-              <div className="flex flex-col text-center mx-auto">
-                <p className="text-sm uppercase font-medium pb-6">
+              <div className="flex flex-col text-center">
+                <p className="text-sm uppercase font-medium pb-6 text-left md:text-center">
                   Our Events are Sponsored By
                 </p>
-                <ul className="grid grid-cols-2 md:grid-cols-1 gap-8">
+                <ul className="grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
                   {eventSponsors.map(({ companyName, logo }) => {
                     return (
                       <li data-aos="fade-up" key={companyName}>
-                        <img src={logo} alt={` logo`} className="h-8" />
+                        <img src={logo} alt={` logo`} className="w-36" />
                       </li>
                     );
                   })}

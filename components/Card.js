@@ -11,7 +11,7 @@ export default function Card({
   children,
 }) {
   return (
-    <div className="border border-opacity-25 border-gray rounded-xl bg-white p-6 flex flex-col space-y-5">
+    <div className="border border-opacity-25 border-gray rounded-xl bg-white p-6 flex flex-col space-y-5 h-full">
       <div className="rounded-full bg-bluelight p-4 w-min">
         {renderIcon(icon)}
       </div>
@@ -19,7 +19,7 @@ export default function Card({
       <Badge fillcolor={fillcolor}>{badgeText}</Badge>
       <p className="text-gray">{children}</p>
       <Link href={href}>
-        <a className="text-purple font-medium hover:text-indigo">{cta}</a>
+        <a className="text-purple hover:text-indigo">{cta}</a>
       </Link>
     </div>
   );

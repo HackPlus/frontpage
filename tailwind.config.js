@@ -25,7 +25,8 @@ module.exports = {
         black: "#212529",
       },
       fontFamily: {
-        circular: "CircularStd",
+        circular:
+          '"CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
       },
       backgroundImage: {
         "about-cover": "url('/meeting.jpg')",

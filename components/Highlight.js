@@ -11,7 +11,7 @@ export default function Highlight({
 }) {
   return (
     <div className="flex flex-col space-y-3">
-      <div className="overflow-hidden w-full md:w-52">
+      <div className="overflow-hidden w-full md:w-72">
         <img className="rounded-xl" src={src} alt="Event venue image" />
       </div>
       <div className="flex flex-row space-x-1">

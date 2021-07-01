@@ -128,7 +128,7 @@
     @apply text-xl leading-loose font-circular font-semibold;
   }
   p {
-    @apply font-circular;
+    @apply font-circular font-normal;
   }
   li {
     @apply font-circular;

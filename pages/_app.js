@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <motion.div
       key={router.route}
-      transition={{ delay: 0.2 }}
+      transition={{ delay: 1 }}
       initial="pageInitial"
       animate="pageAnimate"
       variants={{

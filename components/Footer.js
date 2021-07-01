@@ -22,30 +22,31 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/events">
-                <a className="text-white opacity-70 hover:opacity-100">Events</a>
+                <a className="text-white opacity-70 hover:opacity-100">
+                  Events
+                </a>
               </Link>
             </li>
           </ul>
         </div>
 
-
         <div>
           <h5>Contact</h5>
           <ul className="flex flex-col space-y-3">
-            <li className="flex">
+            <li className="flex space-x-5">
               <IoLocationSharp size={20} />
               <div>
                 447 King Ave <br /> Fremont, CA 94536-1516
               </div>
             </li>
-            <li className="flex">
+            <li className="flex space-x-5">
               <FaPhone size={20} />
               <div>
                 +1 (415) 938-8088 <br />
                 <span className="opacity-70">Mon - Fri 9am - 5pm</span>
               </div>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-5">
               <div>
                 <IoMail size={20} />
               </div>
@@ -55,7 +56,8 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-1"></div>
+        <div className="col-span-2 md:col-span-1 md:-ml-16 space-y-4">
           <h5>Subscribe</h5>
           <p>
             The latest Hack+ news, articles, and resources, sent straight to
@@ -64,13 +66,18 @@ export default function Footer() {
           <form action="http://eepurl.com/grlSeH" target="_blank">
             <div>
               <div>
-                <button className="rounded-md bg-purple w-full py-1 font-medium font-circular">Subscribe</button>
+                <button className="rounded-md bg-purple w-full py-1 font-medium font-circular">
+                  Subscribe
+                </button>
               </div>
             </div>
           </form>
           <small>
             We’ll never share your details. See our{" "}
-            <Link href="/docs/privacy"><a>Privacy Policy</a></Link>.
+            <Link href="/docs/privacy">
+              <a>Privacy Policy</a>
+            </Link>
+            .
           </small>
         </div>
       </div>
@@ -106,7 +113,7 @@ export default function Footer() {
             501(c)(3) nonprofit public charity, with EIN 81-1543325.
           </small>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 }

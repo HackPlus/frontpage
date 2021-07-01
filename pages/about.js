@@ -38,6 +38,7 @@ export default function About() {
               <div>
                 <CountUp
                   end={732}
+                  delay={1.5}
                   className="text-5xl text-purple font-semibold"
                 />
                 <p className="text-black font-medium text-sm pt-2">
@@ -47,6 +48,7 @@ export default function About() {
               <div>
                 <CountUp
                   end={65}
+                  delay={1.5}
                   className="text-5xl text-purple font-semibold"
                 />
                 <p className="text-black font-medium text-sm pt-2">
@@ -56,6 +58,7 @@ export default function About() {
               <div>
                 <CountUp
                   end={258}
+                  delay={1.5}
                   className="text-5xl text-purple font-semibold"
                 />
                 <p className="text-black font-medium text-sm pt-2">
@@ -65,6 +68,7 @@ export default function About() {
               <div>
                 <CountUp
                   end={60000}
+                  delay={1.5}
                   separator=","
                   suffix="+"
                   className="text-5xl text-purple font-semibold"
@@ -182,14 +186,6 @@ export default function About() {
               <Team
                 src="/avatars/aaron.png"
                 name="Aaron Wang"
-                role="Engineering"
-                badgeFill="yellow"
-                badgeTextColor="black"
-                badgeText="Intern"
-              />
-              <Team
-                src="/avatars/ella.jpg"
-                name="Ella Xu"
                 role="Engineering"
                 badgeFill="yellow"
                 badgeTextColor="black"
