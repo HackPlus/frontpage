@@ -129,8 +129,8 @@ export default function Events() {
           </svg>
           <section className="py-20">
             <div className="flex flex-col space-y-5 justify-center px-8 md:px-48 text-center">
-              <h2 className="text-blue font-medium text-5xl">
-                We &hearts; Organizers
+              <h2 className="text-blue font-medium text-5xl flex items-center justify-center">
+                We <FaHeart size={35} className="mx-3" /> Organizers
               </h2>
               <p className="text-gray text-xl">
                 We love working with amazing organizers (like you!) to throw
