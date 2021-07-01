@@ -19,11 +19,7 @@ const corporate = [
   { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
   { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
   { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
-  {
-    company: "Vercel",
-    logo: "/partners/corporate/vercel.svg",
-    href: "https://vercel.com/?utm_source=hackplus&utm_campaign=oss",
-  },
+  { company: "Vercel", logo: "/partners/corporate/vercel.svg" },
 ];
 
 const schools = [
@@ -284,18 +280,18 @@ export default function Home() {
             <p className="text-gray text-lg pt-8 py-6">
               Corporate partners include
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center place-items-center">
               {corporate.map(({ company, logo }) => (
-                <div key={company} className="w-48 md:w-32">
-                  <img src={logo} alt={company} />
+                <div key={company} className="mx-auto">
+                  <img src={logo} alt={company} className="h-14 md:h-16" />
                 </div>
               ))}
             </div>
             <p className="text-gray text-lg pt-8 py-6">Schools include</p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center place-items-center">
               {schools.map(({ company, logo }) => (
-                <div key={company} className="w-48 md:w-32">
-                  <img src={logo} alt={company} />
+                <div key={company} className="mx-auto">
+                  <img src={logo} alt={company} className="h-14 md:h-16" />
                 </div>
               ))}
             </div>
