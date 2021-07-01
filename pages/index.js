@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import Card from "../components/Card";
 import { CarouselData } from "../components/Carousel/CarouselData";
 import Carousel from "../components/Carousel/Slider";
@@ -9,7 +10,7 @@ import Link from "next/link";
 import { FaStripeS, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
 import CountUp from "react-countup";
-
+import { useEffect } from "react";
 const corporate = [
   { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
   { company: "Atlassian", logo: "/partners/corporate/atlassian.svg" },
@@ -37,6 +38,21 @@ const schools = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    console.log(`
+    ___  ___  ________  ________  ___  __       
+    |\  \|\  \|\   __  \|\   ____\|\  \|\  \     
+    \ \  \\\  \ \  \|\  \ \  \___|\ \  \/  /|_   
+     \ \   __  \ \   __  \ \  \    \ \   ___  \  
+      \ \  \ \  \ \  \ \  \ \  \____\ \  \\ \  \ 
+       \ \__\ \__\ \__\ \__\ \_______\ \__\\ \__\
+        \|__|\|__|\|__|\|__|\|_______|\|__| \|__|
+                                                 
+                                                 
+      hack+ is a nonprofit accelerator for student-led impacts
+                                 
+    `);
+  });
   return (
     <div>
       <Layout title="Home">
