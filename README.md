@@ -1,23 +1,39 @@
-# Next.js + Tailwind CSS Example
+<p align="center"><img width="192px" alt="Hack+ Logo" src="./public/logo.svg"></p>
+<h1 align="center"><a href="https://hackplus.io/">Hack+ Site</a></h1>
+<p align="center"><i>Hack+ is an accessible nonprofit accelerator for student-led impacts.</i></p>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2.1) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+---
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+#### This project uses the following:
 
-## Deploy your own
+- Next.js
+- Tailwind CSS for styling
+- MDX for writing jsx in markdown documents
+- `react-icons` for icons
+- `AOS` for scroll animations
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+#### Dev environment setup
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Clone the repo:
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```shell
+$ git clone https://github.com/hackplus/frontpage.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+cd into the folder you cloned it to:
+
+```
+$ cd frontpage
+```
+
+Install dependencies:
+
+```shell
+$ npm install
+```
+
+Run it locally at localhost:3000:
+
+```shell
+$ npm run dev
+```
