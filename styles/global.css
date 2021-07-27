@@ -113,28 +113,28 @@
 
 @layer base {
   h1 {
-    @apply font-circular text-5xl;
+    @apply font-circular text-5xl antialiased;
   }
   h2 {
-    @apply text-4xl font-circular;
+    @apply text-4xl font-circular antialiased;
   }
   h3 {
-    @apply text-3xl font-circular;
+    @apply text-3xl font-circular antialiased;
   }
   h4 {
-    @apply text-2xl font-circular;
+    @apply text-2xl font-circular antialiased;
   }
   h5 {
-    @apply text-xl leading-loose font-circular font-semibold;
+    @apply text-xl leading-loose font-circular font-semibold antialiased;
   }
   p {
-    @apply font-circular font-normal;
+    @apply font-circular font-normal antialiased;
   }
   li {
-    @apply font-circular;
+    @apply font-circular antialiased;
   }
   small {
-    @apply text-white opacity-70 font-circular;
+    @apply text-white opacity-70 font-circular antialiased;
   }
 
   th,
@@ -143,5 +143,14 @@
   }
   section {
     @apply xl:px-48;
+  }
+}
+
+@layer utilities {
+  .main-container {
+    @apply px-2 sm:px-4 lg:px-8;
+  }
+  .main-content {
+    @apply px-2 sm:px-4 max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto w-full;
   }
 }

@@ -23,12 +23,8 @@ export default function Nav() {
     setDropdown(!dropdown);
   };
   return (
-    <nav className="sticky top-0 z-50 bg-white text-gray text-opacity-50 px-2 sm:px-4 lg:px-8 py-5">
-      <div
-        className={
-          "max-w-3xl lg:max-w-6xl px-2 sm:px-4 mx-auto flex flex-wrap items-center"
-        }
-      >
+    <nav className="sticky top-0 z-50 bg-white text-gray text-opacity-50 main-container py-5">
+      <div className={"main-content flex flex-wrap items-center"}>
         <div className="flex flex-1 justify-between items-center">
           <Link href="/">
             <a>
