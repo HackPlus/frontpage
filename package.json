@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ./ --ext js,jsx,ts,tsx"
+    "lint": "next lint"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -14,9 +14,9 @@
     "aos": "^2.3.4",
     "framer-motion": "^4.1.17",
     "next": "latest",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-countup": "^4.3.3",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-typing-effect": "^2.0.5",
     "react-visibility-sensor": "^5.1.1"
@@ -24,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.4",
     "eslint": "^7.28.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-plugin-react": "^7.24.0",
     "postcss": "^8.3.0",
     "tailwindcss": "^2.1.4"
