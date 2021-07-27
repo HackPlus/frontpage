@@ -10,7 +10,9 @@ import Link from "next/link";
 import { FaStripeS, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
 import CountUp from "react-countup";
-import { useEffect } from "react";
+import VisibilitySensor from "react-visibility-sensor";
+import { useEffect, useState } from "react";
+
 const corporate = [
   { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
   { company: "Atlassian", logo: "/partners/corporate/atlassian.svg" },
@@ -38,6 +40,7 @@ const schools = [
 ];
 
 export default function Home() {
+  const [countedUp, setCountedUp] = useState(false);
   useEffect(() => {
     console.log(`
     ___  ___  ________  ________  ___  __       
@@ -203,13 +206,30 @@ export default function Home() {
                   idea—and we&apos;re here to help.{" "}
                 </p>
                 <div className="pt-8 pb-14">
-                  <CountUp
-                    end={1756382}
-                    separator=","
-                    suffix="+"
-                    prefix="$"
-                    className="text-purple text-5xl leading-loose font-semibold"
-                  />
+                  <VisibilitySensor
+                    active={!countedUp}
+                    onChange={(isVisible) => {
+                      if (isVisible) {
+                        setCountedUp(true);
+                      }
+                    }}
+                  >
+                    {({ isVisible }) => (
+                      <div className="text-purple text-5xl leading-loose font-semibold">
+                        {isVisible ? (
+                          <CountUp
+                            start={1250000}
+                            end={1756382}
+                            separator=","
+                            suffix="+"
+                            prefix="$"
+                          />
+                        ) : (
+                          "$1,250,000+"
+                        )}
+                      </div>
+                    )}
+                  </VisibilitySensor>
 
                   <p className="text-lg text-gray">
                     transacted for our student-run ventures to date
