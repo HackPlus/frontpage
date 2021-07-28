@@ -1,7 +1,9 @@
+import Image from "next/image";
 import CountUp from "react-countup";
 import Badge from "../components/Badge";
 import Layout from "../components/Layout";
 import Team from "../components/Team";
+import aboutImage from "../public/about.jpg";
 
 export default function About() {
   return (
@@ -95,10 +97,10 @@ export default function About() {
               data-aos="fade-up"
               className="flex flex-col items-center md:flex-row md:space-x-10"
             >
-              <div>
-                <img
-                  className="w-3/4 md:w-full rounded-xl mx-auto md:mx-0 mb-8 md:mb-0"
-                  src="/about.jpg"
+              <div className="w-3/4 md:w-full md:mx-0 mb-8 md:mb-0 mx-auto">
+                <Image
+                  className="rounded-xl"
+                  src={aboutImage}
                   alt="A group of students sitting and smiling"
                 />
               </div>

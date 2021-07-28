@@ -12,6 +12,11 @@ import ReactTypingEffect from "react-typing-effect";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { useEffect, useState } from "react";
+import saas1 from "../public/saas-1.svg";
+import saas2 from "../public/saas-2.svg";
+import saas3 from "../public/saas-3.svg";
+import saas4 from "../public/saas-4.svg";
+import Image from "next/image";
 
 const corporate = [
   { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
@@ -103,8 +108,8 @@ export default function Home() {
                   </a>
                 </div>
                 <div data-aos="fade-left" className="p-24">
-                  <img
-                    src="/saas-3.svg"
+                  <Image
+                    src={saas3}
                     alt="Person sitting in a chair chilling in at their desk"
                   />
                 </div>
@@ -246,10 +251,7 @@ export default function Home() {
             <div className="main-content">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center pt-16">
                 <div data-aos="fade-right" className="md:pr-4">
-                  <img
-                    src="/saas-2.svg"
-                    alt="Person pointing at a whiteboard"
-                  />
+                  <Image src={saas2} alt="Person pointing at a whiteboard" />
                 </div>
                 <div>
                   <div className="flex flex-col space-y-3">
@@ -385,8 +387,8 @@ export default function Home() {
                   data-aos="fade-left"
                   className="mx-20 pt-5 md:pt-0 md:mx-5"
                 >
-                  <img
-                    src="/saas-4.svg"
+                  <Image
+                    src={saas4}
                     alt="Two people working together on a computer screen"
                   />
                 </div>
@@ -398,8 +400,8 @@ export default function Home() {
               data-aos="fade-up"
               className="flex justify-center relative mx-8 md:mx-24 z-10"
             >
-              <img
-                src="/saas-1.svg"
+              <Image
+                src={saas1}
                 alt="Person looking at tablet screen while pointing in the northeast direction"
               />
             </div>

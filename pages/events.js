@@ -1,9 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 import Button from "../components/Button";
 import { CarouselData } from "../components/Carousel/CarouselData";
 import Carousel from "../components/Carousel/Slider";
 import Layout from "../components/Layout";
 import Service from "../components/Service";
+import microsoftLogo from "../public/logos/microsoft.svg";
+import amazonLogo from "../public/logos/amazon.svg";
+import disneyLogo from "../public/logos/disney.svg";
+import googleLogo from "../public/logos/google.svg";
+import stanfordLogo from "../public/logos/stanford.svg";
+import githubLogo from "../public/logos/github.svg";
+import losAltos2 from "../public/losaltos-2.jpg";
 
 import {
   FaTachometerAlt,
@@ -22,27 +30,27 @@ import Table from "../components/Table";
 const eventSponsors = [
   {
     companyName: "Microsoft",
-    logo: "/logos/microsoft.svg",
+    logo: microsoftLogo,
   },
   {
     companyName: "Amazon",
-    logo: "/logos/amazon.svg",
+    logo: amazonLogo,
   },
   {
     companyName: "disney",
-    logo: "/logos/disney.svg",
+    logo: disneyLogo,
   },
   {
     companyName: "Google",
-    logo: "/logos/google.svg",
+    logo: googleLogo,
   },
   {
     companyName: "Stanford",
-    logo: "/logos/stanford.svg",
+    logo: stanfordLogo,
   },
   {
     companyName: "Github",
-    logo: "/logos/github.svg",
+    logo: githubLogo,
   },
 ];
 
@@ -108,7 +116,9 @@ export default function Events() {
                   {eventSponsors.map(({ companyName, logo }) => {
                     return (
                       <li data-aos="fade-up" key={companyName}>
-                        <img src={logo} alt={` logo`} className="w-36" />
+                        <div className="w-36">
+                          <Image src={logo} alt={`${companyName} logo`} />
+                        </div>
                       </li>
                     );
                   })}
@@ -328,12 +338,8 @@ export default function Events() {
                     </a>
                   </Link>
                 </div>
-                <div>
-                  <img
-                    className="rounded-xl mx-auto w-10/12"
-                    src="/losaltos-2.jpg"
-                    alt="alt"
-                  />
+                <div className={"mx-auto w-10/12"}>
+                  <Image className="rounded-xl" src={losAltos2} alt="alt" />
                 </div>
               </div>
             </div>
