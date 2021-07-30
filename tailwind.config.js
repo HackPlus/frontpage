@@ -33,6 +33,9 @@ module.exports = {
         "events-cover": "url('/ttbstadium_flip.jpg')",
         "contact-cover": "url('/article-6.jpg')",
       },
+      boxShadow: {
+        block: "0.5rem 0.5rem 0 rgb(233 236 239 / 50%)",
+      },
     },
   },
   variants: {

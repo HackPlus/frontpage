@@ -5,8 +5,8 @@ import { FaPhone, FaTwitter, FaMedium } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="bg-blue text-white pb-8 pt-16">
-      <div className="grid grid-cols-2 md:grid-cols-4 mx-8 md:mx-24 gap-5">
+    <div className="bg-blue text-white pb-8 pt-24 main-container">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 main-content">
         <div>
           <h5>Navigate</h5>
           <ul className="flex flex-col space-y-2">

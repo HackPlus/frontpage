@@ -5,7 +5,7 @@ export default function Button({ type, href, children }) {
     // secondary button
     case 2:
       return (
-        <button className="border border-purple rounded-lg py-4 px-8 bg-white text-purple text-lg font-medium hover:bg-purple hover:text-white">
+        <button className="border border-purple rounded-lg py-4 px-10 bg-white text-purple text-lg font-medium hover:bg-purple hover:text-white">
           <Link href={href}>
             <a>{children}</a>
           </Link>
@@ -23,7 +23,7 @@ export default function Button({ type, href, children }) {
     default:
       // primary button
       return (
-        <button className="rounded-lg bg-purple py-4 px-8 text-white text-lg font-medium hover:bg-indigo">
+        <button className="rounded-lg bg-purple py-4 px-10 text-white text-lg font-medium hover:bg-indigo">
           <Link href={href}>
             <a className="text-white">{children}</a>
           </Link>

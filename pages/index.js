@@ -65,10 +65,10 @@ export default function Home() {
     <div>
       <Layout title="Home">
         <main>
-          <section className="main-container mt-12">
+          <section className="main-container my-24">
             <div className="main-content">
-              <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-                <div className="flex flex-col space-y-5">
+              <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="flex flex-col space-y-5 max-w-xl">
                   <h1 className="font-medium text-4xl md:text-5xl lg:text-6xl">
                     We make it easy for students to create <br />
                     <span>
@@ -107,7 +107,7 @@ export default function Home() {
                     </span>
                   </a>
                 </div>
-                <div data-aos="fade-left" className="p-24">
+                <div data-aos="fade-left" className="px-8">
                   <Image
                     src={saas3}
                     alt="Person sitting in a chair chilling in at their desk"
@@ -142,7 +142,7 @@ export default function Home() {
                     fillcolor="green"
                     badgeText="Accepting applications"
                     href="/events"
-                    cta="Learn more &rarr;"
+                    cta="Learn More &rarr;"
                   >
                     Launch events, like hackathons or conferences, using our
                     comprehensive platform. We&apos;ll provide legal backend,
@@ -197,7 +197,7 @@ export default function Home() {
           <section className="main-container">
             <div className="main-content">
               <div className="flex flex-col justify-center text-center space-y-5 pt-14">
-                <h2 className="font-medium text-4xl md:text-5xl mx-auto lg:max-w-lg">
+                <h2 className="font-medium text-4xl md:text-5xl lg:text-6xl mx-auto lg:max-w-lg">
                   For students, by students.
                 </h2>
                 <p className="text-gray text-lg md:text-xl mx-auto max-w-2xl lg:max-w-3xl">
@@ -279,14 +279,6 @@ export default function Home() {
                         <FaGoogle size={35} color="#7d5fff" />
                       </Perk>
                     </span>
-                    <span data-aos="fade-left" data-aos-delay="200">
-                      <Perk
-                        heading="Stripe"
-                        description="Instant Atlas access, $20k in credits"
-                      >
-                        <FaStripeS size={35} color="#7d5fff" />
-                      </Perk>
-                    </span>
                     <span data-aos="fade-left" data-aos-delay="300">
                       <Perk
                         heading="Amazon Web Services"
@@ -295,7 +287,14 @@ export default function Home() {
                         <FaAws size={35} color="#7d5fff" />
                       </Perk>
                     </span>
-
+                    <span data-aos="fade-left" data-aos-delay="200">
+                      <Perk
+                        heading="Stripe"
+                        description="Instant Atlas access, $20k in credits"
+                      >
+                        <FaStripeS size={35} color="#7d5fff" />
+                      </Perk>
+                    </span>
                     <span data-aos="fade-left" data-aos-delay="400">
                       <Perk heading="Microsoft" description="Azure credits">
                         <FaMicrosoft size={35} color="#7d5fff" />
@@ -330,7 +329,7 @@ export default function Home() {
                   that&apos;s fostering a new generation of innovators.
                 </p>
               </div>
-              <p className="text-gray text-lg pt-8 py-6">
+              <p className="text-gray text-xl pt-14 py-6">
                 Corporate partners include
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center place-items-center">
@@ -340,7 +339,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <p className="text-gray text-lg pt-8 py-6">Schools include</p>
+              <p className="text-gray text-xl pt-14 py-6">Schools include</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center place-items-center">
                 {schools.map(({ company, logo }) => (
                   <div key={company} className="mx-auto">
@@ -363,12 +362,12 @@ export default function Home() {
           </svg>
           <section className="bg-purplelight pb-24 pt-10 main-container">
             <div className="main-content">
-              <h2 className="leading-loose font-medium">
-                Get started in days.
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+              <div className="flex flex-col md:flex-row items-center">
                 <div>
-                  <ol className="space-y-10">
+                  <h2 className="leading-loose font-medium">
+                    Get started in days.
+                  </h2>
+                  <ol className="space-y-14">
                     <Step
                       heading="1. Reach out"
                       description="Apply for one of our programs by reaching out to our team."
@@ -398,7 +397,7 @@ export default function Home() {
           <section className="pt-16">
             <div
               data-aos="fade-up"
-              className="flex justify-center relative mx-8 md:mx-24 z-10"
+              className="flex justify-center relative mx-8 z-10 sm:max-w-lg sm:mx-auto"
             >
               <Image
                 src={saas1}
@@ -417,12 +416,12 @@ export default function Home() {
             />
           </svg>
           <section className="bg-purple pt-16 pb-16">
-            <h2 className="text-white text-center pb-10 font-medium">
+            <h2 className="text-white text-center pb-10 font-medium text-2xl sm:text-3xl md:text-4xl lg:max-w-xl xl:max-w-lg mx-auto">
               Launch your dream organization now.
             </h2>
             <div className="flex flex-col justify-center space-y-4 md:space-y-0 md:flex-row md:space-x-4">
               <input
-                className="px-2 py-2 rounded-lg border-graylight w-96 mx-auto md:mx-0"
+                className="px-4 py-2 rounded-lg border-graylight w-96 mx-auto md:mx-0 md:text-xl"
                 placeholder="Email Address"
                 type="email"
               />
@@ -445,12 +444,12 @@ export default function Home() {
 
 const Step = ({ heading, description }) => {
   return (
-    <li data-aos="fade-up" className="flex items-center space-x-6">
-      <div className="p-1 rounded-full bg-purplemedium bg-opacity-50 w-min">
+    <li data-aos="fade-up" className="flex items-start space-x-6">
+      <div className="p-1 rounded-full bg-purplemedium bg-opacity-30 w-min">
         <BsDot size={40} className="text-purple" />
       </div>
       <div>
-        <h5 className="leading-6 pb-3">{heading}</h5>
+        <h5 className="leading-6 pb-3 font-medium">{heading}</h5>
         <p className="text-gray">{description}</p>
       </div>
     </li>
