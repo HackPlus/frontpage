@@ -55,7 +55,7 @@ const Carousel = ({ slides }) => {
   };
 
   return (
-    <section className="h-full">
+    <section className="h-full px-12 md:px-36 lg:px-48 xl:px-52">
       <div className="relative flex flex-row items-center justify-center h-full">
         <FaAngleLeft
           size={35}
