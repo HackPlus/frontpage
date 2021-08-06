@@ -4,6 +4,8 @@ import Badge from "../components/Badge";
 import Layout from "../components/Layout";
 import Team from "../components/Team";
 import aboutImage from "../public/about.jpg";
+import Link from "next/link";
+import { MdPlayArrow } from "react-icons/md";
 
 export default function About() {
   return (
@@ -21,8 +23,17 @@ export default function About() {
             </svg>
             <div
               data-aos="fade-up"
-              className="main-content text-white space-y-5 pt-20"
+              className="main-content text-white space-y-5"
             >
+              <div className="text-white text-sm h-16 flex items-center pb-20 pt-8">
+                <Link href="/">
+                  <a className="text-graylight font-medium hover:text-white">
+                    Home
+                  </a>
+                </Link>{" "}
+                <MdPlayArrow className="mx-2 h-3 w-3 text-graylight opacity-20" />{" "}
+                <span className="text-white">About</span>
+              </div>
               <h1 className="font-medium">About Hack+</h1>
               <p className="text-xl">
                 We&apos;re a 501(c)(3) nonprofit that&apos;s looking to help
