@@ -28,7 +28,7 @@ export default function Contact() {
               />
             </div>
           </section> */}
-          <section className="main-container bg-contact-cover bg-cover bg-gray bg-blend-overlay h-96 -mb-24">
+          <section className="relative main-container bg-contact-cover bg-cover bg-gray bg-blend-overlay h-96">
             <div className="main-content">
               <div className="text-white text-sm h-16 flex items-center">
                 <Link href="/">
@@ -49,19 +49,16 @@ export default function Contact() {
                 </p>
               </div>
             </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 2568 292"
+              className="absolute w-full text-white -bottom-14 left-0 right-0 z-20 -mb-2 translate-y-8"
+            >
+              <path d="M0 70.001S121.5 171.5 577.5 171.5c241.837 0 753.21-149.204 1222-171C2211 .5 2568 70.001 2568 70.001v222H0v-222z"></path>
+            </svg>
           </section>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 2568 292"
-            className="w-full fill-current relative z-20 -mb-2 -mt-14 md:-mt-18 lg:-mt-32"
-          >
-            <path
-              fill="#ffffff"
-              d="M0 70.001S121.5 171.5 577.5 171.5c241.837 0 753.21-149.204 1222-171C2211 .5 2568 70.001 2568 70.001v222H0v-222z"
-            ></path>
-          </svg>
           <section className="bg-white py-16 relative z-40">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-y-7 gap-5 md:gap-x-0 text-center">
               <h4 className="text-black leading-9 font-medium text-3xl">
