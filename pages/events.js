@@ -123,7 +123,7 @@ export default function Events() {
                 <p className="text-sm uppercase font-medium pb-6 text-left md:text-center">
                   Our Events are Sponsored By
                 </p>
-                <ul className="grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
+                <ul className="w-max mx-auto grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
                   {eventSponsors.map(({ companyName, logo }) => {
                     return (
                       <li data-aos="fade-up" key={companyName}>
@@ -181,8 +181,8 @@ export default function Events() {
               </div>
               {/* Badge/Alert thing */}
               <div className="flex justify-center pb-8 mt-4">
-                <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-8 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-                  <p className="text-white text-center">
+                <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-12">
+                  <p className="text-white text-center font-medium">
                     NEW: All Hack+ events get access to{" "}
                     <a href="https://stream.club" className="underline">
                       Stream Club
