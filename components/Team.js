@@ -10,7 +10,7 @@ export default function Team({ src, name, role, badgeFill, badgeText }) {
         <Badge fillcolor={badgeFill}>{badgeText}</Badge>
       </div>
       <div className="mx-auto py-8">
-        <div className="rounded-full overflow-hidden border-4 border-graylight w-28 h-28">
+        <div className="mx-auto rounded-full overflow-hidden border-4 border-graylight w-28 h-28">
           <img src={src} alt={name} />
         </div>
         <div className="flex flex-col text-center pt-4">
