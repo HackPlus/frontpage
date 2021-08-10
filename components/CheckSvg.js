@@ -1,9 +1,9 @@
 export default function CheckSvg({ color }) {
   if (color === "green") {
     return (
-      <div class="rounded-full h-6 w-6 mx-auto flex items-center justify-center bg-darkgreen">
+      <div className="rounded-full h-6 w-6 mx-auto flex items-center justify-center bg-darkgreen">
         <svg
-          class="text-white h-4 w-4"
+          className="text-white h-4 w-4"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -14,9 +14,9 @@ export default function CheckSvg({ color }) {
     );
   }
   return (
-    <div class="rounded-full h-6 w-6 mx-auto flex items-center justify-center bg-bluelight">
+    <div className="rounded-full h-6 w-6 mx-auto flex items-center justify-center bg-bluelight">
       <svg
-        class="text-blue h-4 w-4"
+        className="text-blue h-4 w-4"
         fill="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"

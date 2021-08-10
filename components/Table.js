@@ -1,4 +1,3 @@
-import { AiFillCheckCircle, AiOutlineCheckCircle } from "react-icons/ai";
 import CheckSvg from "./CheckSvg";
 
 export default function Table() {
