@@ -1,4 +1,5 @@
 import { AiFillCheckCircle, AiOutlineCheckCircle } from "react-icons/ai";
+import CheckSvg from "./CheckSvg";
 
 export default function Table() {
   return (
@@ -32,14 +33,10 @@ export default function Table() {
           FDIC-backed bank account
         </div>
         <div className="font-medium table-cell align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle
-            size={35}
-            color="#28a745"
-            className="text-center"
-          />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle w-52 px-24  border-b border-graylight">
-          <AiOutlineCheckCircle size={35} color="#1ac9e7" />
+          <CheckSvg color="blue" />
         </div>
       </div>
       <div className="table-row">
@@ -47,10 +44,10 @@ export default function Table() {
           501(c)(3) Status
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell align-middle w-52 px-24 border-b border-graylight">
-          <AiOutlineCheckCircle size={35} color="#1ac9e7" />
+          <CheckSvg color="blue" />
         </div>
       </div>
       <div className="table-row">
@@ -58,7 +55,7 @@ export default function Table() {
           Full org management platform
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
@@ -67,7 +64,7 @@ export default function Table() {
           Unlimited free Visa credit cards
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
@@ -76,7 +73,7 @@ export default function Table() {
           Expense reimbursements
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
@@ -86,7 +83,7 @@ export default function Table() {
           <span className="text-graymed text-sm">ACH & check</span>
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
@@ -95,7 +92,7 @@ export default function Table() {
           Complimentary event insurance
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
@@ -105,7 +102,7 @@ export default function Table() {
           Free domain + hosting
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
@@ -114,7 +111,7 @@ export default function Table() {
           $45,000+ in free equipment/software
         </div>
         <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <AiFillCheckCircle size={35} color="#28a745" />
+          <CheckSvg color="green" />
         </div>
         <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
       </div>
