@@ -19,28 +19,29 @@ import saas4 from "../public/saas-4.svg";
 import Image from "next/image";
 
 const corporate = [
-  { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
-  { company: "Atlassian", logo: "/partners/corporate/atlassian.svg" },
-  { company: "Facebook", logo: "/partners/corporate/facebook.svg" },
   { company: "Google", logo: "/partners/corporate/google.svg" },
   { company: "Microsoft", logo: "/partners/corporate/microsoft.svg" },
-  { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
+  { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
+  { company: "Facebook", logo: "/partners/corporate/facebook.svg" },
+  { company: "Atlassian", logo: "/partners/corporate/atlassian.svg" },
   { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
+  { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
   { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
   { company: "Vercel", logo: "/partners/corporate/vercel.svg" },
 ];
 
 const schools = [
+  { company: "Stanford", logo: "/partners/university/stanford.svg" },
+  { company: "USC", logo: "/partners/university/usc.svg" },
   { company: "Berkeley", logo: "/partners/university/berkeley.svg" },
+  { company: "MIT", logo: "/partners/university/mit.svg" },
+
+  { company: "Calpoly SLO", logo: "/partners/university/calpolyslo.svg" },
+  { company: "Northeastern", logo: "/partners/university/northeastern.svg" },
   {
     company: "Boston university",
     logo: "/partners/university/bostonuniversity.svg",
   },
-  { company: "Calpoly SLO", logo: "/partners/university/calpolyslo.svg" },
-  { company: "MIT", logo: "/partners/university/mit.svg" },
-  { company: "Northeastern", logo: "/partners/university/northeastern.svg" },
-  { company: "Stanford", logo: "/partners/university/stanford.svg" },
-  { company: "USC", logo: "/partners/university/usc.svg" },
   { company: "UPenn", logo: "/partners/university/upenn.svg" },
 ];
 
