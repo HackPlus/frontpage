@@ -12,6 +12,8 @@ import googleLogo from "../public/logos/google.svg";
 import stanfordLogo from "../public/logos/stanford.svg";
 import githubLogo from "../public/logos/github.svg";
 import losAltos2 from "../public/losaltos-2.jpg";
+import techTogether1 from "../public/techtogether-1.jpg";
+import ttb2018 from "../public/TTB-2018.jpg";
 
 import {
   FaTachometerAlt,
@@ -337,29 +339,35 @@ export default function Events() {
             />
           </svg>
           <section className="bg-purplelight py-20">
-            <div className="mx-8 md:mx-24">
-              <div className="flex flex-col md:flex-row md:items-center justify-center">
-                <div className="flex flex-col space-y-5">
-                  <h2 className="text-black font-medium text-5xl">
-                    Run the event of your dreams.
-                  </h2>
-                  <p className="text-gray text-lg">
-                    Over 22,000 students attended over 50 events in our program
-                    last year. Join Events+ and grow your event to its full
-                    potential.
-                  </p>
-                  <Link href="/">
-                    <a className="text-lg text-purple font-semibold pb-6 md:pb-0">
-                      Get Started &rarr;
-                    </a>
-                  </Link>
-                </div>
+            <div className="flex flex-col md:flex-row md:items-center w-full justify-around">
+              <div className="flex flex-col space-y-5 max-w-sm">
+                <h2 className="text-black font-medium text-6xl">
+                  Run the event of your dreams.
+                </h2>
+                <p className="text-gray text-xl">
+                  Over 22,000 students attended over 50 events in our program
+                  last year. Join Events+ and grow your event to its full
+                  potential.
+                </p>
+                <Link href="/">
+                  <a className="text-lg text-purple font-semibold pb-6 md:pb-0">
+                    Get Started &rarr;
+                  </a>
+                </Link>
+              </div>
+              <div className="relative max-w-sm">
                 <div
                   className={
-                    "mx-auto w-10/12 hover:-rotate-2 transform origin-bottom-left duration-200"
+                    "mx-auto hover:-rotate-2 transform origin-bottom-left duration-200"
                   }
                 >
                   <Image className="rounded-xl" src={losAltos2} alt="alt" />
+                </div>
+                <div className="absolute -top-8 -right-16 rotate-6 duration-200 hover:rotate-12 origin-right transform w-4/5">
+                  <Image className="rounded-xl" src={techTogether1} />
+                </div>
+                <div className="absolute -bottom-12 -left-12 -rotate-6 duration-200 hover:-rotate-12 origin-left transform w-4/5">
+                  <Image className="rounded-xl" src={ttb2018} />
                 </div>
               </div>
             </div>
