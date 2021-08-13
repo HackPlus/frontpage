@@ -157,3 +157,31 @@
     @apply px-2 sm:px-4 max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto w-full;
   }
 }
+
+@layer components {
+  .loading-animation {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: typing 1s linear infinite alternate;
+    position: relative;
+    left: -12px;
+  }
+  @keyframes typing {
+    0% {
+      background-color: rgba(100, 100, 100, 1);
+      box-shadow: 12px 0px 0px 0px rgb(100 100 100 / 20%),
+        24px 0px 0px 0px rgb(100 100 100 / 20%);
+    }
+    25% {
+      background-color: rgba(100, 100, 100, 0.4);
+      box-shadow: 12px 0px 0px 0px rgb(100 100 100),
+        24px 0px 0px 0px rgb(100 100 100 / 20%);
+    }
+    75% {
+      background-color: rgba(100, 100, 100, 0.4);
+      box-shadow: 12px 0px 0px 0px rgb(100 100 100 / 20%),
+        24px 0px 0px 0px rgb(100 100 100);
+    }
+  }
+}

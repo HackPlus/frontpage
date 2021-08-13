@@ -11,24 +11,43 @@ function MyApp({ Component, pageProps, router }) {
     AOS.init();
   }, []);
   return (
-    <motion.div
-      key={router.route}
-      transition={{ delay: 1 }}
-      initial="pageInitial"
-      animate="pageAnimate"
-      variants={{
-        pageInitial: {
-          opacity: 0,
-        },
-        pageAnimate: {
-          opacity: 1,
-        },
-      }}
-    >
-      <MDXProvider components={MDXComponents}>
-        <Component {...pageProps} />
-      </MDXProvider>
-    </motion.div>
+    <>
+      <motion.div
+        key={router.route}
+        transition={{ delay: 0.5 }}
+        initial="pageInitial"
+        animate="pageAnimate"
+        className="flex items-center justify-center absolute inset-0"
+        variants={{
+          pageInitial: {
+            opacity: 1,
+          },
+          pageAnimate: {
+            opacity: 0,
+          },
+        }}
+      >
+        <div className="loading-animation"></div>
+      </motion.div>
+      <motion.div
+        key={router.route}
+        transition={{ delay: 0.5 }}
+        initial="pageInitial"
+        animate="pageAnimate"
+        variants={{
+          pageInitial: {
+            opacity: 0,
+          },
+          pageAnimate: {
+            opacity: 1,
+          },
+        }}
+      >
+        <MDXProvider components={MDXComponents}>
+          <Component {...pageProps} />
+        </MDXProvider>
+      </motion.div>
+    </>
   );
 }
 
