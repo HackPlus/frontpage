@@ -15,11 +15,11 @@ export default function Card({
       <div className="rounded-full bg-bluelight p-4 w-min">
         {renderIcon(icon)}
       </div>
-      <h3 className="text-2xl">{title}</h3>
+      <h3 className="text-2xl font-medium">{title}</h3>
       <Badge fillcolor={fillcolor}>{badgeText}</Badge>
       <p className="text-gray">{children}</p>
       <Link href={href}>
-        <a className="text-purple hover:text-indigo">{cta}</a>
+        <a className="text-purple hover:text-indigo font-medium">{cta}</a>
       </Link>
     </div>
   );

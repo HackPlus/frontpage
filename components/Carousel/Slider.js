@@ -55,16 +55,16 @@ const Carousel = ({ slides }) => {
   };
 
   return (
-    <section className="h-full">
+    <section className="h-full px-12 md:px-36 lg:px-48 xl:px-52">
       <div className="relative flex flex-row items-center justify-center h-full">
         <FaAngleLeft
           size={35}
-          className="absolute left-6 top-30 z-40 cursor-pointer"
+          className="absolute -left-14 top-30 z-40 cursor-pointer"
           onClick={prevSlide}
         />
         <FaAngleRight
           size={35}
-          className="absolute right-6 top-30 z-40 cursor-pointer"
+          className="absolute -right-14 top-30 z-40 cursor-pointer"
           onClick={nextSlide}
         />
         <div className="flex items-center justify-center h-full">
