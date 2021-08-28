@@ -45,6 +45,10 @@ function MyApp({ Component, pageProps, router }) {
             },
             exit: {
               opacity: 0,
+              transition: {
+                delay: 0,
+                duration: 0.4,
+              },
             },
           }}
         >
