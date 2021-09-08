@@ -338,8 +338,8 @@ export default function Events() {
               fill="#F7F5FF"
             />
           </svg>
-          <section className="bg-purplelight py-20">
-            <div className="flex flex-col md:flex-row md:items-center w-full justify-around">
+          <section className="bg-purplelight py-20 main-container">
+            <div className="main-content flex flex-col md:flex-row md:items-center w-full justify-around">
               <div className="flex flex-col space-y-5 max-w-sm">
                 <h2 className="text-black font-medium text-6xl">
                   Run the event of your dreams.
@@ -363,10 +363,10 @@ export default function Events() {
                 >
                   <Image className="rounded-xl" src={losAltos2} alt="alt" />
                 </div>
-                <div className="absolute -top-8 -right-16 rotate-6 duration-200 hover:rotate-12 origin-right transform w-4/5">
+                <div className="hidden lg:block absolute -top-8 -right-16 rotate-6 duration-200 hover:rotate-12 origin-right transform w-4/5">
                   <Image className="rounded-xl" src={techTogether1} />
                 </div>
-                <div className="absolute -bottom-12 -left-12 -rotate-6 duration-200 hover:-rotate-12 origin-left transform w-4/5">
+                <div className="hidden lg:block absolute -bottom-12 -left-12 -rotate-6 duration-200 hover:-rotate-12 origin-left transform w-4/5">
                   <Image className="rounded-xl" src={ttb2018} />
                 </div>
               </div>
