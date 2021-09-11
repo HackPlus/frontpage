@@ -74,7 +74,7 @@ export default function Events() {
                 comprehensive launchpad for hackathons, conferences, meetups,
                 and more.
               </p>
-              <Button type={3} href="mailto:hello@hackplus.io">
+              <Button type={3} href="mailto:events@hackplus.io" external>
                 Get Started
               </Button>
             </div>
@@ -349,11 +349,12 @@ export default function Events() {
                   last year. Join Events+ and grow your event to its full
                   potential.
                 </p>
-                <Link href="/">
-                  <a className="text-lg text-purple font-semibold pb-6 md:pb-0">
-                    Get Started &rarr;
-                  </a>
-                </Link>
+                <a
+                  href="mailto:events@hackplus.io"
+                  className="text-lg text-purple hover:text-indigo font-semibold pb-6 md:pb-0"
+                >
+                  Get Started &rarr;
+                </a>
               </div>
               <div className="relative max-w-sm">
                 <div

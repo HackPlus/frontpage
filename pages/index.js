@@ -92,19 +92,22 @@ export default function Home() {
                     change the world.
                   </p>
                   <div className="flex space-x-3">
-                    <Button href="/">Reach Out</Button>
-                    <Button type={2} href="/">
+                    <Button href="mailto:hello@hackplus.io" external>
+                      Reach Out
+                    </Button>
+                    <Button type={2} href="https://hack.ms/donate" external>
                       Donate
                     </Button>
                   </div>
                   <a className="text-graymed text-sm">
                     Already a Hack+ member?{" "}
                     <span>
-                      <Link href="https://dash.hackplus.services">
-                        <a className="text-purple hover:text-gray">
-                          Sign in &rarr;
-                        </a>
-                      </Link>
+                      <a
+                        href="https://dash.hackplus.services"
+                        className="text-purple hover:text-gray"
+                      >
+                        Sign in &rarr;
+                      </a>
                     </span>
                   </a>
                 </div>
@@ -427,7 +430,7 @@ export default function Home() {
                 type="email"
               />
               <span className="mx-auto md:mx-0">
-                <Button type={3} href="mailto:hello@hackplus.io">
+                <Button type={3} href="mailto:hello@hackplus.io" external>
                   Get Started
                 </Button>
               </span>
