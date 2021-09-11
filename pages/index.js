@@ -6,7 +6,6 @@ import Layout from "../components/Layout";
 import Button from "../components/Button";
 import { BsDot } from "react-icons/bs";
 import Perk from "../components/PerkCard";
-import Link from "next/link";
 import { FaStripeS, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
 import CountUp from "react-countup";
