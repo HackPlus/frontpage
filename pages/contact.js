@@ -50,49 +50,56 @@ export default function Contact() {
               </div>
             </div>
             <svg
+              preserveAspectRatio="none"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              viewBox="0 0 2568 292"
-              className="absolute w-full text-white -bottom-14 left-0 right-0 z-20 -mb-2 translate-y-8"
+              viewBox="0 0 2568 200"
+              className="absolute w-full text-white -bottom-1 left-0 right-0 max-h-24"
             >
               <path d="M0 70.001S121.5 171.5 577.5 171.5c241.837 0 753.21-149.204 1222-171C2211 .5 2568 70.001 2568 70.001v222H0v-222z"></path>
             </svg>
           </section>
 
           <section className="bg-white py-16 relative z-40">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-7 gap-5 md:gap-x-0 text-center">
-              <h4 className="text-black leading-9 font-medium text-3xl">
-                Mail
-              </h4>
-              <h4 className="text-black leading-9 font-medium text-3xl">
-                Email
-              </h4>
-              <h4 className="text-black leading-9 font-medium text-3xl">
-                Call
-              </h4>
-              <p className="text-gray text-xl">
-                447 King Ave <br />
-                Fremont, CA 94536
-              </p>
-              <p>
-                <a
-                  className="text-purple font-medium text-xl"
-                  href="mailto:hello@hackplus.io"
-                >
-                  hello@hackplus.io
-                </a>
-              </p>
-              <p>
-                <a
-                  href="tel:+14159388088"
-                  className="font-medium text-purple text-xl"
-                >
-                  +1 (415) 938-8088
-                </a>
-                <p className="text-sm text-muted font-medium">
-                  Leave a message anytime.
+            <div className="px-20 flex flex-col md:flex-row w-full justify-between text-center space-y-4 md:space-y-0">
+              <div>
+                <h4 className="text-black leading-9 font-medium text-2xl md:text-3xl mb-4 md:mb-6">
+                  Mail
+                </h4>
+                <p className="text-gray text-lg md:text-xl">
+                  447 King Ave <br />
+                  Fremont, CA 94536
                 </p>
-              </p>
+              </div>
+              <div>
+                <h4 className="text-black leading-9 font-medium text-2xl md:text-3xl mb-4 md:mb-6">
+                  Email
+                </h4>
+                <p>
+                  <a
+                    className="text-purple font-medium text-lg md:text-xl"
+                    href="mailto:hello@hackplus.io"
+                  >
+                    hello@hackplus.io
+                  </a>
+                </p>
+              </div>
+              <div>
+                <h4 className="text-black leading-9 font-medium text-2xl md:text-3xl mb-4 md:mb-6">
+                  Call
+                </h4>
+                <p>
+                  <a
+                    href="tel:+14159388088"
+                    className="font-medium text-purple text-lg md:text-xl"
+                  >
+                    +1 (415) 938-8088
+                  </a>
+                  <p className="text-sm text-muted font-medium">
+                    Leave a message anytime.
+                  </p>
+                </p>
+              </div>
             </div>
           </section>
         </main>
