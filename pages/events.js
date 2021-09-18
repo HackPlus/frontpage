@@ -61,21 +61,23 @@ export default function Events() {
       <Layout title="Events+">
         <main>
           <section className="relative overflow-hidden main-container bg-events-cover bg-cover bg-center bg-purple bg-blend-multiply h-screen -mb-48 md:-mb-48 lg:-mb-64">
-            <div
-              data-aos="fade-up"
-              className="main-content text-white space-y-8 py-6 md:py-14 pt-48"
-            >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium mt-4">
-                Events+
-              </h1>
-              <p className="text-lg md:text-xl md:w-9/12">
-                Run the event of your dreams using the world&apos;s most
-                comprehensive launchpad for hackathons, conferences, meetups,
-                and more.
-              </p>
-              <Button type={3} href="mailto:events@hackplus.io" external>
-                Get Started
-              </Button>
+            <div className="flex items-center h-full">
+              <div
+                data-aos="fade-up"
+                className="main-content text-white space-y-8 py-6 md:py-14 pt-48 mb-48 md:mb-48 lg:mb-64"
+              >
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium mt-4">
+                  Events+
+                </h1>
+                <p className="text-lg md:text-xl md:w-9/12">
+                  Run the event of your dreams using the world&apos;s most
+                  comprehensive launchpad for hackathons, conferences, meetups,
+                  and more.
+                </p>
+                <Button type={3} href="mailto:events@hackplus.io" external>
+                  Get Started
+                </Button>
+              </div>
             </div>
             <svg
               className="bg-primary-3 absolute -mt-32 -mr-2 -right-96 -top-96
