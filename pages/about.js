@@ -46,7 +46,8 @@ export default function About() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 2568 292"
-            className="w-full fill-current relative z-20 -mb-2"
+            className="w-full fill-current relative z-20 max-h-32"
+            preserveAspectRatio="none"
           >
             <path
               fill="#ffffff"
