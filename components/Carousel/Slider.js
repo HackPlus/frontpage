@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import CarouselItem from "./CarouselItem";
+import { useKeenSlider } from "keen-slider/react";
 
 const CarouselData = [
   {
@@ -40,6 +41,9 @@ const CarouselData = [
 
 const Carousel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+  });
   const length = slides.length;
 
   const nextSlide = () => {
@@ -67,19 +71,11 @@ const Carousel = ({ slides }) => {
           className="absolute -right-14 top-30 z-40 cursor-pointer"
           onClick={nextSlide}
         />
-        <div className="flex items-center justify-center h-full">
+        <div className="keen-slider" ref={sliderRef}>
           {CarouselData.map(
             ({ index, image, excerpt, testimonial, name, eventName, role }) => {
               return (
-                <div
-                  key={index}
-                  className={
-                    index === current ? "opacity-100" : "opacity-0 hidden"
-                  }
-                  initial={{ opacity: 0, y: 200 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
+                <div key={index} className={"keen-slider__slide px-10"}>
                   <CarouselItem
                     image={image}
                     excerpt={excerpt}

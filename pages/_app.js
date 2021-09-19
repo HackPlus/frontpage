@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import "keen-slider/keen-slider.min.css";
 import { MDXProvider } from "@mdx-js/react";
 import MDXComponents from "../components/MDXComponents";
 import { motion, AnimatePresence } from "framer-motion";

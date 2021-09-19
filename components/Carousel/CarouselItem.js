@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function CarouselItem({
   image,
   excerpt,
@@ -9,11 +7,7 @@ export default function CarouselItem({
   role,
 }) {
   return (
-    <motion.div
-      drag="x"
-      dragConstraints={{ left: 0, right: 0 }}
-      className="border-2 border-graylight bg-white rounded-xl mx-auto p-6 cursor-move"
-    >
+    <div className="border-2 border-graylight bg-white rounded-xl mx-auto p-6 cursor-move">
       <div className="grid grid-cols-8 space-x-5 relative z-0">
         <div className="col-span-1">
           <img
@@ -31,6 +25,6 @@ export default function CarouselItem({
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
