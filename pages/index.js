@@ -62,7 +62,7 @@ export default function Home() {
     `);
   });
   return (
-    <div>
+    <div className="overflow-hidden">
       <Layout title="Home">
         <main>
           <section className="main-container my-24">
