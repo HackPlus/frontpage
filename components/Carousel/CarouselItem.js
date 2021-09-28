@@ -17,11 +17,13 @@ export default function CarouselItem({
           />
         </div>
         <div className="flex flex-col space-y-2 col-span-7">
-          <p className="text-purple text-xl leading-tight">&quot;{excerpt}</p>
+          <p className="text-purple text-xl leading-tight font-medium">
+            &quot;{excerpt}
+          </p>
           <p className="text-gray">{testimonial}&quot;</p>
-          <p className="text-black text-2xl pt-3 leading-4">{name}</p>
+          <p className="text-black text-2xl pt-3 font-medium">{name}</p>
           <p className="text-gray">
-            {role}, <span className="text-purple">{eventName}</span>
+            {role}, <span className="text-purple font-medium">{eventName}</span>
           </p>
         </div>
       </div>

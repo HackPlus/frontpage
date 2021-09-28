@@ -8,8 +8,8 @@ export default function Footer() {
     <div className="bg-blue text-white pb-8 pt-24 main-container">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 main-content">
         <div>
-          <h5>Navigate</h5>
-          <ul className="flex flex-col space-y-2">
+          <h5 className="text-lg md:text-xl font-medium">Navigate</h5>
+          <ul className="flex flex-col space-y-2 text-sm md:text-base">
             <li>
               <Link href="/">
                 <a className="text-white opacity-70 hover:opacity-100">Home</a>
@@ -31,35 +31,37 @@ export default function Footer() {
         </div>
 
         <div>
-          <h5>Contact</h5>
-          <ul className="flex flex-col space-y-3">
-            <li className="flex space-x-5">
+          <h5 className="text-lg md:text-xl font-medium">Contact</h5>
+          <ul className="flex flex-col space-y-3 text-sm md:text-base">
+            <li className="flex space-x-4 sm:space-x-5">
               <IoLocationSharp size={20} />
               <div>
                 447 King Ave <br /> Fremont, CA 94536-1516
               </div>
             </li>
-            <li className="flex space-x-5">
+            <li className="flex space-x-4 sm:space-x-5">
               <FaPhone size={20} />
               <div>
                 +1 (415) 938-8088 <br />
                 <span className="opacity-70">Mon - Fri 9am - 5pm</span>
               </div>
             </li>
-            <li className="flex items-center space-x-5">
+            <li className="flex items-center space-x-4 sm:space-x-5">
               <div>
                 <IoMail size={20} />
               </div>
               <div>
-                <a href="mailto:hello@hackplus.io">hello@hackplus.io</a>
+                <a className="font-medium" href="mailto:hello@hackplus.io">
+                  hello@hackplus.io
+                </a>
               </div>
             </li>
           </ul>
         </div>
         <div className="md:col-span-1"></div>
         <div className="col-span-2 md:col-span-1 md:-ml-16 space-y-4">
-          <h5>Subscribe</h5>
-          <p>
+          <h5 className="text-lg md:text-xl font-medium">Subscribe</h5>
+          <p className="text-sm md:text-base">
             The latest Hack+ news, articles, and resources, sent straight to
             your inbox every month.
           </p>

@@ -63,7 +63,7 @@ export default function About() {
                   <CountUp
                     end={732}
                     delay={1.5}
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
                   <p className="text-black font-medium text-sm pt-2">
                     student founders
@@ -73,7 +73,7 @@ export default function About() {
                   <CountUp
                     end={65}
                     delay={1.5}
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
                   <p className="text-black font-medium text-sm pt-2">
                     ventures launched
@@ -83,7 +83,7 @@ export default function About() {
                   <CountUp
                     end={258}
                     delay={1.5}
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
                   <p className="text-black font-medium text-sm pt-2">
                     donors to date
@@ -95,7 +95,7 @@ export default function About() {
                     delay={1.5}
                     separator=","
                     suffix="+"
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
 
                   <p className="text-black font-medium text-sm pt-2">

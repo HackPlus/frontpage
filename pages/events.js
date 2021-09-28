@@ -64,7 +64,7 @@ export default function Events() {
             <div className="flex items-center h-full">
               <div
                 data-aos="fade-up"
-                className="main-content text-white space-y-8 py-6 md:py-14 pt-48 mb-48 md:mb-48 lg:mb-64"
+                className="main-content text-white space-y-8 py-6 md:py-14 mb-48 md:mb-48 lg:mb-64"
               >
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium mt-4">
                   Events+
@@ -340,7 +340,7 @@ export default function Events() {
             />
           </svg>
           <section className="bg-purplelight py-20 main-container">
-            <div className="main-content flex flex-col md:flex-row md:items-center w-full justify-around">
+            <div className="main-content flex flex-col md:flex-row items-center w-full justify-around">
               <div className="flex flex-col space-y-5 max-w-sm">
                 <h2 className="text-black font-medium text-6xl">
                   Run the event of your dreams.
