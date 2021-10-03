@@ -46,7 +46,8 @@ export default function About() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 2568 292"
-            className="w-full fill-current relative z-20 -mb-2"
+            className="w-full fill-current relative z-20 max-h-32"
+            preserveAspectRatio="none"
           >
             <path
               fill="#ffffff"
@@ -62,7 +63,7 @@ export default function About() {
                   <CountUp
                     end={732}
                     delay={1.5}
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
                   <p className="text-black font-medium text-sm pt-2">
                     student founders
@@ -72,7 +73,7 @@ export default function About() {
                   <CountUp
                     end={65}
                     delay={1.5}
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
                   <p className="text-black font-medium text-sm pt-2">
                     ventures launched
@@ -82,7 +83,7 @@ export default function About() {
                   <CountUp
                     end={258}
                     delay={1.5}
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
                   <p className="text-black font-medium text-sm pt-2">
                     donors to date
@@ -94,7 +95,7 @@ export default function About() {
                     delay={1.5}
                     separator=","
                     suffix="+"
-                    className="text-5xl text-purple font-semibold"
+                    className="text-4xl sm:text-5xl text-purple font-semibold"
                   />
 
                   <p className="text-black font-medium text-sm pt-2">

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Button from "../components/Button";
 import { CarouselData } from "../components/Carousel/CarouselData";
@@ -62,21 +61,23 @@ export default function Events() {
       <Layout title="Events+">
         <main>
           <section className="relative overflow-hidden main-container bg-events-cover bg-cover bg-center bg-purple bg-blend-multiply h-screen -mb-48 md:-mb-48 lg:-mb-64">
-            <div
-              data-aos="fade-up"
-              className="main-content text-white space-y-8 py-6 md:py-14 pt-48"
-            >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium mt-4">
-                Events+
-              </h1>
-              <p className="text-lg md:text-xl md:w-9/12">
-                Run the event of your dreams using the world&apos;s most
-                comprehensive launchpad for hackathons, conferences, meetups,
-                and more.
-              </p>
-              <Button type={3} href="mailto:hello@hackplus.io">
-                Get Started
-              </Button>
+            <div className="flex items-center h-full">
+              <div
+                data-aos="fade-up"
+                className="main-content text-white space-y-8 py-6 md:py-14 mb-48 md:mb-48 lg:mb-64"
+              >
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium mt-4">
+                  Events+
+                </h1>
+                <p className="text-lg md:text-xl md:w-9/12">
+                  Run the event of your dreams using the world&apos;s most
+                  comprehensive launchpad for hackathons, conferences, meetups,
+                  and more.
+                </p>
+                <Button type={3} href="mailto:events@hackplus.io" external>
+                  Get Started
+                </Button>
+              </div>
             </div>
             <svg
               className="bg-primary-3 absolute -mt-32 -mr-2 -right-96 -top-96
@@ -338,8 +339,8 @@ export default function Events() {
               fill="#F7F5FF"
             />
           </svg>
-          <section className="bg-purplelight py-20">
-            <div className="flex flex-col md:flex-row md:items-center w-full justify-around">
+          <section className="bg-purplelight py-20 main-container">
+            <div className="main-content flex flex-col md:flex-row items-center w-full justify-around">
               <div className="flex flex-col space-y-5 max-w-sm">
                 <h2 className="text-black font-medium text-6xl">
                   Run the event of your dreams.
@@ -349,11 +350,12 @@ export default function Events() {
                   last year. Join Events+ and grow your event to its full
                   potential.
                 </p>
-                <Link href="/">
-                  <a className="text-lg text-purple font-semibold pb-6 md:pb-0">
-                    Get Started &rarr;
-                  </a>
-                </Link>
+                <a
+                  href="mailto:events@hackplus.io"
+                  className="text-lg text-purple hover:text-indigo font-semibold pb-6 md:pb-0"
+                >
+                  Get Started &rarr;
+                </a>
               </div>
               <div className="relative max-w-sm">
                 <div
@@ -363,10 +365,10 @@ export default function Events() {
                 >
                   <Image className="rounded-xl" src={losAltos2} alt="alt" />
                 </div>
-                <div className="absolute -top-8 -right-16 rotate-6 duration-200 hover:rotate-12 origin-right transform w-4/5">
+                <div className="hidden lg:block absolute -top-8 -right-16 rotate-6 duration-200 hover:rotate-12 origin-right transform w-4/5">
                   <Image className="rounded-xl" src={techTogether1} />
                 </div>
-                <div className="absolute -bottom-12 -left-12 -rotate-6 duration-200 hover:-rotate-12 origin-left transform w-4/5">
+                <div className="hidden lg:block absolute -bottom-12 -left-12 -rotate-6 duration-200 hover:-rotate-12 origin-left transform w-4/5">
                   <Image className="rounded-xl" src={ttb2018} />
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import "keen-slider/keen-slider.min.css";
 import { MDXProvider } from "@mdx-js/react";
 import MDXComponents from "../components/MDXComponents";
 import { motion, AnimatePresence } from "framer-motion";
@@ -18,13 +19,17 @@ function MyApp({ Component, pageProps, router }) {
           transition={{ delay: 0.5 }}
           initial="pageInitial"
           animate="pageAnimate"
-          className="flex items-center justify-center absolute inset-0"
+          className="flex items-center justify-center fixed inset-0"
           variants={{
             pageInitial: {
               opacity: 1,
             },
             pageAnimate: {
               opacity: 0,
+              transitionEnd: {
+                height: 0,
+                width: 0,
+              },
             },
           }}
         >

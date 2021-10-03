@@ -38,10 +38,12 @@ module.exports = {
       boxShadow: {
         block: "0.5rem 0.5rem 0 rgb(233 236 239 / 50%)",
       },
+      cursor: {
+        grab: "grab",
+        grabbing: "grabbing",
+      },
     },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [],
 };
