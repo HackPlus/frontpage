@@ -184,13 +184,13 @@ export default function Events() {
               </div>
               {/* Badge/Alert thing */}
               <div className="flex justify-center pb-8 mt-4">
-                <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-12">
+                <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-24">
                   <p className="text-white text-center font-medium">
-                    NEW: All Hack+ events get access to{" "}
+                    NEW: All Hack+ events get a free{" "}
                     <a href="https://stream.club" className="underline">
                       Stream Club
-                    </a>
-                    , which includes free Zoom Pro.
+                    </a>{" "}
+                    Pro membership.
                   </p>
                 </div>
               </div>
