@@ -13,10 +13,10 @@ function MyApp({ Component, pageProps, router }) {
   }, []);
   return (
     <>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence>
         <motion.div
           key={router.route + "loading"}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 1 }}
           initial="pageInitial"
           animate="pageAnimate"
           className="flex items-center justify-center fixed inset-0"
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps, router }) {
         </motion.div>
         <motion.div
           key={router.route + "opacity"}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 1 }}
           initial="pageInitial"
           animate="pageAnimate"
           exit="exit"

@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="bg-blue text-white pb-8 pt-24 main-container">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 main-content">
         <div>
-          <h5 className="text-lg md:text-xl font-medium">Navigate</h5>
+          <h5 className="text-lg md:text-xl font-medium mb-4">Navigate</h5>
           <ul className="flex flex-col space-y-2 text-sm md:text-base">
             <li>
               <Link href="/">
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h5 className="text-lg md:text-xl font-medium">Contact</h5>
+          <h5 className="text-lg md:text-xl font-medium mb-4">Contact</h5>
           <ul className="flex flex-col space-y-3 text-sm md:text-base">
             <li className="flex space-x-4 sm:space-x-5">
               <IoLocationSharp size={20} />
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
         <div className="md:col-span-1"></div>
         <div className="col-span-2 md:col-span-1 md:-ml-16 space-y-4">
-          <h5 className="text-lg md:text-xl font-medium">Subscribe</h5>
+          <h5 className="text-lg md:text-xl font-medium mb-4">Subscribe</h5>
           <p className="text-sm md:text-base">
             The latest Hack+ news, articles, and resources, sent straight to
             your inbox every month.
