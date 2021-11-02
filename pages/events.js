@@ -126,11 +126,11 @@ export default function Events() {
                 <p className="text-sm uppercase font-medium pb-6 text-left md:text-center">
                   Our Events are Sponsored By
                 </p>
-                <ul className="w-max mx-auto grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
+                <ul className="w-max mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
                   {eventSponsors.map(({ companyName, logo }) => {
                     return (
                       <li data-aos="fade-up" key={companyName}>
-                        <div className="w-36">
+                        <div className="w-32 sm:w-36">
                           <Image src={logo} alt={`${companyName} logo`} />
                         </div>
                       </li>
@@ -154,8 +154,12 @@ export default function Events() {
           <section className="main-container py-20">
             <div className={"main-content"}>
               <div className="flex flex-col space-y-5 justify-center px-8 md:px-48 text-center">
-                <h2 className="text-blue font-medium text-5xl flex items-center justify-center">
-                  We <FaHeart size={35} className="mx-3" /> Organizers
+                <h2 className="text-blue font-medium text-3xl sm:text-5xl flex items-center justify-center">
+                  We{" "}
+                  <span className="px-3">
+                    <FaHeart />
+                  </span>{" "}
+                  Organizers
                 </h2>
                 <p className="text-gray text-xl">
                   We love working with amazing organizers (like you!) to throw

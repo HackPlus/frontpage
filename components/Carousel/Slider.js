@@ -84,7 +84,7 @@ const Carousel = ({ slides }) => {
           {CarouselData.map(
             ({ index, image, excerpt, testimonial, name, eventName, role }) => {
               return (
-                <div key={index} className={"keen-slider__slide px-10"}>
+                <div key={index} className={"keen-slider__slide px-4 sm:px-10"}>
                   <CarouselItem
                     image={image}
                     excerpt={excerpt}
