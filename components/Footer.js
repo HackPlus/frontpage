@@ -65,15 +65,16 @@ export default function Footer() {
             The latest Hack+ news, articles, and resources, sent straight to
             your inbox every month.
           </p>
-          <form action="http://eepurl.com/grlSeH" target="_blank">
-            <div>
-              <div>
-                <button className="rounded-md bg-purple w-full py-1 font-medium font-circular">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </form>
+          <a
+            href="http://eepurl.com/grlSeH"
+            target="_blank"
+            rel="noreferrer"
+            className="block"
+          >
+            <button className="rounded-md bg-purple w-full py-1 font-medium font-circular">
+              Subscribe
+            </button>
+          </a>
           <small>
             We’ll never share your details. See our{" "}
             <Link href="/docs/privacy">
