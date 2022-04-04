@@ -37,10 +37,37 @@ const CustomSubheading = (props) => {
     );
 };
 
+const CustomUnorderedList = (props) => {
+    return (
+        <ul className="list-disc list-inside" {...props}>
+            {props.children}
+        </ul>
+    );
+};
+
+const CustomTableHeader = (props) => {
+    return (
+        <th className="p-2" {...props}>
+            {props.children}
+        </th>
+    );
+}
+
+const CustomTableCell = (props) => {
+    return (
+        <td className="p-2" {...props}>
+            {props.children}
+        </td>
+    );
+}
+
 const MDXComponents = {
     h1: CustomHeader,
     h2: CustomSubheading,
-    a: CustomLink
+    a: CustomLink,
+    ul: CustomUnorderedList,
+    th: CustomTableHeader,
+    td: CustomTableCell
 };
 
 export default MDXComponents;

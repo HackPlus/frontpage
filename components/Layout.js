@@ -9,7 +9,7 @@ export default function Layout({ layout, title, children }) {
         <div>
           <Meta title={title} />
           <Nav />
-          <div className="mx-14 my-8 md:mx-24 lg:mx-48">{children}</div>
+          <div className="px-5 py-10 max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto w-full">{children}</div>
           <Footer />
         </div>
       );
