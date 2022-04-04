@@ -232,7 +232,7 @@ export default function Events() {
                 </Service>
                 <Service
                   heading="$25k+ in free software"
-                  description="G Suite (including Gmail, Calendar, Drive) at your custom domain? We got it. AWS credits? You betcha. We're constantly finding new corporate partners to bring you the best software, all for free."
+                  description="Google Workspace (including Gmail, Calendar, Drive) at your custom domain? We got it. AWS credits? You betcha. We're constantly finding new corporate partners to bring you the best software, all for free."
                 >
                   <FaLayerGroup size={36} color="gray" />
                 </Service>

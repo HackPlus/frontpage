@@ -184,7 +184,6 @@ export default function About() {
                   badgeTextColor="black"
                   badgeText="Director"
                 />
-
                 <Team
                   src="/avatars/leo.jpg"
                   name="Leo Lin"
@@ -210,14 +209,6 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
-                  src="/avatars/aaron.png"
-                  name="Aaron Wang"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
                   src="/avatars/maggie.png"
                   name="Maggie Liu"
                   role="Engineering"
@@ -226,8 +217,8 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/matthew.jpg"
-                  name="Matthew Lee"
+                  src="/avatars/nima.jpg"
+                  name="Nima Pourjafar"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
@@ -242,17 +233,17 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/yash.jpg"
-                  name="Yash Totale"
+                  src="/avatars/terry.jpg"
+                  name="Terry Su"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/garima.jpg"
-                  name="Garima Sharma"
-                  role="Marketing"
+                  src="/avatars/yash.jpg"
+                  name="Yash Totale"
+                  role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
                   badgeText="Intern"
