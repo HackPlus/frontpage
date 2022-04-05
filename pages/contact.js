@@ -7,27 +7,6 @@ export default function Contact() {
     <div>
       <Layout title="Contact">
         <main>
-          {/* <section>
-            <div
-              data-aos="fade-up"
-              className="absolute z-20 text-white pt-8 md:pt-20 mx-8 md:mx-14"
-            >
-              <h1 className="text-4xl md:text-5xl font-medium leading-loose pb-4">
-                Reach Out
-              </h1>
-              <p className="w-9/12 text-lg">
-                Shoot us a message to talk about our programs, learn more about
-                our story, or anything else.
-              </p>
-            </div>
-            <div className="bg-gray relative z-0">
-              <img
-                src="/article-6.jpg"
-                alt="Laptop"
-                className="w-full h-80 mix-blend-overlay opacity-70"
-              />
-            </div>
-          </section> */}
           <section className="relative main-container bg-contact-cover bg-cover bg-gray bg-blend-overlay h-96">
             <div className="main-content">
               <div className="text-white text-sm h-16 flex items-center">

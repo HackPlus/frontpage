@@ -1,5 +1,20 @@
 import CheckSvg from "./CheckSvg";
 
+function Row({ perk, events, traditional }) {
+  return (
+    <div className="table-row">
+      <div className="font-medium table-cell py-5 border-b border-r border-graylight">
+        {perk}
+      </div>
+      <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight">
+        {events}
+      </div>
+      <div className="font-medium table-cell text-center align-middle border-b border-graylight">
+        {traditional ?? ""}
+      </div>
+    </div>
+  );
+}
 export default function Table() {
   return (
     <div className="hidden md:table w-9/12 my-4">
@@ -16,116 +31,60 @@ export default function Table() {
           />
         </div>
       </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-6 border-b border-r border-graylight">
-          Program
-        </div>
-        <div className="font-medium table-cell text-purple text-2xl text-center bg-purplelight border-b border-r border-graylight">
-          Events+
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight">
-          Traditional FS
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell align-middle py-5 border-b border-r border-graylight">
-          FDIC-backed bank account
-        </div>
-        <div className="font-medium table-cell align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle w-52 px-24  border-b border-graylight">
-          <CheckSvg color="blue" />
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          501(c)(3) Status
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell align-middle w-52 px-24 border-b border-graylight">
-          <CheckSvg color="blue" />
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Full org management platform
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Unlimited free Visa credit cards
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Expense reimbursements
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Automated vendor payments <br />
-          <span className="text-graymed text-sm">ACH & check</span>
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Complimentary event insurance
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Free domain + hosting
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          $45,000+ in free equipment/software
-        </div>
-        <div className="font-medium table-cell text-center align-middle bg-purplelight border-b border-r border-graylight w-52 px-24">
-          <CheckSvg color="green" />
-        </div>
-        <div className="font-medium table-cell text-center align-middle border-b border-graylight"></div>
-      </div>
-      <div className="table-row">
-        <div className="font-medium table-cell py-5 border-b border-r border-graylight">
-          Cost <br />
-          <span className="text-sm text-graymed">on average</span>
-        </div>
-        <div className="table-cell text-center font-bold align-middle bg-purplelight border-b border-r border-graylight text-2xl text-purple">
-          Free!
-        </div>
-        <div className="font-medium table-cell align-middle text-center border-b border-graylight">
-          Up to 20% of revenue
-        </div>
-      </div>
+      <Row
+        perk="Program"
+        events={<span className="text-purple text-2xl">Events+</span>}
+        traditional="Traditional FS"
+      />
+      <Row
+        perk="FDIC-backed bank account"
+        events={<CheckSvg color="green" />}
+        traditional={<CheckSvg color="blue" />}
+      />
+      <Row
+        perk="501(c)(3) Status"
+        events={<CheckSvg color="green" />}
+        traditional={<CheckSvg color="blue" />}
+      />
+      <Row
+        perk="Full org management platform"
+        events={<CheckSvg color="green" />}
+      />
+      <Row
+        perk="Unlimited free Visa credit cards"
+        events={<CheckSvg color="green" />}
+      />
+      <Row perk="Expense reimbursements" events={<CheckSvg color="green" />} />
+      <Row
+        perk={
+          <>
+            {" "}
+            Automated vendor payments <br />
+            <span className="text-graymed text-sm">ACH & check</span>
+          </>
+        }
+        events={<CheckSvg color="green" />}
+      />
+      <Row
+        perk="Complimentary event insurance"
+        events={<CheckSvg color="green" />}
+      />
+      <Row perk="Free domain + hosting" events={<CheckSvg color="green" />} />
+      <Row
+        perk="$45,000+ in free equipment/software"
+        events={<CheckSvg color="green" />}
+      />
+      <Row
+        perk={
+          <>
+            {" "}
+            Cost <br />
+            <span className="text-sm text-graymed">on average</span>
+          </>
+        }
+        events={<span className="text-2xl text-purple font-bold">Free!</span>}
+        traditional="Up to 20% of revenue"
+      />
     </div>
   );
 }

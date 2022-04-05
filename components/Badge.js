@@ -1,12 +1,3 @@
-// export default function Badge({ fillcolor, textcolor, children }) {
-//   return (
-//     <div
-//       className={`bg-${fillcolor} w-max rounded-md px-2 py-1 uppercase font-semibold text-xs text-${textcolor}`}>
-//       {children}
-//     </div>
-//   );
-// }
-
 export default function Badge({ fillcolor, children }) {
   switch (fillcolor) {
     case "purple":
