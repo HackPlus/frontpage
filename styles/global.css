@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-Black.eot");
+  src: url("/fonts/CircularStd/CircularStd-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-Black.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-Black.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-BlackItalic.eot");
+  src: url("/fonts/CircularStd/CircularStd-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-BlackItalic.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-BlackItalic.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-BlackItalic.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-Bold.eot");
+  src: url("/fonts/CircularStd/CircularStd-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-Bold.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-Bold.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-BoldItalic.eot");
+  src: url("/fonts/CircularStd/CircularStd-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-BoldItalic.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-BoldItalic.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-BoldItalic.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-Medium.eot");
+  src: url("/fonts/CircularStd/CircularStd-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-Medium.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-Medium.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-Medium.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-MediumItalic.eot");
+  src: url("/fonts/CircularStd/CircularStd-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-MediumItalic.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-MediumItalic.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-MediumItalic.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-Book.eot");
+  src: url("/fonts/CircularStd/CircularStd-Book.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-Book.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-Book.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd/CircularStd-BookItalic.eot");
+  src: url("/fonts/CircularStd/CircularStd-BookItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/CircularStd/CircularStd-BookItalic.woff") format("woff"),
+    url("/fonts/CircularStd/CircularStd-BookItalic.ttf") format("truetype"),
+    url("/fonts/CircularStd/CircularStd-BookItalic.svg#bcc26993292869431e54c666aafa8fcd")
+      format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  font-family: CircularStd;
+  letter-spacing: -0.025ch;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  h1 {
+    @apply font-circular text-5xl;
+  }
+  h2 {
+    @apply text-4xl font-circular;
+  }
+  h3 {
+    @apply text-3xl font-circular;
+  }
+  h4 {
+    @apply text-2xl font-circular;
+  }
+  h5 {
+    @apply text-xl leading-loose font-circular font-semibold;
+  }
+  p {
+    @apply font-circular font-normal;
+  }
+  li {
+    @apply font-circular;
+  }
+  small {
+    @apply text-white opacity-70 font-circular;
+  }
+
+  th,
+  td {
+    @apply border border-gray;
+  }
+  section {
+    @apply xl:px-48;
+  }
+}
+
+@layer utilities {
+  .main-container {
+    @apply px-2 sm:px-4 lg:px-8;
+  }
+  .main-content {
+    @apply px-2 sm:px-4 max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto w-full;
+  }
+}
+
+@layer components {
+  .loading-animation {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: typing 1s linear infinite alternate;
+    position: relative;
+    left: -12px;
+  }
+  @keyframes typing {
+    0% {
+      background-color: rgba(100, 100, 100, 1);
+      box-shadow: 12px 0px 0px 0px rgb(100 100 100 / 20%),
+        24px 0px 0px 0px rgb(100 100 100 / 20%);
+    }
+    25% {
+      background-color: rgba(100, 100, 100, 0.4);
+      box-shadow: 12px 0px 0px 0px rgb(100 100 100),
+        24px 0px 0px 0px rgb(100 100 100 / 20%);
+    }
+    75% {
+      background-color: rgba(100, 100, 100, 0.4);
+      box-shadow: 12px 0px 0px 0px rgb(100 100 100 / 20%),
+        24px 0px 0px 0px rgb(100 100 100);
+    }
+  }
+}

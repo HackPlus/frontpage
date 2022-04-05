@@ -1,20 +1,33 @@
 {
-  "name": "with-tailwindcss",
+  "name": "hackplus.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.2.3",
+    "aos": "^2.3.4",
+    "framer-motion": "^4.1.17",
+    "keen-slider": "^5.5.1",
     "next": "latest",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-typing-effect": "^2.0.5",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
-    "tailwindcss": "^2.1.1"
+    "eslint": "^7.28.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-plugin-react": "^7.24.0",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
   }
 }
