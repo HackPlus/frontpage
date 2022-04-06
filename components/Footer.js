@@ -4,6 +4,7 @@ import { AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { FaPhone, FaTwitter, FaMedium } from "react-icons/fa";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className="bg-blue text-white pb-8 pt-24 main-container">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 main-content">
@@ -112,7 +113,7 @@ export default function Footer() {
         </div>
         <div className="flex justify-center pt-5">
           <small className="text-center">
-            &copy;2021 Youth Leadership Incubator Inc dba Hack+. We are a
+            &copy;{year} Youth Leadership Incubator Inc dba Hack+. We are a
             501(c)(3) nonprofit public charity, with EIN 81-1543325.
           </small>
         </div>
