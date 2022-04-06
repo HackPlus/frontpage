@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Button from "../components/Button";
-import { CarouselData } from "../components/Carousel/CarouselData";
+import CarouselData from "../components/Carousel/CarouselData";
 import Carousel from "../components/Carousel/Slider";
 import Layout from "../components/Layout";
 import Service from "../components/Service";
-import microsoftLogo from "../public/logos/microsoft.svg";
-import amazonLogo from "../public/logos/amazon.svg";
-import disneyLogo from "../public/logos/disney.svg";
-import googleLogo from "../public/logos/google.svg";
-import stanfordLogo from "../public/logos/stanford.svg";
-import githubLogo from "../public/logos/github.svg";
-import losAltos2 from "../public/losaltos-2.jpg";
-import techTogether1 from "../public/techtogether-1.jpg";
-import ttb2018 from "../public/TTB-2018.jpg";
+import microsoftLogo from "../public/img/sponsors/microsoft.svg";
+import amazonLogo from "../public/img/sponsors/amazon.svg";
+import disneyLogo from "../public/img/sponsors/disney.svg";
+import googleLogo from "../public/img/sponsors/google.svg";
+import stanfordLogo from "../public/img/sponsors/stanford.svg";
+import githubLogo from "../public/img/sponsors/github.svg";
+import eventImage1 from "../public/img/event-image-1.jpg";
+import eventImage2 from "../public/img/event-image-2.jpg";
+import eventImage3 from "../public/img/event-image-3.jpg";
 
 import {
   FaTachometerAlt,
@@ -38,7 +38,7 @@ const eventSponsors = [
     logo: amazonLogo,
   },
   {
-    companyName: "disney",
+    companyName: "Disney",
     logo: disneyLogo,
   },
   {
@@ -275,7 +275,7 @@ export default function Events() {
                 className="flex flex-col justify-center space-y-10 md:space-y-0 md:flex-row md:space-x-4"
               >
                 <Highlight
-                  src="/TTB_stadium.jpg"
+                  src="/img/ttb.jpg"
                   purpleBadge="All-Female"
                   greenBadge="Collegiate"
                   heading="Tech Together Boston"
@@ -285,7 +285,7 @@ export default function Events() {
                   at Agganis Arena in Boston.
                 </Highlight>
                 <Highlight
-                  src="/slohacks-venue.jpg"
+                  src="/img/slohacks.jpg"
                   purpleBadge="General"
                   greenBadge="Collegiate"
                   heading="SLOHacks"
@@ -295,7 +295,7 @@ export default function Events() {
                   Cal Poly SLO.
                 </Highlight>
                 <Highlight
-                  src="/superposition-venue.jpg"
+                  src="/img/superposition.jpg"
                   purpleBadge="All-Female"
                   greenBadge="high school"
                   heading="Superposition"
@@ -367,13 +367,13 @@ export default function Events() {
                     "mx-auto hover:-rotate-2 transform origin-bottom-left duration-200"
                   }
                 >
-                  <Image className="rounded-xl" src={losAltos2} alt="alt" />
+                  <Image className="rounded-xl" src={eventImage1} alt="alt" />
                 </div>
                 <div className="hidden lg:block absolute -top-8 -right-16 rotate-6 duration-200 hover:rotate-12 origin-right transform w-4/5">
-                  <Image className="rounded-xl" src={techTogether1} />
+                  <Image className="rounded-xl" src={eventImage2} />
                 </div>
                 <div className="hidden lg:block absolute -bottom-12 -left-12 -rotate-6 duration-200 hover:-rotate-12 origin-left transform w-4/5">
-                  <Image className="rounded-xl" src={ttb2018} />
+                  <Image className="rounded-xl" src={eventImage3} />
                 </div>
               </div>
             </div>

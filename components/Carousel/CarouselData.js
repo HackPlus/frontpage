@@ -1,6 +1,6 @@
-export const CarouselData = [
+const CarouselData = [
   {
-    image: "/karinahalevy.png",
+    image: "/img/avatars/karina.png",
     excerpt:
       "Hack+ has been instrumental not only in making both of the LingHacks hackathons possible but also enabling us to expand into an international organization reaching hundreds of students.",
     testimonial:
@@ -10,7 +10,7 @@ export const CarouselData = [
     eventName: "LingHacks",
   },
   {
-    image: "/scott.png",
+    image: "/img/avatars/scott.png",
     excerpt:
       "Garuda Hacks wouldn't have been possible without the Hack+ infrastructure that abstracted away the complexity of raising sponsorship and making vendor payments.",
     testimonial:
@@ -20,7 +20,7 @@ export const CarouselData = [
     eventName: "Garuda Hacks",
   },
   {
-    image: "/eileenyang.jpg",
+    image: "/img/avatars/eileen.jpg",
     excerpt:
       "Working with Hack+ last fall was an astoundingly rewarding decision.",
     testimonial:
@@ -30,3 +30,5 @@ export const CarouselData = [
     eventName: "HSHacks",
   },
 ];
+
+export default CarouselData

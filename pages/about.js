@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import Badge from "../components/Badge";
 import Layout from "../components/Layout";
 import Team from "../components/Team";
-import aboutImage from "../public/about.jpg";
+import aboutImage from "../public/img/about.jpg";
 import Link from "next/link";
 import { MdPlayArrow } from "react-icons/md";
 
@@ -161,7 +161,7 @@ export default function About() {
               <h3 className="pb-16 pt-8">Meet the Team</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <Team
-                  src="/avatars/sanil.jpeg"
+                  src="/img/avatars/sanil.jpeg"
                   name="Sanil Chawla"
                   role="Executive Director"
                   badgeFill="purple"
@@ -169,7 +169,7 @@ export default function About() {
                   badgeText="Founder"
                 />
                 <Team
-                  src="/avatars/jamsheed.jpg"
+                  src="/img/avatars/jamsheed.jpg"
                   name="Jamsheed Mistri"
                   role="Operations"
                   badgeFill="blue"
@@ -177,7 +177,7 @@ export default function About() {
                   badgeText="Director"
                 />
                 <Team
-                  src="/avatars/sam.jpg"
+                  src="/img/avatars/sam.jpg"
                   name="Samuel Escapa"
                   role="Engineering"
                   badgeFill="blue"
@@ -185,7 +185,7 @@ export default function About() {
                   badgeText="Director"
                 />
                 <Team
-                  src="/avatars/leo.jpg"
+                  src="/img/avatars/leo.jpg"
                   name="Leo Lin"
                   role="Operations"
                   badgeFill="green"
@@ -193,7 +193,7 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
-                  src="/avatars/jd.jpg"
+                  src="/img/avatars/jd.jpg"
                   name="JD LeRoy"
                   role="Events"
                   badgeFill="green"
@@ -201,7 +201,7 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
-                  src="/avatars/lily.jpg"
+                  src="/img/avatars/lily.jpg"
                   name="Lillian Zeng"
                   role="Events"
                   badgeFill="green"
@@ -209,7 +209,7 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
-                  src="/avatars/maggie.png"
+                  src="/img/avatars/maggie.png"
                   name="Maggie Liu"
                   role="Engineering"
                   badgeFill="yellow"
@@ -217,7 +217,7 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/nima.jpg"
+                  src="/img/avatars/nima.jpg"
                   name="Nima Pourjafar"
                   role="Engineering"
                   badgeFill="yellow"
@@ -225,7 +225,7 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/raghav.jpg"
+                  src="/img/avatars/raghav.jpg"
                   name="Raghav Misra"
                   role="Engineering"
                   badgeFill="yellow"
@@ -233,7 +233,7 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/terry.jpg"
+                  src="/img/avatars/terry.jpg"
                   name="Terry Su"
                   role="Engineering"
                   badgeFill="yellow"
@@ -241,7 +241,7 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/yash.jpg"
+                  src="/img/avatars/yash.jpg"
                   name="Yash Totale"
                   role="Engineering"
                   badgeFill="yellow"
@@ -249,7 +249,7 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/avatars/jade.jpg"
+                  src="/img/avatars/jade.jpg"
                   name="Jade Wang"
                   role="Marketing"
                   badgeFill="yellow"

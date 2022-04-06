@@ -31,9 +31,9 @@ module.exports = {
           '"CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
       },
       backgroundImage: {
-        "about-cover": "url('/meeting.jpg')",
-        "events-cover": "url('/ttbstadium_flip.jpg')",
-        "contact-cover": "url('/article-6.jpg')",
+        "about-cover": "url('/img/about-cover.jpg')",
+        "events-cover": "url('/img/events-cover.jpg')",
+        "contact-cover": "url('/img/contact-cover.jpg')",
       },
       boxShadow: {
         block: "0.5rem 0.5rem 0 rgb(233 236 239 / 50%)",
