@@ -1,4 +1,4 @@
-<p align="center"><img width="192px" alt="Hack+ Logo" src="./public/logo.svg"></p>
+<p align="center"><img width="192px" alt="Hack+ Logo" src="./public/img/logos/logo.svg"></p>
 <h1 align="center"><a href="https://hackplus.io/">Hack+ Site</a></h1>
 <p align="center"><i>Hack+ is an accessible nonprofit accelerator for student-led impacts. In other words: we're here to help students change the world.</i></p>
 

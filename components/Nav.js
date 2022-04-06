@@ -18,7 +18,7 @@ export default function Nav() {
           <Link href="/">
             <a>
               <img
-                src="/logo.svg"
+                src="/img/logos/logo.svg"
                 alt="Hack+ Logo"
                 className="h-7 md:h-8 xl:h-9"
               />

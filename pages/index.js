@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-escape */
 import Card from "../components/Card";
-import { CarouselData } from "../components/Carousel/CarouselData";
+import CarouselData from "../components/Carousel/CarouselData";
 import Carousel from "../components/Carousel/Slider";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
@@ -11,37 +11,37 @@ import ReactTypingEffect from "react-typing-effect";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { useEffect, useState } from "react";
-import saas1 from "../public/saas-1.svg";
-import saas2 from "../public/saas-2.svg";
-import saas3 from "../public/saas-3.svg";
-import saas4 from "../public/saas-4.svg";
+import saas1 from "../public/img/saas-1.svg";
+import saas2 from "../public/img/saas-2.svg";
+import saas3 from "../public/img/saas-3.svg";
+import saas4 from "../public/img/saas-4.svg";
 import Image from "next/image";
 
 const corporate = [
-  { company: "Google", logo: "/partners/corporate/google.svg" },
-  { company: "Microsoft", logo: "/partners/corporate/microsoft.svg" },
-  { company: "Amazon", logo: "/partners/corporate/amazon.svg" },
-  { company: "Facebook", logo: "/partners/corporate/facebook.svg" },
-  { company: "Atlassian", logo: "/partners/corporate/atlassian.svg" },
-  { company: "Stripe", logo: "/partners/corporate/stripe.svg" },
-  { company: "Salesforce", logo: "/partners/corporate/salesforce.svg" },
-  { company: "Twosigma", logo: "/partners/corporate/twosigma.svg" },
-  { company: "Vercel", logo: "/partners/corporate/vercel.svg" },
+  { company: "Google", logo: "/img/partners/corporate/google.svg" },
+  { company: "Microsoft", logo: "/img/partners/corporate/microsoft.svg" },
+  { company: "Amazon", logo: "/img/partners/corporate/amazon.svg" },
+  { company: "Facebook", logo: "/img/partners/corporate/facebook.svg" },
+  { company: "Atlassian", logo: "/img/partners/corporate/atlassian.svg" },
+  { company: "Stripe", logo: "/img/partners/corporate/stripe.svg" },
+  { company: "Salesforce", logo: "/img/partners/corporate/salesforce.svg" },
+  { company: "Twosigma", logo: "/img/partners/corporate/twosigma.svg" },
+  { company: "Vercel", logo: "/img/partners/corporate/vercel.svg" },
 ];
 
 const schools = [
-  { company: "Stanford", logo: "/partners/university/stanford.svg" },
-  { company: "USC", logo: "/partners/university/usc.svg" },
-  { company: "Berkeley", logo: "/partners/university/berkeley.svg" },
-  { company: "MIT", logo: "/partners/university/mit.svg" },
+  { company: "Stanford", logo: "/img/partners/university/stanford.svg" },
+  { company: "USC", logo: "/img/partners/university/usc.svg" },
+  { company: "Berkeley", logo: "/img/partners/university/berkeley.svg" },
+  { company: "MIT", logo: "/img/partners/university/mit.svg" },
 
-  { company: "Calpoly SLO", logo: "/partners/university/calpolyslo.svg" },
-  { company: "Northeastern", logo: "/partners/university/northeastern.svg" },
+  { company: "Calpoly SLO", logo: "/img/partners/university/calpolyslo.svg" },
+  { company: "Northeastern", logo: "/img/partners/university/northeastern.svg" },
   {
     company: "Boston university",
-    logo: "/partners/university/bostonuniversity.svg",
+    logo: "/img/partners/university/bostonuniversity.svg",
   },
-  { company: "UPenn", logo: "/partners/university/upenn.svg" },
+  { company: "UPenn", logo: "/img/partners/university/upenn.svg" },
 ];
 
 export default function Home() {

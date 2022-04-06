@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logoWhite from "../public/logo-white.svg";
+import logoWhite from "../public/img/logos/logo-white.svg";
 import BackgroundSvgs from "../components/BackgroundSvgs";
 
 export default function Custom404() {

@@ -21,12 +21,12 @@ export default function Table() {
       <div className="table-row">
         <div className="font-medium table-cell border-b border-r border-graylight"></div>
         <div className="font-medium table-cell align-middle bg-purplelight py-4 border-b border-r border-graylight">
-          <img alt="Hack+ Logo" src="/logo.svg" className="mx-auto" />
+          <img alt="Hack+ Logo" src="/img/logos/logo.svg" className="mx-auto" />
         </div>
         <div className="font-medium table-cell align-middle py-4 border-b border-graylight">
           <img
             alt="Image"
-            src="/logos/traditional.svg"
+            src="/img/traditional.svg"
             className="max-h-20 mx-auto"
           />
         </div>
