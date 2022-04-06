@@ -48,17 +48,14 @@ export default function Home() {
   const [countedUp, setCountedUp] = useState(false);
   useEffect(() => {
     console.log(`
-    ___  ___  ________  ________  ___  __       
-    |\  \|\  \|\   __  \|\   ____\|\  \|\  \     
-    \ \  \\\  \ \  \|\  \ \  \___|\ \  \/  /|_   
-     \ \   __  \ \   __  \ \  \    \ \   ___  \  
-      \ \  \ \  \ \  \ \  \ \  \____\ \  \\ \  \ 
-       \ \__\ \__\ \__\ \__\ \_______\ \__\\ \__\
-        \|__|\|__|\|__|\|__|\|_______|\|__| \|__|
-                                                 
-                                                 
-      hack+ is a nonprofit accelerator for student-led impacts
-                                 
+                      ██╗░░██╗░█████╗░░█████╗░██╗░░██╗░░░░░░░
+                      ██║░░██║██╔══██╗██╔══██╗██║░██╔╝░░██╗░░
+                      ███████║███████║██║░░╚═╝█████═╝░██████╗
+                      ██╔══██║██╔══██║██║░░██╗██╔═██╗░╚═██╔═╝
+                      ██║░░██║██║░░██║╚█████╔╝██║░╚██╗░░╚═╝░░
+                      ╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝░░░░░░░
+
+         Interested in working with us? Shoot us an email: hello@hackplus.io
     `);
   });
   return (
@@ -98,17 +95,15 @@ export default function Home() {
                       Donate
                     </Button>
                   </div>
-                  <a className="text-graymed text-sm">
+                  <span className="text-graymed text-sm">
                     Already a Hack+ member?{" "}
-                    <span>
-                      <a
-                        href="https://dash.hackplus.services"
-                        className="text-purple hover:text-gray"
-                      >
-                        Sign in &rarr;
-                      </a>
-                    </span>
-                  </a>
+                    <a
+                      href="https://dash.hackplus.services"
+                      className="text-purple hover:text-gray"
+                    >
+                      Sign in &rarr;
+                    </a>
+                  </span>
                 </div>
                 <div data-aos="fade-left" className="px-8">
                   <Image
