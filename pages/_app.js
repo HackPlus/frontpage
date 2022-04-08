@@ -13,7 +13,11 @@ function MyApp({ Component, pageProps, router }) {
   }, []);
   return (
     <>
-      <AnimatePresence>
+      <AnimatePresence
+        onExitComplete={() => {
+          AOS.refresh();
+        }}
+      >
         <motion.div
           key={router.route + "loading"}
           transition={{ delay: 1 }}
