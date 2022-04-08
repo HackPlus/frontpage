@@ -1,5 +1,10 @@
+const gfm = require('remark-gfm');
 const withMDX = require("@next/mdx")({
-    extension: /\.mdx$/
+    extension: /\.mdx$/,
+    options: {
+      remarkPlugins: [ gfm ],
+      providerImportSource: '@mdx-js/react',
+    }
 });
 
 module.exports = withMDX({
