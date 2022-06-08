@@ -209,6 +209,14 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
+                  src="/img/avatars/evan.jpg"
+                  name="Evan Tu"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern"
+                />
+                <Team
                   src="/img/avatars/maggie.png"
                   name="Maggie Liu"
                   role="Engineering"
@@ -227,6 +235,14 @@ export default function About() {
                 <Team
                   src="/img/avatars/raghav.jpg"
                   name="Raghav Misra"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern"
+                />
+                <Team
+                  src="/img/avatars/shubham.jpg"
+                  name="Shubham Patil"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
