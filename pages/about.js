@@ -225,6 +225,14 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
+                  src="/img/avatars/manasa.jpeg"
+                  name="Manasa Maddi"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern"
+                />
+                <Team
                   src="/img/avatars/nima.jpg"
                   name="Nima Pourjafar"
                   role="Engineering"
