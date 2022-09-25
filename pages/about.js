@@ -185,14 +185,6 @@ export default function About() {
                   badgeText="Director"
                 />
                 <Team
-                  src="/img/avatars/leo.jpg"
-                  name="Leo Lin"
-                  role="Operations"
-                  badgeFill="green"
-                  badgeTextColor="black"
-                  badgeText="Staff"
-                />
-                <Team
                   src="/img/avatars/jd.jpg"
                   name="JD LeRoy"
                   role="Events"
