@@ -201,16 +201,16 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
-                  src="/img/avatars/evan.jpg"
-                  name="Evan Tu"
+                  src="/img/avatars/agrim.jpg"
+                  name="Agrim Kar"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
                   badgeText="Intern"
                 />
                 <Team
-                  src="/img/avatars/maggie.png"
-                  name="Maggie Liu"
+                  src="/img/avatars/alexander.jpeg"
+                  name="Alexander Do"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
@@ -225,40 +225,16 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/img/avatars/nima.jpg"
-                  name="Nima Pourjafar"
+                  src="/img/avatars/pooja.jpeg"
+                  name="Pooja Kedia"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
                   badgeText="Intern"
                 />
                 <Team
-                  src="/img/avatars/raghav.jpg"
-                  name="Raghav Misra"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
-                  src="/img/avatars/shubham.jpg"
-                  name="Shubham Patil"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
-                  src="/img/avatars/terry.jpg"
-                  name="Terry Su"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
-                  src="/img/avatars/yash.jpg"
-                  name="Yash Totale"
+                  src="/img/avatars/ritvik.jpg"
+                  name="Ritvik Irigireddy"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
