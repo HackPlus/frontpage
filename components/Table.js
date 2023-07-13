@@ -20,10 +20,10 @@ export default function Table() {
     <div className="hidden md:table w-9/12 my-4">
       <div className="table-row">
         <div className="font-medium table-cell border-b border-r border-graylight"></div>
-        <div className="font-medium table-cell align-middle bg-purplelight py-4 border-b border-r border-graylight">
+        <div style={{ width: '180px' }} className="font-medium table-cell align-middle bg-purplelight py-4 px-3 border-b border-r border-graylight">
           <img alt="Hack+ Logo" src="/img/logos/logo.svg" className="mx-auto" />
         </div>
-        <div className="font-medium table-cell align-middle py-4 border-b border-graylight">
+        <div style={{ width: '180px' }} className="font-medium table-cell align-middle py-4 border-b border-graylight">
           <img
             alt="Image"
             src="/img/traditional.svg"

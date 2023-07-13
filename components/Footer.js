@@ -37,7 +37,7 @@ export default function Footer() {
             <li className="flex space-x-4 sm:space-x-5">
               <IoLocationSharp size={20} />
               <div>
-                447 King Ave <br /> Fremont, CA 94536-1516
+                8549 Wilshire Blvd, Unit 3089 <br /> Beverly Hills, CA 90211
               </div>
             </li>
             <li className="flex space-x-4 sm:space-x-5">
@@ -76,13 +76,15 @@ export default function Footer() {
               Subscribe
             </button>
           </a>
-          <small>
-            We’ll never share your details. See our{" "}
-            <Link href="/docs/privacy">
-              <a>Privacy Policy</a>
-            </Link>
-            .
-          </small>
+          <div>
+            <small>
+              We’ll never share your details. See our{" "}
+              <Link href="/docs/privacy">
+                <a>Privacy Policy</a>
+              </Link>
+              .
+            </small>
+          </div>
         </div>
       </div>
       <div>

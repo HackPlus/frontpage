@@ -74,9 +74,11 @@ export default function Events() {
                   comprehensive launchpad for hackathons, conferences, meetups,
                   and more.
                 </p>
-                <Button type={3} href="mailto:events@hackplus.io" external>
-                  Get Started
-                </Button>
+                <div>
+                  <Button type={3} href="mailto:events@hackplus.io" external>
+                    Get Started
+                  </Button>
+                </div>
               </div>
             </div>
             <svg
@@ -176,7 +178,7 @@ export default function Events() {
           </section>
           <section className="bg-purplelight space-y-5 py-20 main-container">
             <div className="main-content">
-              <div className="flex flex-col justify-center text-center space-y-5">
+              <div className="flex flex-col justify-center text-center space-y-5 mb-12">
                 <h2 className="text-purple text-5xl font-medium xl:max-w-lg mx-auto">
                   A true full-service platform
                 </h2>
@@ -187,17 +189,17 @@ export default function Events() {
                 </p>
               </div>
               {/* Badge/Alert thing */}
-              <div className="flex justify-center pb-8 mt-4">
-                <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-4 lg:px-24">
-                  <p className="text-white text-center font-medium">
-                    NEW: All Hack+ events get a free{" "}
-                    <a href="https://stream.club" className="underline">
-                      Stream Club
-                    </a>{" "}
-                    Pro membership.
-                  </p>
-                </div>
-              </div>
+              {/*<div className="flex justify-center pb-8 mt-4">*/}
+              {/*  <div className="mx-8 bg-purple border-purplemedium border-4 rounded-xl w-max py-2 px-4 lg:px-24">*/}
+              {/*    <p className="text-white text-center font-medium">*/}
+              {/*      NEW: All Hack+ events get a free{" "}*/}
+              {/*      <a href="https://stream.club" className="underline">*/}
+              {/*        Stream Club*/}
+              {/*      </a>{" "}*/}
+              {/*      Pro membership.*/}
+              {/*    </p>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
 
               <div className="mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <Service
@@ -278,7 +280,7 @@ export default function Events() {
                   src="/img/ttb.jpg"
                   purpleBadge="All-Female"
                   greenBadge="Collegiate"
-                  heading="Tech Together Boston"
+                  heading="TechTogether Boston"
                   href="https://techtogether.io/boston"
                 >
                   The world&apos;s largest all-female and non-binary hackathon,

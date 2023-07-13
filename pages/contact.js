@@ -46,8 +46,8 @@ export default function Contact() {
                   Mail
                 </h4>
                 <p className="text-gray text-lg md:text-xl">
-                  447 King Ave <br />
-                  Fremont, CA 94536
+                  8549 Wilshire Blvd, Unit 3089 <br />
+                  Beverly Hills, CA 90211
                 </p>
               </div>
               <div>
