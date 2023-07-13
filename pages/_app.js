@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
@@ -66,6 +67,7 @@ function MyApp({ Component, pageProps, router }) {
           </MDXProvider>
         </motion.div>
       </AnimatePresence>
+      <Analytics />
     </>
   );
 }
