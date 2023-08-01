@@ -200,13 +200,45 @@ export default function About() {
                   badgeTextColor="black"
                   badgeText="Staff"
                 />
+                {/* <Team
+                  src="/img/avatars/vir.jpeg"
+                  name="Vir Shah"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern Lead"
+                /> */}
+                <Team
+                  src="/img/avatars/evan.jpg"
+                  name="Evan Tu"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern Lead"
+                />
+                {/* <Team
+                  src="/img/avatars/caleb.jpeg"
+                  name="Caleb Lin"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern"
+                />
+                <Team
+                  src="/img/avatars/lakshya.jpeg"
+                  name="Lakshya Jain"
+                  role="Engineering"
+                  badgeFill="yellow"
+                  badgeTextColor="black"
+                  badgeText="Intern"
+                /> */}
                 <Team
                   src="/img/avatars/alexander.jpeg"
                   name="Alexander Do"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
-                  badgeText="Intern"
+                  badgeText="Learning Intern"
                 />
                 <Team
                   src="/img/avatars/pooja.jpeg"
@@ -214,7 +246,7 @@ export default function About() {
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
-                  badgeText="Intern"
+                  badgeText="Learning Intern"
                 />
                 <Team
                   src="/img/avatars/jade.jpg"
