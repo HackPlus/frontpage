@@ -201,14 +201,6 @@ export default function About() {
                   badgeText="Staff"
                 />
                 <Team
-                  src="/img/avatars/agrim.jpg"
-                  name="Agrim Kar"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
                   src="/img/avatars/alexander.jpeg"
                   name="Alexander Do"
                   role="Engineering"
@@ -217,24 +209,8 @@ export default function About() {
                   badgeText="Intern"
                 />
                 <Team
-                  src="/img/avatars/manasa.jpeg"
-                  name="Manasa Maddi"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
                   src="/img/avatars/pooja.jpeg"
                   name="Pooja Kedia"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
-                  src="/img/avatars/ritvik.jpg"
-                  name="Ritvik Irigireddy"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
