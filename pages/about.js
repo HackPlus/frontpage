@@ -223,15 +223,15 @@ export default function About() {
                   badgeFill="yellow"
                   badgeTextColor="black"
                   badgeText="Intern"
-                />
+                />*/}
                 <Team
-                  src="/img/avatars/lakshya.jpeg"
+                  src="/img/avatars/lakshya.jpg"
                   name="Lakshya Jain"
                   role="Engineering"
                   badgeFill="yellow"
                   badgeTextColor="black"
                   badgeText="Intern"
-                /> */}
+                />
                 <Team
                   src="/img/avatars/alexander.jpeg"
                   name="Alexander Do"
