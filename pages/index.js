@@ -88,7 +88,7 @@ export default function Home() {
                     change the world.
                   </p>
                   <div className="flex space-x-3">
-                    <Button href="https://apply.hackplus.io/events" external>
+                    <Button href="#apply">
                       Apply now
                     </Button>
                     <Button type={2} href="https://hack.ms/donate" external>
@@ -125,7 +125,7 @@ export default function Home() {
               d="M0 15.446S461-27.74 788.16 30.312c462.18 82.012 732.73 147.47 1196.24 89.548C2177.21 95.767 2469 15.446 2469 15.446V239H0V15.446z"
             ></path>
           </svg>
-          <section className="main-container bg-purplelight py-10">
+          <section className="main-container bg-purplelight py-10" id="apply">
             <div className="main-content">
               <h2 className="text-black pb-7 font-medium">
                 We&apos;re a full-spectrum platform that enables students to
@@ -155,7 +155,7 @@ export default function Home() {
                     fillcolor="green"
                     badgeText="Accepting applications"
                     href="https://apply.hackplus.io/nonprofits"
-                    cta="Apply here &rarr;"
+                    cta="Apply now &rarr;"
                   >
                     Want to have a positive impact on your community or the
                     world around you? We&apos;ll help you launch a nonprofit by
@@ -170,8 +170,7 @@ export default function Home() {
                     textcolor="white"
                     fillcolor="purple"
                     badgeText="Closed beta"
-                    href="https://apply.hackplus.io/startups"
-                    cta="Apply here &rarr;"
+                    href="#"
                   >
                     Students like you are coming up with the next unicorn
                     startup ideas. We&apos;re here to provide the resources,
@@ -368,7 +367,7 @@ export default function Home() {
                   <ol className="space-y-14">
                     <Step
                       heading="1. Apply through our website"
-                      description={<span>Fill out the application on <a className="underline" href="https://apply.hackplus.io/" target="_blank" rel="noreferrer" >our website</a>.</span>}
+                      description={<span>Fill out the application on <a className="underline" href="#apply">our website</a>.</span>}
                     />
                     <Step
                       heading="2. Fill out some simple paperwork"
@@ -419,7 +418,7 @@ export default function Home() {
             </h2>
             <div className="flex flex-col justify-center space-y-4 md:space-y-0 md:flex-row md:space-x-4">
               <span className="mx-auto md:mx-0">
-                <Button type={3} href="https://apply.hackplus.io/" external>
+                <Button type={3} href="#apply">
                   Apply now
                 </Button>
               </span>
