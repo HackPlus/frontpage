@@ -75,8 +75,8 @@ export default function Events() {
                   and more.
                 </p>
                 <div>
-                  <Button type={3} href="mailto:events@hackplus.io" external>
-                    Get Started
+                  <Button type={3} href="https://apply.hackplus.io/events" external>
+                    Apply Now
                   </Button>
                 </div>
               </div>
@@ -357,10 +357,10 @@ export default function Events() {
                   potential.
                 </p>
                 <a
-                  href="mailto:events@hackplus.io"
+                  href="https://apply.hackplus.io/events"
                   className="text-lg text-purple hover:text-indigo font-semibold pb-6 md:pb-0"
                 >
-                  Get Started &rarr;
+                  Apply Now &rarr;
                 </a>
               </div>
               <div className="relative max-w-sm">
