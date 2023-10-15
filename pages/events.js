@@ -75,7 +75,7 @@ export default function Events() {
                   and more.
                 </p>
                 <div>
-                  <Button type={3} href="https://apply.hackplus.io/events" external>
+                  <Button type={3} href="https://apply.hackplus.io" external>
                     Get Started
                   </Button>
                 </div>
@@ -357,7 +357,7 @@ export default function Events() {
                   potential.
                 </p>
                 <a
-                  href="https://apply.hackplus.io/events"
+                  href="https://apply.hackplus.io"
                   className="text-lg text-purple hover:text-indigo font-semibold pb-6 md:pb-0"
                 >
                   Get Started &rarr;
