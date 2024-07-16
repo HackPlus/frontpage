@@ -36,7 +36,10 @@ const schools = [
   { company: "MIT", logo: "/img/partners/university/mit.svg" },
 
   { company: "Calpoly SLO", logo: "/img/partners/university/calpolyslo.svg" },
-  { company: "Northeastern", logo: "/img/partners/university/northeastern.svg" },
+  {
+    company: "Northeastern",
+    logo: "/img/partners/university/northeastern.svg",
+  },
   {
     company: "Boston university",
     logo: "/img/partners/university/bostonuniversity.svg",
@@ -88,9 +91,7 @@ export default function Home() {
                     change the world.
                   </p>
                   <div className="flex space-x-3">
-                    <Button href="#apply">
-                      Apply now
-                    </Button>
+                    <Button href="#apply">Apply now</Button>
                     <Button type={2} href="https://hack.ms/donate" external>
                       Donate
                     </Button>
@@ -98,7 +99,7 @@ export default function Home() {
                   <span className="text-graymed text-sm">
                     Already a Hack+ member?{" "}
                     <a
-                      href="https://dash.hackplus.services"
+                      href="https://dash.hackplus.io"
                       className="text-purple hover:text-gray"
                     >
                       Sign in &rarr;
@@ -367,7 +368,15 @@ export default function Home() {
                   <ol className="space-y-14">
                     <Step
                       heading="1. Apply through our website"
-                      description={<span>Fill out the application on <a className="underline" href="#apply">our website</a>.</span>}
+                      description={
+                        <span>
+                          Fill out the application on{" "}
+                          <a className="underline" href="#apply">
+                            our website
+                          </a>
+                          .
+                        </span>
+                      }
                     />
                     <Step
                       heading="2. Fill out some simple paperwork"
