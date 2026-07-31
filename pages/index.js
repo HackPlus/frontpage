@@ -47,7 +47,7 @@ const schools = [
   { company: "UPenn", logo: "/img/partners/university/upenn.svg" },
 ];
 
-export default function Home() {
+export default function Home({ totalTransacted }) {
   const [countedUp, setCountedUp] = useState(false);
   useEffect(() => {
     console.log(`
@@ -221,14 +221,13 @@ export default function Home() {
                       <div className="text-purple text-5xl leading-loose font-semibold">
                         {isVisible ? (
                           <CountUp
-                            start={1250000}
-                            end={1756382}
+                            start={Math.max(totalTransacted - 500000, 0)}
+                            end={totalTransacted}
                             separator=","
-                            suffix="+"
                             prefix="$"
                           />
                         ) : (
-                          "$1,250,000+"
+                          `$${totalTransacted.toLocaleString()}`
                         )}
                       </div>
                     )}
@@ -237,7 +236,6 @@ export default function Home() {
                   <p className="text-lg text-gray">
                     transacted for our student-run ventures to date
                   </p>
-                  <p className="text-xs text-graymed italic">(as of Q4 2019)</p>
                 </div>
               </div>
               <div className="flex justify-center pb-8">
@@ -437,6 +435,19 @@ export default function Home() {
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(
+    "https://dash.hackplus.io/api/stats/totalTransacted"
+  );
+  const data = await res.json();
+  // API returns the amount in cents; display to the nearest dollar
+  const totalTransacted = Math.round(data.total_transacted / 100);
+  return {
+    props: { totalTransacted },
+    revalidate: 3600,
+  };
 }
 
 const Step = ({ heading, description }) => {
