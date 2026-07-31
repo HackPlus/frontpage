@@ -200,62 +200,6 @@ export default function About() {
                   badgeTextColor="black"
                   badgeText="Staff"
                 />
-                <Team
-                  src="/img/avatars/vir.jpeg"
-                  name="Vir Shah"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern Lead"
-                />
-                <Team
-                  src="/img/avatars/evan.jpg"
-                  name="Evan Tu"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern Lead"
-                />
-                <Team
-                  src="/img/avatars/caleb.jpg"
-                  name="Caleb Lin"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
-                  src="/img/avatars/lakshya.jpg"
-                  name="Lakshya Jain"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
-                <Team
-                  src="/img/avatars/alexander.jpeg"
-                  name="Alexander Do"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Learning Intern"
-                />
-                <Team
-                  src="/img/avatars/pooja.jpeg"
-                  name="Pooja Kedia"
-                  role="Engineering"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Learning Intern"
-                />
-                <Team
-                  src="/img/avatars/jade.jpg"
-                  name="Jade Wang"
-                  role="Marketing"
-                  badgeFill="yellow"
-                  badgeTextColor="black"
-                  badgeText="Intern"
-                />
               </div>
               <p className="py-8 text-gray">
                 Interested in joining our team?{" "}
