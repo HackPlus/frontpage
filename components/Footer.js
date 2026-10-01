@@ -107,7 +107,7 @@ export default function Footer() {
             </a>
           </Link>
 
-          <Link href="https://blog.hackplus.io/">
+          <Link href="https://blog.hackplus.org/">
             <a className="text-white opacity-50 hover:opacity-100">
               <FaMedium size={30} />
             </a>

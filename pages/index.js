@@ -99,7 +99,7 @@ export default function Home({ totalTransacted }) {
                   <span className="text-graymed text-sm">
                     Already a Hack+ member?{" "}
                     <a
-                      href="https://dash.hackplus.io"
+                      href="https://dash.hackplus.org"
                       className="text-purple hover:text-gray"
                     >
                       Sign in &rarr;
@@ -155,7 +155,7 @@ export default function Home({ totalTransacted }) {
                     textcolor="black"
                     fillcolor="green"
                     badgeText="Accepting applications"
-                    href="https://apply.hackplus.io/nonprofits"
+                    href="https://apply.hackplus.org/nonprofits"
                     cta="Apply now &rarr;"
                   >
                     Want to have a positive impact on your community or the
@@ -439,7 +439,7 @@ export default function Home({ totalTransacted }) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    "https://dash.hackplus.io/api/stats/totalTransacted"
+    "https://dash.hackplus.org/api/stats/totalTransacted"
   );
   const data = await res.json();
   // API returns the amount in cents; display to the nearest dollar

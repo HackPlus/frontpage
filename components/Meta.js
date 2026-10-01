@@ -18,7 +18,7 @@ export default function Meta({ title }) {
       <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
       <meta name="theme-color" content="#ffffff" />
-      <meta property="og:url" content="https://hackplus.io" />
+      <meta property="og:url" content="https://hackplus.org" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
