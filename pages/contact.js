@@ -46,8 +46,8 @@ export default function Contact() {
                   Mail
                 </h4>
                 <p className="text-gray text-lg md:text-xl">
-                  8549 Wilshire Blvd, Unit 3089 <br />
-                  Beverly Hills, CA 90211
+                  2000 Riverside Dr, Suite 200 <br />
+                  Los Angeles, CA 90039
                 </p>
               </div>
               <div>

@@ -37,7 +37,7 @@ export default function Footer() {
             <li className="flex space-x-4 sm:space-x-5">
               <IoLocationSharp size={20} />
               <div>
-                8549 Wilshire Blvd, Unit 3089 <br /> Beverly Hills, CA 90211
+                2000 Riverside Dr, Suite 200 <br /> Los Angeles, CA 90039
               </div>
             </li>
             <li className="flex space-x-4 sm:space-x-5">
